@@ -1,4 +1,6 @@
-@RTK.md
+## karpathy-guidelines
+
+Follow Karpathy's 4 principles: think before coding (state assumptions, surface tradeoffs), simplicity first (minimum code, no speculation), surgical changes (touch only what you must), goal-driven execution (define success criteria, loop until verified).
 
 ## graphify
 
