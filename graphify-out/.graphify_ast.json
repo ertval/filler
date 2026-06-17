@@ -1,0 +1,3624 @@
+{
+  "nodes": [
+    {
+      "id": "agents_skills_caveman_compress_scripts_init_py_scripts_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_init_py_scripts_init_rationale_1",
+      "label": "Caveman compress scripts.  This package provides tools to compress natural langu",
+      "file_type": "rationale",
+      "source_file": ".agents/skills/caveman-compress/scripts/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_main_py_scripts_main",
+      "label": "__main__.py",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/__main__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark",
+      "label": "benchmark.py",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/benchmark.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark_count_tokens",
+      "label": "count_tokens()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/benchmark.py",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark_benchmark_pair",
+      "label": "benchmark_pair()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/benchmark.py",
+      "source_location": "L25",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_benchmark_py_path",
+      "label": "Path",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/benchmark.py",
+      "source_location": "L25",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark_print_table",
+      "label": "print_table()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/benchmark.py",
+      "source_location": "L37",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark_main",
+      "label": "main()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/benchmark.py",
+      "source_location": "L44",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_cli_py_scripts_cli",
+      "label": "cli.py",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/cli.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_cli_py_scripts_cli_print_usage",
+      "label": "print_usage()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/cli.py",
+      "source_location": "L28",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_cli_py_scripts_cli_main",
+      "label": "main()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/cli.py",
+      "source_location": "L32",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress",
+      "label": "compress.py",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_compress_split_frontmatter",
+      "label": "split_frontmatter()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L28",
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_compress_backup_dir_for",
+      "label": "backup_dir_for()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L69",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_compress_py_path",
+      "label": "Path",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L69",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_is_sensitive_path",
+      "label": "is_sensitive_path()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L93",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_strip_llm_wrapper",
+      "label": "strip_llm_wrapper()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L106",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_call_claude",
+      "label": "call_claude()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L122",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_build_compress_prompt",
+      "label": "build_compress_prompt()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L171",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_build_fix_prompt",
+      "label": "build_fix_prompt()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L190",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_compress_file",
+      "label": "compress_file()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L222",
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_compress_rationale_29",
+      "label": "Split YAML frontmatter from body. Returns (frontmatter, body).      Memory files",
+      "file_type": "rationale",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L29",
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_compress_rationale_70",
+      "label": "Resolve the out-of-tree backup directory for a given source file.      Backups m",
+      "file_type": "rationale",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L70",
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_compress_rationale_94",
+      "label": "Heuristic denylist for files that must never be shipped to a third-party API.",
+      "file_type": "rationale",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L94",
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_compress_rationale_107",
+      "label": "Strip outer ```markdown ... ``` fence when it wraps the entire output.",
+      "file_type": "rationale",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L107",
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_compress_rationale_123",
+      "label": "Send a prompt to Claude.      Prefers the Anthropic SDK when ANTHROPIC_API_KEY i",
+      "file_type": "rationale",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L123",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect",
+      "label": "detect.py",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_is_code_line",
+      "label": "_is_code_line()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L32",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_is_json_content",
+      "label": "_is_json_content()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L37",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_is_yaml_content",
+      "label": "_is_yaml_content()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L46",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_detect_file_type",
+      "label": "detect_file_type()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L62",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_detect_py_path",
+      "label": "Path",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L62",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_should_compress",
+      "label": "should_compress()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L100",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_rationale_33",
+      "label": "Check if a line looks like code.",
+      "file_type": "rationale",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L33",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_rationale_38",
+      "label": "Check if content is valid JSON.",
+      "file_type": "rationale",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L38",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_rationale_47",
+      "label": "Heuristic: check if content looks like YAML.",
+      "file_type": "rationale",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L47",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_rationale_63",
+      "label": "Classify a file as 'natural_language', 'code', 'config', or 'unknown'.      Retu",
+      "file_type": "rationale",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L63",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_rationale_101",
+      "label": "Return True if the file is natural language and should be compressed.",
+      "file_type": "rationale",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L101",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate",
+      "label": "validate.py",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validationresult",
+      "label": "ValidationResult",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validationresult_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validationresult_add_error",
+      "label": ".add_error()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validationresult_add_warning",
+      "label": ".add_warning()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L26",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_read_file",
+      "label": "read_file()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L30",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_validate_py_path",
+      "label": "Path",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L30",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_extract_headings",
+      "label": "extract_headings()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L37",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_extract_code_blocks",
+      "label": "extract_code_blocks()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L41",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_extract_urls",
+      "label": "extract_urls()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L85",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_extract_paths",
+      "label": "extract_paths()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L89",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_count_bullets",
+      "label": "count_bullets()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L93",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_extract_inline_codes",
+      "label": "extract_inline_codes()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L97",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_headings",
+      "label": "validate_headings()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L106",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_code_blocks",
+      "label": "validate_code_blocks()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L117",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_urls",
+      "label": "validate_urls()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L125",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_paths",
+      "label": "validate_paths()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L133",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_bullets",
+      "label": "validate_bullets()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L141",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_inline_codes",
+      "label": "validate_inline_codes()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L154",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate",
+      "label": "validate()",
+      "file_type": "code",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L173",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_rationale_42",
+      "label": "Line-based fenced code block extractor.      Handles ``` and ~~~ fences with var",
+      "file_type": "rationale",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L42",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_init_py_scripts_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_init_py_scripts_init_rationale_1",
+      "label": "Caveman compress scripts.  This package provides tools to compress natural langu",
+      "file_type": "rationale",
+      "source_file": ".agents/skills/compress/scripts/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_main_py_scripts_main",
+      "label": "__main__.py",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/__main__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark",
+      "label": "benchmark.py",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/benchmark.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark_count_tokens",
+      "label": "count_tokens()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/benchmark.py",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark_benchmark_pair",
+      "label": "benchmark_pair()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/benchmark.py",
+      "source_location": "L25",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_benchmark_py_path",
+      "label": "Path",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/benchmark.py",
+      "source_location": "L25",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark_print_table",
+      "label": "print_table()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/benchmark.py",
+      "source_location": "L37",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark_main",
+      "label": "main()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/benchmark.py",
+      "source_location": "L44",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_cli_py_scripts_cli",
+      "label": "cli.py",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/cli.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_cli_py_scripts_cli_print_usage",
+      "label": "print_usage()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/cli.py",
+      "source_location": "L28",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_cli_py_scripts_cli_main",
+      "label": "main()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/cli.py",
+      "source_location": "L32",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_compress_py_scripts_compress",
+      "label": "compress.py",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_compress_py_scripts_compress_is_sensitive_path",
+      "label": "is_sensitive_path()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L46",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_compress_py_path",
+      "label": "Path",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L46",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_compress_py_scripts_compress_strip_llm_wrapper",
+      "label": "strip_llm_wrapper()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L59",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_compress_py_scripts_compress_call_claude",
+      "label": "call_claude()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L75",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_compress_py_scripts_compress_build_compress_prompt",
+      "label": "build_compress_prompt()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L104",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_compress_py_scripts_compress_build_fix_prompt",
+      "label": "build_fix_prompt()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L123",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_compress_py_scripts_compress_compress_file",
+      "label": "compress_file()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L155",
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_compress_rationale_47",
+      "label": "Heuristic denylist for files that must never be shipped to a third-party API.",
+      "file_type": "rationale",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L47",
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_compress_rationale_60",
+      "label": "Strip outer ```markdown ... ``` fence when it wraps the entire output.",
+      "file_type": "rationale",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L60",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_detect_py_scripts_detect",
+      "label": "detect.py",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_detect_py_scripts_detect_is_code_line",
+      "label": "_is_code_line()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L32",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_detect_py_scripts_detect_is_json_content",
+      "label": "_is_json_content()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L37",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_detect_py_scripts_detect_is_yaml_content",
+      "label": "_is_yaml_content()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L46",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_detect_py_scripts_detect_detect_file_type",
+      "label": "detect_file_type()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L62",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_detect_py_path",
+      "label": "Path",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L62",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_detect_py_scripts_detect_should_compress",
+      "label": "should_compress()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L100",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_detect_py_scripts_detect_rationale_33",
+      "label": "Check if a line looks like code.",
+      "file_type": "rationale",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L33",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_detect_py_scripts_detect_rationale_38",
+      "label": "Check if content is valid JSON.",
+      "file_type": "rationale",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L38",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_detect_py_scripts_detect_rationale_47",
+      "label": "Heuristic: check if content looks like YAML.",
+      "file_type": "rationale",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L47",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_detect_py_scripts_detect_rationale_63",
+      "label": "Classify a file as 'natural_language', 'code', 'config', or 'unknown'.      Retu",
+      "file_type": "rationale",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L63",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_detect_py_scripts_detect_rationale_101",
+      "label": "Return True if the file is natural language and should be compressed.",
+      "file_type": "rationale",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L101",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_validate_py_scripts_validate",
+      "label": "validate.py",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_validate_py_scripts_validate_validationresult",
+      "label": "ValidationResult",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_validate_py_scripts_validate_validationresult_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_validate_py_scripts_validate_validationresult_add_error",
+      "label": ".add_error()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_validate_py_scripts_validate_validationresult_add_warning",
+      "label": ".add_warning()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L26",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_validate_py_scripts_validate_read_file",
+      "label": "read_file()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L30",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_validate_py_path",
+      "label": "Path",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L30",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_validate_py_scripts_validate_extract_headings",
+      "label": "extract_headings()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L37",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_validate_py_scripts_validate_extract_code_blocks",
+      "label": "extract_code_blocks()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L41",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_validate_py_scripts_validate_extract_urls",
+      "label": "extract_urls()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L85",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_validate_py_scripts_validate_extract_paths",
+      "label": "extract_paths()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L89",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_validate_py_scripts_validate_count_bullets",
+      "label": "count_bullets()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L93",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_validate_py_scripts_validate_extract_inline_codes",
+      "label": "extract_inline_codes()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L97",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_headings",
+      "label": "validate_headings()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L106",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_code_blocks",
+      "label": "validate_code_blocks()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L117",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_urls",
+      "label": "validate_urls()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L125",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_paths",
+      "label": "validate_paths()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L133",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_bullets",
+      "label": "validate_bullets()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L141",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_inline_codes",
+      "label": "validate_inline_codes()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L154",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_validate_py_scripts_validate_validate",
+      "label": "validate()",
+      "file_type": "code",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L173",
+      "_origin": "ast"
+    },
+    {
+      "id": "agents_skills_compress_scripts_validate_py_scripts_validate_rationale_42",
+      "label": "Line-based fenced code block extractor.      Handles ``` and ~~~ fences with var",
+      "file_type": "rationale",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L42",
+      "_origin": "ast"
+    },
+    {
+      "id": "opencode_opencode",
+      "label": "opencode.json",
+      "file_type": "code",
+      "source_file": ".opencode/opencode.json",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "opencode_opencode_schema",
+      "label": "$schema",
+      "file_type": "code",
+      "source_file": ".opencode/opencode.json",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "opencode_opencode_plugin",
+      "label": "plugin",
+      "file_type": "code",
+      "source_file": ".opencode/opencode.json",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "opencode_package",
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": ".opencode/package.json",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "opencode_package_dependencies",
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": ".opencode/package.json",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "opencode_package_dependencies_opencode_ai_plugin",
+      "label": "@opencode-ai/plugin",
+      "file_type": "code",
+      "source_file": ".opencode/package.json",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_graphify",
+      "label": "graphify.js",
+      "file_type": "code",
+      "source_file": ".opencode/plugins/graphify.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_graphify_graphifyplugin",
+      "label": "GraphifyPlugin()",
+      "file_type": "code",
+      "source_file": ".opencode/plugins/graphify.js",
+      "source_location": "L6",
+      "_origin": "ast"
+    }
+  ],
+  "edges": [
+    {
+      "source": "agents_skills_caveman_compress_scripts_init_py_scripts_init_rationale_1",
+      "target": "agents_skills_caveman_compress_scripts_init_py_scripts_init",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/__init__.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_main_py_scripts_main",
+      "target": "scripts_cli",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/__main__.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/benchmark.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark",
+      "target": "sys",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/benchmark.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark",
+      "target": "scripts_validate",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/benchmark.py",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark",
+      "target": "validate",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/benchmark.py",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark",
+      "target": "tiktoken",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/benchmark.py",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark",
+      "target": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark_count_tokens",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/benchmark.py",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark",
+      "target": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark_benchmark_pair",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/benchmark.py",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark_benchmark_pair",
+      "target": "agents_skills_caveman_compress_scripts_benchmark_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/benchmark.py",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark_benchmark_pair",
+      "target": "agents_skills_caveman_compress_scripts_benchmark_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/benchmark.py",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark",
+      "target": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark_print_table",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/benchmark.py",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark",
+      "target": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/benchmark.py",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark_benchmark_pair",
+      "target": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark_count_tokens",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/benchmark.py",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark_main",
+      "target": "agents_skills_caveman_compress_scripts_benchmark_py_path",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/benchmark.py",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark_main",
+      "target": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark_print_table",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/benchmark.py",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark_main",
+      "target": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark_benchmark_pair",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/benchmark.py",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_cli_py_scripts_cli",
+      "target": "sys",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/cli.py",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_cli_py_scripts_cli",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/cli.py",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_cli_py_scripts_cli",
+      "target": "scripts_compress",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/cli.py",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_cli_py_scripts_cli",
+      "target": "scripts_detect",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/cli.py",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_cli_py_scripts_cli",
+      "target": "agents_skills_caveman_compress_scripts_cli_py_scripts_cli_print_usage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/cli.py",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_cli_py_scripts_cli",
+      "target": "agents_skills_caveman_compress_scripts_cli_py_scripts_cli_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/cli.py",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_cli_py_scripts_cli_main",
+      "target": "agents_skills_caveman_compress_scripts_cli_py_scripts_cli_print_usage",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/cli.py",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress",
+      "target": "re",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress",
+      "target": "shutil",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress",
+      "target": "subprocess",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress",
+      "target": "sys",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress",
+      "target": "typing",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress",
+      "target": "scripts_compress_split_frontmatter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress",
+      "target": "scripts_compress_backup_dir_for",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_compress_backup_dir_for",
+      "target": "agents_skills_caveman_compress_scripts_compress_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_compress_backup_dir_for",
+      "target": "agents_skills_caveman_compress_scripts_compress_py_path",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress",
+      "target": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_is_sensitive_path",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_is_sensitive_path",
+      "target": "agents_skills_caveman_compress_scripts_compress_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress",
+      "target": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_strip_llm_wrapper",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L106",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress",
+      "target": "scripts_detect",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L113",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress",
+      "target": "scripts_validate",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress",
+      "target": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_call_claude",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L122",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress",
+      "target": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_build_compress_prompt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L171",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress",
+      "target": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_build_fix_prompt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L190",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress",
+      "target": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_compress_file",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L222",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_compress_file",
+      "target": "agents_skills_caveman_compress_scripts_compress_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L222",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_compress_backup_dir_for",
+      "target": "agents_skills_caveman_compress_scripts_compress_py_path",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_call_claude",
+      "target": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_strip_llm_wrapper",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L146",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_compress_file",
+      "target": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_is_sensitive_path",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L235",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_compress_file",
+      "target": "scripts_compress_backup_dir_for",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L253",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_compress_file",
+      "target": "scripts_compress_split_frontmatter",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L271",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_compress_file",
+      "target": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_call_claude",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L281",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_compress_file",
+      "target": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_build_compress_prompt",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L281",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_compress_file",
+      "target": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_build_fix_prompt",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L338",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_compress_rationale_29",
+      "target": "scripts_compress_split_frontmatter",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_compress_rationale_70",
+      "target": "scripts_compress_backup_dir_for",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_compress_rationale_94",
+      "target": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_is_sensitive_path",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L94",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_compress_rationale_107",
+      "target": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_strip_llm_wrapper",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L107",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_compress_rationale_123",
+      "target": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_call_claude",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L123",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect",
+      "target": "re",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect",
+      "target": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_is_code_line",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect",
+      "target": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_is_json_content",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect",
+      "target": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_is_yaml_content",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect",
+      "target": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_detect_file_type",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L62",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_detect_file_type",
+      "target": "agents_skills_caveman_compress_scripts_detect_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L62",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect",
+      "target": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_should_compress",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_should_compress",
+      "target": "agents_skills_caveman_compress_scripts_detect_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect",
+      "target": "sys",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L111",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_detect_file_type",
+      "target": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_is_json_content",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_detect_file_type",
+      "target": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_is_yaml_content",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_detect_file_type",
+      "target": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_is_code_line",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L90",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_should_compress",
+      "target": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_detect_file_type",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L107",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_rationale_33",
+      "target": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_is_code_line",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_rationale_38",
+      "target": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_is_json_content",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_rationale_47",
+      "target": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_is_yaml_content",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_rationale_63",
+      "target": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_detect_file_type",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_rationale_101",
+      "target": "agents_skills_caveman_compress_scripts_detect_py_scripts_detect_should_compress",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/detect.py",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate",
+      "target": "re",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate",
+      "target": "collections",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validationresult",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validationresult",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validationresult_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validationresult",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validationresult_add_error",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validationresult",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validationresult_add_warning",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_read_file",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_read_file",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_extract_headings",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_extract_code_blocks",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_extract_urls",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_extract_paths",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L89",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_count_bullets",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_extract_inline_codes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L97",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_headings",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L106",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_code_blocks",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L117",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_urls",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L125",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_paths",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L133",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_bullets",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L141",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_inline_codes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L154",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L173",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L173",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L173",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validationresult",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L173",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate",
+      "target": "sys",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L192",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_headings",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_extract_headings",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L107",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_headings",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validationresult_add_error",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L111",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_headings",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validationresult_add_warning",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_code_blocks",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_extract_code_blocks",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L118",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_code_blocks",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validationresult_add_error",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L122",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_urls",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_extract_urls",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L126",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_urls",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validationresult_add_error",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L130",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_paths",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_extract_paths",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L134",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_paths",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validationresult_add_warning",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L138",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_bullets",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_count_bullets",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L142",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_bullets",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validationresult_add_warning",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L151",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_inline_codes",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_extract_inline_codes",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L155",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_inline_codes",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validationresult_add_error",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L165",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_inline_codes",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validationresult_add_warning",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L167",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validationresult",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L174",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_read_file",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L176",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_headings",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L179",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_code_blocks",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L180",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_urls",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L181",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_paths",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L182",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_bullets",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L183",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_validate_inline_codes",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L184",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_rationale_42",
+      "target": "agents_skills_caveman_compress_scripts_validate_py_scripts_validate_extract_code_blocks",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/validate.py",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_init_py_scripts_init_rationale_1",
+      "target": "agents_skills_compress_scripts_init_py_scripts_init",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/__init__.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_main_py_scripts_main",
+      "target": "scripts_cli",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/__main__.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/benchmark.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark",
+      "target": "sys",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/benchmark.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark",
+      "target": "scripts_validate",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/benchmark.py",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark",
+      "target": "validate",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/benchmark.py",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark",
+      "target": "tiktoken",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/benchmark.py",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark",
+      "target": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark_count_tokens",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/benchmark.py",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark",
+      "target": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark_benchmark_pair",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/benchmark.py",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark_benchmark_pair",
+      "target": "agents_skills_compress_scripts_benchmark_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/benchmark.py",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark_benchmark_pair",
+      "target": "agents_skills_compress_scripts_benchmark_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/benchmark.py",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark",
+      "target": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark_print_table",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/benchmark.py",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark",
+      "target": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/benchmark.py",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark_benchmark_pair",
+      "target": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark_count_tokens",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/benchmark.py",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark_main",
+      "target": "agents_skills_compress_scripts_benchmark_py_path",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/benchmark.py",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark_main",
+      "target": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark_print_table",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/benchmark.py",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark_main",
+      "target": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark_benchmark_pair",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/benchmark.py",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_cli_py_scripts_cli",
+      "target": "sys",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/cli.py",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_cli_py_scripts_cli",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/cli.py",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_cli_py_scripts_cli",
+      "target": "scripts_compress",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/cli.py",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_cli_py_scripts_cli",
+      "target": "scripts_detect",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/cli.py",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_cli_py_scripts_cli",
+      "target": "agents_skills_compress_scripts_cli_py_scripts_cli_print_usage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/cli.py",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_cli_py_scripts_cli",
+      "target": "agents_skills_compress_scripts_cli_py_scripts_cli_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/cli.py",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_cli_py_scripts_cli_main",
+      "target": "agents_skills_compress_scripts_cli_py_scripts_cli_print_usage",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/cli.py",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_compress_py_scripts_compress",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_compress_py_scripts_compress",
+      "target": "re",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_compress_py_scripts_compress",
+      "target": "subprocess",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_compress_py_scripts_compress",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_compress_py_scripts_compress",
+      "target": "typing",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_compress_py_scripts_compress",
+      "target": "agents_skills_compress_scripts_compress_py_scripts_compress_is_sensitive_path",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_compress_py_scripts_compress_is_sensitive_path",
+      "target": "agents_skills_compress_scripts_compress_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_compress_py_scripts_compress",
+      "target": "agents_skills_compress_scripts_compress_py_scripts_compress_strip_llm_wrapper",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_compress_py_scripts_compress",
+      "target": "scripts_detect",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_compress_py_scripts_compress",
+      "target": "scripts_validate",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_compress_py_scripts_compress",
+      "target": "agents_skills_compress_scripts_compress_py_scripts_compress_call_claude",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L75",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_compress_py_scripts_compress",
+      "target": "agents_skills_compress_scripts_compress_py_scripts_compress_build_compress_prompt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L104",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_compress_py_scripts_compress",
+      "target": "agents_skills_compress_scripts_compress_py_scripts_compress_build_fix_prompt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L123",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_compress_py_scripts_compress",
+      "target": "agents_skills_compress_scripts_compress_py_scripts_compress_compress_file",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L155",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_compress_py_scripts_compress_compress_file",
+      "target": "agents_skills_compress_scripts_compress_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L155",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_compress_py_scripts_compress_call_claude",
+      "target": "agents_skills_compress_scripts_compress_py_scripts_compress_strip_llm_wrapper",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_compress_py_scripts_compress_compress_file",
+      "target": "agents_skills_compress_scripts_compress_py_scripts_compress_is_sensitive_path",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L168",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_compress_py_scripts_compress_compress_file",
+      "target": "agents_skills_compress_scripts_compress_py_scripts_compress_call_claude",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L198",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_compress_py_scripts_compress_compress_file",
+      "target": "agents_skills_compress_scripts_compress_py_scripts_compress_build_compress_prompt",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L198",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_compress_py_scripts_compress_compress_file",
+      "target": "agents_skills_compress_scripts_compress_py_scripts_compress_build_fix_prompt",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L250",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_compress_rationale_47",
+      "target": "agents_skills_compress_scripts_compress_py_scripts_compress_is_sensitive_path",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_compress_rationale_60",
+      "target": "agents_skills_compress_scripts_compress_py_scripts_compress_strip_llm_wrapper",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_detect_py_scripts_detect",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_detect_py_scripts_detect",
+      "target": "re",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_detect_py_scripts_detect",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_detect_py_scripts_detect",
+      "target": "agents_skills_compress_scripts_detect_py_scripts_detect_is_code_line",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_detect_py_scripts_detect",
+      "target": "agents_skills_compress_scripts_detect_py_scripts_detect_is_json_content",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_detect_py_scripts_detect",
+      "target": "agents_skills_compress_scripts_detect_py_scripts_detect_is_yaml_content",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_detect_py_scripts_detect",
+      "target": "agents_skills_compress_scripts_detect_py_scripts_detect_detect_file_type",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L62",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_detect_py_scripts_detect_detect_file_type",
+      "target": "agents_skills_compress_scripts_detect_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L62",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_detect_py_scripts_detect",
+      "target": "agents_skills_compress_scripts_detect_py_scripts_detect_should_compress",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_detect_py_scripts_detect_should_compress",
+      "target": "agents_skills_compress_scripts_detect_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_detect_py_scripts_detect",
+      "target": "sys",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L111",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_detect_py_scripts_detect_detect_file_type",
+      "target": "agents_skills_compress_scripts_detect_py_scripts_detect_is_json_content",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_detect_py_scripts_detect_detect_file_type",
+      "target": "agents_skills_compress_scripts_detect_py_scripts_detect_is_yaml_content",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_detect_py_scripts_detect_detect_file_type",
+      "target": "agents_skills_compress_scripts_detect_py_scripts_detect_is_code_line",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L90",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_detect_py_scripts_detect_should_compress",
+      "target": "agents_skills_compress_scripts_detect_py_scripts_detect_detect_file_type",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L107",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_detect_py_scripts_detect_rationale_33",
+      "target": "agents_skills_compress_scripts_detect_py_scripts_detect_is_code_line",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_detect_py_scripts_detect_rationale_38",
+      "target": "agents_skills_compress_scripts_detect_py_scripts_detect_is_json_content",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_detect_py_scripts_detect_rationale_47",
+      "target": "agents_skills_compress_scripts_detect_py_scripts_detect_is_yaml_content",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_detect_py_scripts_detect_rationale_63",
+      "target": "agents_skills_compress_scripts_detect_py_scripts_detect_detect_file_type",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_detect_py_scripts_detect_rationale_101",
+      "target": "agents_skills_compress_scripts_detect_py_scripts_detect_should_compress",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/detect.py",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate",
+      "target": "re",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate",
+      "target": "collections",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validationresult",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validationresult",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validationresult_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validationresult",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validationresult_add_error",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validationresult",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validationresult_add_warning",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_read_file",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_read_file",
+      "target": "agents_skills_compress_scripts_validate_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_extract_headings",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_extract_code_blocks",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_extract_urls",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_extract_paths",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L89",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_count_bullets",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_extract_inline_codes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L97",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_headings",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L106",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_code_blocks",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L117",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_urls",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L125",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_paths",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L133",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_bullets",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L141",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_inline_codes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L154",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L173",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validate",
+      "target": "agents_skills_compress_scripts_validate_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L173",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validate",
+      "target": "agents_skills_compress_scripts_validate_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L173",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validate",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validationresult",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L173",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate",
+      "target": "sys",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L192",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_headings",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_extract_headings",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L107",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_headings",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validationresult_add_error",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L111",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_headings",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validationresult_add_warning",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_code_blocks",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_extract_code_blocks",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L118",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_code_blocks",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validationresult_add_error",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L122",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_urls",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_extract_urls",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L126",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_urls",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validationresult_add_error",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L130",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_paths",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_extract_paths",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L134",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_paths",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validationresult_add_warning",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L138",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_bullets",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_count_bullets",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L142",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_bullets",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validationresult_add_warning",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L151",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_inline_codes",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_extract_inline_codes",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L155",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_inline_codes",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validationresult_add_error",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L165",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_inline_codes",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validationresult_add_warning",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L167",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validate",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validationresult",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L174",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validate",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_read_file",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L176",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validate",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_headings",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L179",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validate",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_code_blocks",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L180",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validate",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_urls",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L181",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validate",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_paths",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L182",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validate",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_bullets",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L183",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_validate",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_validate_inline_codes",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L184",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_validate_py_scripts_validate_rationale_42",
+      "target": "agents_skills_compress_scripts_validate_py_scripts_validate_extract_code_blocks",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/validate.py",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_opencode",
+      "target": "opencode_opencode_schema",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/opencode.json",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_opencode",
+      "target": "opencode_opencode_plugin",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/opencode.json",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_opencode_plugin",
+      "target": "ref_opencode_plugins_graphify_js",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/opencode.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "opencode_package",
+      "target": "opencode_package_dependencies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/package.json",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_package_dependencies",
+      "target": "opencode_package_dependencies_opencode_ai_plugin",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/package.json",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_package_dependencies_opencode_ai_plugin",
+      "target": "opencode_ai_plugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "plugins_graphify",
+      "target": "fs",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/plugins/graphify.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "plugins_graphify",
+      "target": "path",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/plugins/graphify.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "plugins_graphify",
+      "target": "plugins_graphify_graphifyplugin",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/plugins/graphify.js",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_main_py_scripts_main",
+      "target": "scripts_cli_main",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/__main__.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark",
+      "target": "scripts_validate_validate",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/benchmark.py",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_cli_py_scripts_cli",
+      "target": "scripts_compress_backup_dir_for",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/cli.py",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_cli_py_scripts_cli",
+      "target": "scripts_compress_compress_file",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/cli.py",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_cli_py_scripts_cli",
+      "target": "scripts_detect_detect_file_type",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/cli.py",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_cli_py_scripts_cli",
+      "target": "scripts_detect_should_compress",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/cli.py",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress",
+      "target": "scripts_detect_should_compress",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L113",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress",
+      "target": "scripts_validate_validate",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_main_py_scripts_main",
+      "target": "scripts_cli_main",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/__main__.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_benchmark_py_scripts_benchmark",
+      "target": "scripts_validate_validate",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/benchmark.py",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_cli_py_scripts_cli",
+      "target": "scripts_compress_compress_file",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/cli.py",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_cli_py_scripts_cli",
+      "target": "scripts_detect_detect_file_type",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/cli.py",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_cli_py_scripts_cli",
+      "target": "scripts_detect_should_compress",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/cli.py",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_compress_py_scripts_compress",
+      "target": "scripts_detect_should_compress",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_compress_scripts_compress_py_scripts_compress",
+      "target": "scripts_validate_validate",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/compress/scripts/compress.py",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_benchmark_py_scripts_benchmark_benchmark_pair",
+      "target": "scripts_validate_validate",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/benchmark.py",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_cli_py_scripts_cli_main",
+      "target": "scripts_detect_detect_file_type",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/cli.py",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_cli_py_scripts_cli_main",
+      "target": "scripts_detect_should_compress",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/cli.py",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_cli_py_scripts_cli_main",
+      "target": "scripts_compress_compress_file",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/cli.py",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_cli_py_scripts_cli_main",
+      "target": "scripts_compress_backup_dir_for",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/cli.py",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_compress_file",
+      "target": "scripts_detect_should_compress",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L245",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_caveman_compress_scripts_compress_py_scripts_compress_compress_file",
+      "target": "scripts_validate_validate",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/caveman-compress/scripts/compress.py",
+      "source_location": "L319",
+      "weight": 1.0
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

@@ -12,6 +12,7 @@ Every audit question in `requirements/audit.md` maps to a specific test or E2E c
 filler/
 ├── Cargo.toml                # Rust project manifest
 ├── Dockerfile                # Multi-stage Rust build
+├── .dockerignore             # Docker build exclusions
 │
 ├── src/
 │   ├── main.rs               # Entry point: stdin → parse → decide → stdout loop
@@ -20,6 +21,7 @@ filler/
 │   ├── parser.rs             # Parse stdin into GameState
 │   ├── validator.rs          # Placement legality checks
 │   ├── strategy.rs           # Heatmap + placement scoring
+│   ├── output.rs             # Output formatting
 │   └── visualizer.rs         # Bonus: terminal visualizer
 │
 ├── tests/
@@ -27,8 +29,14 @@ filler/
 │   ├── parser_tests.rs       # Unit tests for parser
 │   ├── validator_tests.rs    # Unit tests for validator
 │   ├── strategy_tests.rs     # Unit tests for strategy
+│   ├── output_tests.rs       # Unit tests for output formatting
 │   ├── integration_tests.rs  # Full pipeline integration tests
+│   ├── multi_turn.rs         # Multi-turn territory growth integration test
+│   ├── e2e.rs                # E2E replay validation test (gated by feature flag)
 │   └── visualizer_tests.rs   # Bonus
+│
+├── benches/
+│   └── turn_benchmark.rs     # Benchmark harness for 100x100 grid performance
 │
 ├── testdata/                 # Fixture files: sample stdin dumps
 │   ├── player1_start.txt
@@ -114,11 +122,12 @@ pub struct Grid {
     pub data: Vec<Vec<Cell>>,
 }
 
-/// A point in the grid (row, col) — row is Y, col is X in output
+/// A point in the grid (row, col) — row is Y, col is X in output.
+/// Uses signed `i32` to support negative placement offsets (piece padding).
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub struct Point {
-    pub row: usize,
-    pub col: usize,
+    pub row: i32,
+    pub col: i32,
 }
 
 /// A random game piece
@@ -147,10 +156,18 @@ The game engine uses `X Y\n` format:
 - **X = column** (0-indexed, left to right)
 - **Y = row** (0-indexed, top to bottom)
 
-Internally store `Point { row, col }`. Convert on output:
+Internally store `Point { row, col }`. Format using `src/output.rs`:
 ```rust
-println!("{} {}", point.col, point.row);
+output::format_move(point)
 ```
+
+---
+
+### Architectural Variant: Byte-Level Grid Storage (Performance Optimization)
+
+Instead of a type-safe `Cell` enum, we can store grid cells as `u8` bytes (`b'O'`, `b'X'`, `b'.'`, etc.).
+- **Advantages:** Single-byte storage (cache-friendly), branchless comparisons (e.g. `cell == char_up || cell == char_lo`), zero allocation.
+- **Trade-offs:** Less type safety, implicit char-to-meaning mappings. Recommended as a post-MVP performance optimization variant.
 
 ---
 
@@ -425,7 +442,7 @@ pub fn is_in_bounds(grid: &Grid, piece: &Piece, target: Point) -> bool
 | Extends past right edge | 10x10 | 2x2 | (0,9) | `false` |
 | Extends past bottom edge | 10x10 | 2x2 | (9,0) | `false` |
 | Extends past both | 10x10 | 2x2 | (9,9) | `false` |
-| Negative check via unsigned: target=(0,0) piece with block at (0,1) on 5x5 grid | 5x5 | 1x2 horizontal | (0,4) | `false` |
+| Negative check: target=(-1,0) piece with block at (0,0) | 5x5 | 1x2 horizontal | (-1,0) | `false` |
 | Fits exactly at boundary | 10x10 | 2x2 | (8,8) | `true` |
 | 1x1 piece anywhere in bounds | 10x10 | 1x1 | (5,5) | `true` |
 
@@ -433,9 +450,9 @@ pub fn is_in_bounds(grid: &Grid, piece: &Piece, target: Point) -> bool
 ```rust
 pub fn is_in_bounds(grid: &Grid, piece: &Piece, target: Point) -> bool {
     for &(dr, dc) in &piece.blocks {
-        let r = target.row + dr;
-        let c = target.col + dc;
-        if r >= grid.rows || c >= grid.cols {
+        let r = target.row + dr as i32;
+        let c = target.col + dc as i32;
+        if r < 0 || r >= grid.rows as i32 || c < 0 || c >= grid.cols as i32 {
             return false;
         }
     }
@@ -470,15 +487,15 @@ P1 at (0,0), P2 at (3,3)
 | # | Scenario | Piece | Target | Expected |
 |---|----------|-------|--------|----------|
 | 1 | Zero own overlap (far away) | 1x1 `[O]` | (2,2) | `false` |
-| 2 | Two own overlaps (piece 1x2 `[OO]` on two own cells) | 1x2 horiz `[OO]` | (0,0) | `false` — but need two own cells! Grid has only one own cell at (0,0). Let's make grid: `@ @ . . .` then target=(0,0) with 1x2 horiz → covers (0,0) own + (0,1) own = false |
+| 2 | Two own overlaps | 1x2 horiz `[OO]` on grid `@ @ . . .` | (0,0) | `false` |
 | 3 | One own + one opponent overlap | 1x2 horiz `[OO]` | Place so one cell hits own, one hits opponent | `false` |
-| 4 | Exactly 1 own, 0 opponent — VALID | 1x2 horiz `[OO]` at (0,0) on grid `@ . . . .` | (0,0) | `true` — covers (0,0) own + (0,1) empty |
+| 4 | Exactly 1 own, 0 opponent — VALID | 1x2 horiz `[OO]` at (0,0) on grid `@ . . . .` | (0,0) | `true` |
 | 5 | Exactly 1 own (via `a` recent char) | Same grid but own cell is `a` | 1x2 `[OO]` at (0,0) | `true` |
-| 6 | Opponent cell is `$` (old) | Opponent at (3,3) is `$`; piece covers it | 1x1 `[O]` at (3,3) | `false` — opponent overlap |
+| 6 | Opponent cell is `$` (old) | Opponent at (3,3) is `$`; piece covers it | 1x1 `[O]` at (3,3) | `false` |
 | 7 | Opponent cell is `s` (recent) | Same, opponent char is `s` | 1x1 `[O]` at (3,3) | `false` |
-| 8 | Piece covers both own AND empty cells (multiple new cells) | 2x2 `[OO/OO]` at (0,0) | (0,0) | `true` — 1 own overlap + 3 empty |
-| 9 | Zero own + zero opponent (all empty) | 1x1 `[O]` at (2,2) all empty grid | (2,2) | `false` — must overlap exactly 1 own cell |
-| 10 | Piece larger than grid — should be caught by `is_in_bounds` first | 6x6 piece on 5x5 | (0,0) | `false` |
+| 8 | Piece covers both own AND empty cells | 2x2 `[OO/OO]` at (0,0) | (0,0) | `true` |
+| 9 | Zero own + zero opponent (all empty) | 1x1 `[O]` at (2,2) all empty grid | (2,2) | `false` |
+| 10 | Piece larger than grid — caught by bounds | 6x6 piece on 5x5 | (0,0) | `false` |
 
 **Implementation sketch:**
 ```rust
@@ -496,8 +513,8 @@ pub fn is_valid_placement(
     let mut opp_count = 0;
 
     for &(dr, dc) in &piece.blocks {
-        let r = target.row + dr;
-        let c = target.col + dc;
+        let r = (target.row + dr as i32) as usize;
+        let c = (target.col + dc as i32) as usize;
         let cell = grid.data[r][c];
 
         if cell.belongs_to(player) {
@@ -527,8 +544,8 @@ pub fn find_valid_placements(
 | Scenario | Expected |
 |----------|----------|
 | 5x5 grid, P1 at (2,2), piece 1x2 vertical `[O/O]` | Returns 2 valid placements (above and below own cell) |
+| Negative-offset placement: piece 2x2 with blocks at (1,1), target (-1,-1) covers (0,0) | Returns valid placement at (-1,-1) |
 | No valid placement exists | Returns empty `Vec` |
-| Piece covers entire grid | Returns empty `Vec` (or 1 if exactly 1 own cell and grid fits) |
 
 **Implementation sketch:**
 ```rust
@@ -538,8 +555,12 @@ pub fn find_valid_placements(
     player: Player,
 ) -> Vec<Point> {
     let mut results = Vec::new();
-    for row in 0..grid.rows {
-        for col in 0..grid.cols {
+    // Start search from negative offsets so pieces with top-left padding can anchor off-grid
+    let min_row = -(piece.rows as i32);
+    let min_col = -(piece.cols as i32);
+    
+    for row in min_row..grid.rows as i32 {
+        for col in min_col..grid.cols as i32 {
             let target = Point { row, col };
             if is_valid_placement(grid, piece, target, player) {
                 results.push(target);
@@ -550,9 +571,7 @@ pub fn find_valid_placements(
 }
 ```
 
----
-
-## 4. Module C: Strategy Algorithm — `src/strategy.rs`
+---## 4. Module C: Strategy Algorithm — `src/strategy.rs`
 
 ### Goal
 Select the best placement from all valid placements.
@@ -565,7 +584,7 @@ Create a distance heatmap from the opponent's territory. Choose placements close
 
 **Function signature:**
 ```rust
-pub fn generate_heatmap(grid: &Grid, opponent: Player) -> Vec<Vec<i32>>
+pub fn generate_heatmap(grid: &Grid, opponent: Player, me: Player) -> Vec<Vec<i32>>
 ```
 
 **Test cases (`tests/strategy_tests.rs`):**
@@ -573,16 +592,15 @@ pub fn generate_heatmap(grid: &Grid, opponent: Player) -> Vec<Vec<i32>>
 | Scenario | Expected |
 |----------|----------|
 | 5x5 grid, opponent at (0,0), rest empty | heatmap[0][0]=0, neighbors=1, diagonal=2... |
+| 5x5 grid, me at (4,4) | heatmap[4][4]=-1 (own territory distinguishable from unreachable) |
 | 5x5 grid, opponent at (2,2) AND (2,3) | Both at 0, BFS from both simultaneously |
-| Grid with walls/edges | BFS respects grid boundaries (doesn't wrap) |
-| All cells are territory (no empty) | Sentinels stay as `i32::MAX` for non-opponent cells that are our territory |
 | 3x3 grid, opponent at (1,1) | Center=0, edges=1, corners=2 |
 
 **Implementation sketch:**
 ```rust
 use std::collections::VecDeque;
 
-pub fn generate_heatmap(grid: &Grid, opponent: Player) -> Vec<Vec<i32>> {
+pub fn generate_heatmap(grid: &Grid, opponent: Player, me: Player) -> Vec<Vec<i32>> {
     let rows = grid.rows;
     let cols = grid.cols;
     let mut heatmap = vec![vec![i32::MAX; cols]; rows];
@@ -593,6 +611,8 @@ pub fn generate_heatmap(grid: &Grid, opponent: Player) -> Vec<Vec<i32>> {
             if grid.data[r][c].belongs_to(opponent) {
                 heatmap[r][c] = 0;
                 queue.push_back((r, c));
+            } else if grid.data[r][c].belongs_to(me) {
+                heatmap[r][c] = -1; // own territory identifier
             }
         }
     }
@@ -607,6 +627,7 @@ pub fn generate_heatmap(grid: &Grid, opponent: Player) -> Vec<Vec<i32>> {
             if nr >= 0 && nr < rows as isize && nc >= 0 && nc < cols as isize {
                 let nr = nr as usize;
                 let nc = nc as usize;
+                // Only traverse into cells that are unvisited/empty (i32::MAX)
                 if heatmap[nr][nc] == i32::MAX {
                     heatmap[nr][nc] = dist;
                     queue.push_back((nr, nc));
@@ -636,7 +657,7 @@ pub fn score_placement(
 |----------|----------|
 | 5x5, opponent at (4,4), placement at (0,0) with 1x1 | Score = 8 |
 | Same, placement at (3,3) with 1x1 | Score = 2 |
-| Placement with 2x2 piece covering cells with distances 2,2,3,3 | Score = 10 |
+| Placement covering cell with own territory (-1) | Score skips -1 cell (no penalty) |
 | Placement on cell with sentinel (i32::MAX) | Score saturates / penalized |
 
 **Implementation sketch:**
@@ -648,10 +669,13 @@ pub fn score_placement(
 ) -> i32 {
     let mut score = 0i32;
     for &(dr, dc) in &piece.blocks {
-        let r = target.row + dr;
-        let c = target.col + dc;
+        let r = (target.row + dr as i32) as usize;
+        let c = (target.col + dc as i32) as usize;
         let h = heatmap[r][c];
-        if h == i32::MAX {
+        if h == -1 {
+            // Skip scoring own territory overlap cell
+            continue;
+        } else if h == i32::MAX {
             score = score.saturating_add(1000); // penalty for unreachable
         } else {
             score = score.saturating_add(h);
@@ -677,7 +701,7 @@ pub fn choose_best_placement(
 | Scenario | Expected |
 |----------|----------|
 | Two placements with scores 5 and 3 | Chooses score-3 placement |
-| Equal scores | Chooses first found (deterministic) |
+| Equal scores (tiebreak test) | Chooses lower row; if same row, lower col |
 | Empty placements slice | Returns `None` |
 | Single placement | Returns that placement |
 
@@ -700,6 +724,11 @@ pub fn choose_best_placement(
         if score < best_score {
             best_score = score;
             best = p;
+        } else if score == best_score {
+            // Deterministic Tiebreak: Lower row first, then lower col
+            if p.row < best.row || (p.row == best.row && p.col < best.col) {
+                best = p;
+            }
         }
     }
 
@@ -707,7 +736,7 @@ pub fn choose_best_placement(
 }
 ```
 
-#### C4 (Bonus): Advanced Territory Control
+#### C4: Advanced Territory Control (Bonus)
 
 For beating `terminator`, upgrade to dual-heatmap strategy:
 
@@ -735,20 +764,70 @@ pub fn score_placement_advanced(
 
 ---
 
-## 5. Main Loop — `src/main.rs`
+#### C5: Strategy Tuning Guide (Win-Rate Insurance)
+
+If base strategy win-rate falls below 80% vs specific bots (e.g. `bender`, `terminator`), implement the following enhancement catalog to adjust behavior:
+
+| Enhancement | Description | Implementation Hint |
+|---|---|---|
+| **Edge Weighting** | Bonus for cells near grid edges; traps opponent. | `edge_bonus(row, col, rows, cols)` returns -5 / -2 / 0 based on distance-to-edge. |
+| **Territory Connectivity** | Prefer placements keeping own territory connected. | Add scoring penalty if placement creates isolated/disconnected own sub-regions. |
+| **Opponent Blocking** | Extend along boundary when adjacent to opponent. | Score bonus for cells adjacent to opponent cells (`score -= 5`). |
+| **Center Start Bias** | First move favors center + opponent direction. | Add extra weight to center proximity on Turn 1 to secure center space early. |
+| **Piece Size Bonus** | Prefer placements covering more empty cells. | Add bonus to placements that overlap more empty cells (`score -= empty_cells_under_piece * 2`). |
+
+> [!NOTE]
+> **Code Structure Guideline:** If strategy logic expands beyond ~150 lines (e.g., adding edge-weighting, blocking, or dual heatmaps), split `src/strategy.rs` into `src/heatmap.rs` (heatmap generation) and `src/scorer.rs` (all placement scoring functions and tiebreaks) to maintain modular testability.
+
+---
+
+## 4.5. Module D: Output Formatter — `src/output.rs`
+
+### Goal
+Format outputs sent to stdout cleanly with trailing newlines. Isolating formatting here ensures it is testable separate from stdin/stdout piping.
+
+### Implementation sketch
 
 ```rust
-use std::io::{self, BufRead, Write};
+use crate::types::Point;
+
+/// Formats a valid placement point as "X Y\n" for the game engine.
+/// Converts internal (row, col) representation to game engine (col, row) coordinates.
+pub fn format_move(p: Point) -> String {
+    format!("{} {}\n", p.col, p.row)
+}
+
+/// Formats a fallback "0 0\n" when no valid moves are possible.
+pub fn format_no_move() -> String {
+    "0 0\n".to_string()
+}
+```
+
+---
+
+## 5. Main Loop — `src/main.rs`
+
+### Error Handling & Guardrails
+- **Central Rule:** **Never panic! or unwrap() on user/game-engine input. Always return a move.**
+- Centralized guardrails:
+  - If Anfield or Piece headers are malformed: print error to stderr, output `"0 0\n"`, and continue.
+  - If stdin receives EOF during parser execution: exit cleanly with `Ok(())`.
+  - Under no circumstances should the program crash.
+
+```rust
+use std::io::{self, BufRead, Write, BufWriter};
 use filler::parser;
 use filler::validator;
 use filler::strategy;
+use filler::output;
 use filler::types::GameState;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let stdin = io::stdin();
     let mut reader = io::BufReader::new(stdin.lock());
     let stdout = io::stdout();
-    let mut writer = stdout.lock();
+    // Wrap stdout in BufWriter for efficient buffered writes
+    let mut writer = BufWriter::new(stdout.lock());
 
     let mut state: Option<GameState> = None;
 
@@ -756,8 +835,14 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         let turn = match parser::parse_turn(&mut reader, state.clone()) {
             Ok(t) => t,
             Err(e) => {
+                // Exit cleanly on EOF
+                if e.contains("EOF") || e.contains("unexpected end of file") {
+                    break;
+                }
                 eprintln!("Parse error: {e}");
-                break;
+                writer.write_all(output::format_no_move().as_bytes())?;
+                writer.flush()?;
+                continue;
             }
         };
 
@@ -768,18 +853,18 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         );
 
         if valid.is_empty() {
-            writeln!(writer, "0 0")?;
+            writer.write_all(output::format_no_move().as_bytes())?;
             writer.flush()?;
             state = Some(turn);
             continue;
         }
 
-        let heatmap = strategy::generate_heatmap(&turn.grid, turn.opponent);
+        let heatmap = strategy::generate_heatmap(&turn.grid, turn.opponent, turn.me);
         let chosen = strategy::choose_best_placement(&valid, &heatmap, &turn.piece);
 
         match chosen {
-            Some(p) => writeln!(writer, "{} {}", p.col, p.row)?,
-            None     => writeln!(writer, "0 0")?,
+            Some(p) => writer.write_all(output::format_move(p).as_bytes())?,
+            None     => writer.write_all(output::format_no_move().as_bytes())?,
         }
         writer.flush()?;
 
@@ -807,6 +892,7 @@ pub mod types;
 pub mod parser;
 pub mod validator;
 pub mod strategy;
+pub mod output;
 pub mod visualizer; // bonus
 ```
 
@@ -820,9 +906,17 @@ name = "filler"
 version = "0.1.0"
 edition = "2021"
 
+[features]
+e2e = []  # Opt-in flag for E2E tests containing execution binaries
+
 [dependencies]
 # Minimal dependencies. Stdlib-only if possible.
 # Add `colored` crate only if building visualizer (bonus).
+
+[dev-dependencies]
+assert_cmd = "2"   # CLI process testing
+predicates = "3"   # Command outcome assertions
+tempfile = "3"     # Temporary directories for E2E file logs
 
 [profile.release]
 opt-level = 3
@@ -841,6 +935,7 @@ Test the full pipeline: parse → validate → choose → format output.
 
 ```rust
 use std::io::Cursor;
+use filler::types::Point;
 
 /// Create a simulated stdin from a multiline string
 pub fn mock_stdin(input: &str) -> impl std::io::BufRead {
@@ -857,7 +952,6 @@ pub fn fixture_anfield_5x5() -> &'static str {
 ### Test Cases
 
 #### IT-1: P1 single valid turn — places on own territory
-
 **Input:**
 ```
 $$$ exec p1 : [robots/bender]
@@ -871,83 +965,108 @@ Anfield 5 5:
 Piece 1 1:
 O
 ```
-
-**Expected:** Output is `1 1\n` (col=1, row=1 — the only cell with P1 territory, 1x1 piece must overlap it exactly).
+**Expected:** Output is `1 1\n` (the only cell with P1 territory).
 
 #### IT-2: P2 single valid turn
-
 Same grid, P2 input. Expected: output is `3 3\n`.
 
 #### IT-3: No valid placement → fallback `0 0`
-
-**Input:**
-```
-$$$ exec p1 : [robots/bender]
-Anfield 3 3:
-    012
-000 ...
-001 .@.
-002 ...
-Piece 3 3:
-OOO
-OOO
-OOO
-```
-
-**Expected:** Output is `0 0\n` (piece too large, covers opponent area or itself with too many overlaps).
+**Expected:** Output is `0 0\n` when piece cannot be placed legally.
 
 #### IT-4: Multiple valid placements → picks closest to opponent
-
-**Input:**
-```
-$$$ exec p1 : [robots/bender]
-Anfield 5 5:
-    01234
-000 .....
-001 .@...
-002 .....
-003 ...$.
-004 .....
-Piece 1 1:
-O
-```
-
-**Expected:** P1 at (1,1), P2 at (3,3). Valid 1x1 placements: (1,1) only (must overlap own territory exactly once). Output `1 1\n`.
-
-Wait — with a 1x1 piece on P1 at (1,1), the only valid placement is exactly on top of (1,1) because you need exactly 1 own overlap and 0 opponent. That's correct per the rules — but it means you're just placing on top of your own cell without expanding. Is that useful? No. So a 1x1 piece on existing territory is technically legal but strategically useless.
-
-Better test: use a 1x2 piece so there are multiple valid placements.
-
-**Revised IT-4 input:**
-```
-$$$ exec p1 : [robots/bender]
-Anfield 5 5:
-    01234
-000 .....
-001 .@...
-002 .....
-003 ...$.
-004 .....
-Piece 1 2:
-O
-O
-```
-
-Piece is vertical: 2 rows, 1 column.
-P1 at (1,1). Valid placements:
-- target=(0,1): covers (0,1) empty + (1,1) own → valid → output `1 0\n`
-- target=(1,1): covers (1,1) own + (2,1) empty → valid → output `1 1\n`
-Both are 1 distance from P1 territory. The one closer to opponent at (3,3): (2,1) vs (1,1). Manhattan from (3,3): (2,1) → |2-3|+|1-3|=3, (1,1) → |3-1|+|3-1|=4. Not a huge difference but heatmap will rank them. Expected: chooses (2,1) → output `1 1\n`... wait output is `col row\n` = `X Y\n`. (row=2, col=1) → `1 2\n`. (row=1, col=1) → `1 1\n`. The one closer to opponent is `1 2\n`.
-
-Actually let's just verify the strategy picks one deterministically. The test should verify that the output is one of the valid placements.
+**Expected:** Deterministic selection closest to opponent's territory.
 
 #### IT-5: Boundary rejection wired in pipeline
-
-Piece placed partially outside grid. Verifies that `is_in_bounds` is called and rejects.
+Rejects piece placements extending past bounds.
 
 #### IT-6: Two consecutive turns (no player line re-sent)
+Verifies state persists and player identity carries over between turns.
 
-First turn includes player line. Second turn jumps straight to anfield header. Verifies state carries over.
+---
+
+### 8.1. Benchmark Harness — `benches/turn_benchmark.rs`
+
+To protect against performance regressions, we compile a release benchmark enforcing that decision processing on maximum dimensions (100x100 Anfield grid + 20x20 Piece) completes in **less than 500ms** (well within the game engine's 10s timeout).
+
+```rust
+// benches/turn_benchmark.rs
+use std::time::Instant;
+use filler::{parser, validator, strategy, types::Point};
+
+fn main() {
+    // 1. Construct simulated 100x100 grid with scattered Player 1 and Player 2 cells
+    // 2. Construct 20x20 piece
+    // 3. Measure time for full pipeline cycle
+    let start = Instant::now();
+    
+    let valid = validator::find_valid_placements(&grid, &piece, me);
+    let heatmap = strategy::generate_heatmap(&grid, opponent, me);
+    let chosen = strategy::choose_best_placement(&valid, &heatmap, &piece);
+    
+    let duration = start.elapsed();
+    println!("Decision time: {:?}", duration);
+    assert!(duration.as_millis() < 500, "Performance regression: decision took longer than 500ms");
+}
+```
+
+---
+
+### 8.2. E2E Replay Validation Test — `tests/e2e.rs`
+
+This test runs an actual game using the engine, records all generated moves, and replays each move against a validator to ensure 100% rule compliance (exactly 1 own overlap, 0 opponent overlap, in-bounds). Gated behind the `e2e` cargo feature.
+
+```rust
+// tests/e2e.rs
+#[cfg(feature = "e2e")]
+#[test]
+fn test_replay_move_correctness() {
+    // 1. Run game_engine binary using assert_cmd with student bot vs bender
+    // 2. Parse game replay file / stdout
+    // 3. For each turn:
+    //    - Assert the placement has exactly 1 own cell overlap
+    //    - Assert 0 opponent cell overlaps
+    //    - Assert is_in_bounds is true
+}
+```
+
+---
+
+### 8.3. Multi-Turn Territory Growth Test — `tests/multi_turn.rs`
+
+Simulates a mini-game over 3 turns to verify that our scoring logic successfully drives expansion and that the count of own territory cells grows monotonically.
+
+```rust
+// tests/multi_turn.rs
+#[test]
+fn test_territory_monotonically_increases() {
+    // 1. Initialize grid with 1 player cell
+    // 2. Turn 1: Find best placement, apply placement to grid, assert own_count == 2
+    // 3. Turn 2: Find best placement, apply placement to grid, assert own_count == 3
+    // 4. Turn 3: Find best placement, assert own_count == 4
+}
+```
+
+---
+
+### 8.4. Deterministic Tie-Breaker Test — `tests/strategy_tests.rs`
+
+Verifies that if multiple placements yield identical heatmap scores, the scorer tie-breaks deterministically by picking the lower row first, and if the rows are equal, the lower column.
+
+```rust
+// tests/strategy_tests.rs
+#[test]
+fn test_tiebreak_by_row_then_col() {
+    let placements = vec![
+        Point { row: 3, col: 2 },
+        Point { row: 2, col: 5 },
+        Point { row: 2, col: 1 },
+    ];
+    // Assuming all placements have equal score...
+    // Expected: picks Point { row: 2, col: 1 } (lowest row, then lowest col)
+    let best = strategy::choose_best_placement(&placements, &heatmap, &piece).unwrap();
+    assert_eq!(best, Point { row: 2, col: 1 });
+}
+```
 
 ---
 
@@ -1131,8 +1250,17 @@ Adjust based on actual engine output when provided.
 
 ---
 
-## 11. Dockerfile
+## 11. Dockerfile & Exclusions
 
+### `.dockerignore`
+Exclude build artifacts and repository history from the Docker build context to accelerate builds and reduce image sizes.
+
+```
+target/
+.git/
+```
+
+### Dockerfile (Base: Debian Bookworm Slim)
 ```dockerfile
 # Stage 1: Build
 FROM rust:1.78-slim-bookworm AS builder
@@ -1147,6 +1275,25 @@ WORKDIR /filler
 COPY --from=builder /filler/target/release/filler /filler/solution/filler
 # game_engine, maps, robots are provided separately in the docker_image folder
 ```
+
+### Alternative: Alpine-Based Docker (Minimal Image Size Variant)
+```dockerfile
+# Stage 1: Build (requires musl targets)
+FROM rust:1.78-alpine AS builder
+RUN apk add --no-cache musl-dev
+WORKDIR /filler
+COPY Cargo.toml Cargo.lock* ./
+COPY src ./src
+RUN cargo build --target x86_64-unknown-linux-musl --release
+
+# Stage 2: Runtime
+FROM alpine:3.19
+WORKDIR /filler
+COPY --from=builder /filler/target/x86_64-unknown-linux-musl/release/filler /filler/solution/filler
+```
+
+> [!WARNING]
+> **Alpine / musl Compatibility Trade-off:** While Alpine reduces the final image size to ~50MB (vs ~150MB for Debian), it dynamically links compiled binaries against `musl` instead of `glibc`. If the provided `game_engine` binary is statically or dynamically linked to `glibc`, running it under Alpine will fail. Keep Debian as the default unless `game_engine` is confirmed `musl`-compatible.
 
 Build command:
 ```bash
@@ -1178,8 +1325,14 @@ cargo build --release
 # Run all unit tests
 cargo test --lib
 
-# Run all tests (unit + integration)
+# Run all tests (unit + integration, excluding e2e)
 cargo test
+
+# Run E2E replay validation tests (requires game_engine binary and e2e feature flag)
+cargo test --features e2e --test e2e
+
+# Run performance benchmarks
+cargo bench
 
 # Run specific test module
 cargo test --lib parser
@@ -1209,46 +1362,49 @@ bash e2e/run_audit_suite.sh
 
 ## 13. Full TDD Execution Order (Day-by-Day)
 
-### Day 1: Project Setup + Types + Parser
+### Day 1: Project Setup + Types + Output + Parser
 
 1. `cargo init filler`
-2. Create `src/types.rs` with all data structures — no logic, just types
-3. Create `src/lib.rs` with module declarations
-4. Write `tests/parser_tests.rs` — all parser test cases (RED)
-5. Write `tests/common/mod.rs` — shared test fixtures
-6. Implement `src/parser.rs` (GREEN)
-7. Create `testdata/` fixture files
+2. Create `src/types.rs` with data structures using `i32` coordinates
+3. Create `src/output.rs` and write tests for formatting moves (X Y) and fallbacks
+4. Create `src/lib.rs` with module declarations
+5. Write `tests/parser_tests.rs` — all parser test cases (RED)
+6. Write `tests/common/mod.rs` — shared test fixtures
+7. Implement `src/parser.rs` (GREEN)
+8. Create `testdata/` fixture files
 
 **Checkpoint:** `cargo test --lib parser` — all green
 
 ### Day 2: Validator + Strategy
 
-1. Write `tests/validator_tests.rs` — boundary + overlap + find_all tests (RED)
+1. Write `tests/validator_tests.rs` — including negative-offset placements (RED)
 2. Implement `src/validator.rs` (GREEN)
-3. Write `tests/strategy_tests.rs` — heatmap + scoring + choose tests (RED)
+3. Write `tests/strategy_tests.rs` — heatmap with own-territory `-1` and deterministic tiebreaks (RED)
 4. Implement `src/strategy.rs` (GREEN)
 
 **Checkpoint:** `cargo test --lib` — all green
 
-### Day 3: Main Loop + Integration + Docker
+### Day 3: Main Loop + Integration + Docker + Benchmark
 
 1. Write `tests/integration_tests.rs` — full pipeline tests (RED)
-2. Implement `src/main.rs` (GREEN)
-3. Write `Dockerfile` — multi-stage build
-4. Build release binary: `cargo build --release`
-5. Test inside Docker container
+2. Implement `src/main.rs` with centralized "never panic" rules and `BufWriter` (GREEN)
+3. Write `benches/turn_benchmark.rs` to assert decision cycle completes in < 500ms
+4. Write `Dockerfile` and `.dockerignore`
+5. Build release binary: `cargo build --release`
+6. Test inside Docker container
 
-**Checkpoint:** Integration tests pass. Binary works inside Docker.
+**Checkpoint:** Integration tests and benchmarks pass. Binary works inside Docker.
 
-### Day 4: E2E Script + Strategy Tuning
+### Day 4: E2E Replay Validation + Multi-Turn Testing + Strategy Tuning
 
-1. Write `e2e/run_audit_suite.sh`
-2. Write `e2e/assert_winrate.rs`
-3. Run E2E against provided robots
-4. Tune heatmap if win rates below 80%
-5. Add advanced dual-heatmap strategy if needed
+1. Write `tests/e2e.rs` to validate all moves in a live game replay are legal
+2. Write `tests/multi_turn.rs` to ensure territory grows monotonically
+3. Write `e2e/run_audit_suite.sh`
+4. Write `e2e/assert_winrate.rs`
+5. Run E2E against provided robots
+6. Tune strategy heatmap (edge weighting, blocking, center start) if win rates are under 80%
 
-**Checkpoint:** E2E script passes all audit requirements.
+**Checkpoint:** E2E replay and territory tests pass. Win-rates exceed 80%.
 
 ### Day 5: Visualizer (Bonus) + Polish
 
@@ -1265,8 +1421,9 @@ bash e2e/run_audit_suite.sh
 
 | Edge Case | Test Location | Expected Behavior |
 |-----------|--------------|-------------------|
-| Player line malformed | `parser_tests.rs` | `Err` returned, main exits gracefully |
-| Anfield dimensions = 0 | `parser_tests.rs` | `Err` |
+| Player line malformed | `parser_tests.rs` | `Err` returned, main outputs `0 0` and continues |
+| Anfield dimensions = 0 / negative | `parser_tests.rs` | `Err` |
+| Negative-offset placement | `validator_tests.rs` | Pieces with padding successfully placed at negative anchor offsets |
 | Piece with zero blocks (all dots) | `validator_tests.rs` | No valid placements, output `0 0` |
 | Grid entirely filled | `validator_tests.rs` | No valid placements |
 | Piece larger than grid in both dimensions | `validator_tests.rs` | All placements rejected (bounds) |
@@ -1275,7 +1432,7 @@ bash e2e/run_audit_suite.sh
 | Our chars: both `a` and `@` | `validator_tests.rs` | Both count as own overlap |
 | Placement at (0,0) with piece that fits | `validator_tests.rs` | Valid |
 | Placement at (MaxRow-1, MaxCol-1) | `validator_tests.rs` | Valid if piece doesn't overflow |
-| Very large grid (100x100) | `strategy_tests.rs` | Algorithm terminates < 1s |
+| Very large grid (100x100) | `benches/turn_benchmark.rs` | Decision completes in < 500ms |
 | Player line includes newline / trailing space | `parser_tests.rs` | Trimmed correctly |
 | Piece header uses `*` instead of `O` | `parser_tests.rs` | Both parsed as filled blocks |
 | Game engine sends empty line between sections | `parser_tests.rs` | `read_line` handles blank lines gracefully |
@@ -1288,7 +1445,7 @@ bash e2e/run_audit_suite.sh
 |---------------|------------|
 | Image and container creation | `e2e/run_audit_suite.sh` Q1 |
 | Project runs correctly (no crash/timeout) | `e2e/run_audit_suite.sh` Q2 |
-| Pieces placed with 1-cell overlap | `validator_tests.rs` — `is_valid_placement` tests all overlap combos |
+| Pieces placed with 1-cell overlap | `validator_tests.rs` — `is_valid_placement` and E2E replay checks |
 | vs wall_e on map00, win 4/5 | `e2e/run_audit_suite.sh` — `check_winrate map00 wall_e` |
 | vs h2_d2 on map01, win 4/5 | `e2e/run_audit_suite.sh` — `check_winrate map01 h2_d2` |
 | vs bender on map02, win 4/5 | `e2e/run_audit_suite.sh` — `check_winrate map02 bender` |
@@ -1296,6 +1453,7 @@ bash e2e/run_audit_suite.sh
 | Input Parsing tests exist | `parser_tests.rs` |
 | Placement Validation tests exist | `validator_tests.rs` |
 | Boundary Detection tests exist | `validator_tests.rs` — `is_in_bounds` tests |
+| Performance target (under 10s timeout) | `benches/turn_benchmark.rs` (asserts < 500ms) |
 | Good practices | `cargo clippy`, `cargo fmt`, module structure, no unsafe code |
 | Test file exists | `tests/` directory with per-module test files |
 | Tests check each possible case | Table-driven tests in every test module |
@@ -1352,13 +1510,14 @@ pub fn play(frames: &[Frame], delay: Duration) {
 ## 17. Summary
 
 Plan covers:
-- **5 Rust source modules**: types, parser, validator, strategy, visualizer
-- **30+ unit test cases** across parser, validator, strategy
-- **6 integration test cases** for full pipeline
+- **6 Rust source modules**: types, parser, validator, strategy, output, visualizer
+- **35+ unit test cases** across parser, validator, strategy, output
+- **9 integration & E2E test cases** for full pipeline, multi-turn growth, and correctness
 - **E2E audit script** mapping every audit question to an automated check
-- **14 edge cases** with expected behavior and test location
+- **Performance benchmark harness** for regression prevention
+- **15 edge cases** with expected behavior and test location
 - **Day-by-day execution order** for a junior engineer
 - **Zero external crate dependencies** (stdlib only for core; `colored` optional for visualizer)
 
 Follow TDD cycle: write test (RED) → minimal implementation (GREEN) → refactor → repeat.
-Every audit question has a corresponding test or script check.
+Every audit question has a corresponding test, benchmark, or script check.
