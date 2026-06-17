@@ -47,7 +47,7 @@ Use this checklist to implement `filler` in Rust. You do not need to read the en
 - [x] **T7.2: Dockerization** - Build Debian Bookworm slim multi-stage image | [Dockerfile](file:///home/ertval/code/zone-modules/filler/Dockerfile) | [deeppro.md:1253-1314](file:///home/ertval/code/zone-modules/filler/docs/plan/deeppro.md#L1253-L1314)
 
 ### Phase 8: Visualizer (Bonus)
-- [ ] **T8.1: Replay Renderer** - CLI ANSI colored game replay visualization | [src/visualizer.rs](file:///home/ertval/code/zone-modules/filler/src/visualizer.rs) | [deeppro.md:1465-1508](file:///home/ertval/code/zone-modules/filler/docs/plan/deeppro.md#L1465-L1508)
+- [x] **T8.1: Replay Renderer** - CLI ANSI colored game replay visualization | [src/visualizer.rs](file:///home/ertval/code/zone-modules/filler/src/visualizer.rs) | [deeppro.md:1465-1508](file:///home/ertval/code/zone-modules/filler/docs/plan/deeppro.md#L1465-L1508)
 
 ---
 

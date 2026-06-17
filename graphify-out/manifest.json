@@ -350,8 +350,8 @@
     "semantic_hash": "194df6f2b4f62f401dbc600ab7ab25e0"
   },
   "docs/plan/implementation_tracker.md": {
-    "mtime": 1781734642.5996406,
-    "ast_hash": "869acce04d7d448d497c9677d42e0dc1",
+    "mtime": 1781734703.307135,
+    "ast_hash": "e44f0ff74865c8de138789c789a4f94f",
     "semantic_hash": ""
   },
   "benches/turn_benchmark.rs": {
@@ -405,8 +405,8 @@
     "semantic_hash": ""
   },
   "src/visualizer.rs": {
-    "mtime": 1781734358.6988466,
-    "ast_hash": "bf931959cb1d9ae44ab6899fc0f3b2ba",
+    "mtime": 1781734699.238983,
+    "ast_hash": "21fd2c394b2584abbe028ea7b1b78c7c",
     "semantic_hash": ""
   },
   "tests/common/mod.rs": {
