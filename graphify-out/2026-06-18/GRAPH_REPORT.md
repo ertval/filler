@@ -1,16 +1,16 @@
 # Graph Report - filler  (2026-06-18)
 
 ## Corpus Check
-- 88 files · ~51,408 words
+- 88 files · ~52,072 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 800 nodes · 897 edges · 93 communities (75 shown, 18 thin omitted)
+- 816 nodes · 925 edges · 84 communities (66 shown, 18 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 17 edges (avg confidence: 0.91)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6b0e7277`
+- Built from commit: `13990897`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -51,38 +51,29 @@
 - [[_COMMUNITY_Community 36|Community 36]]
 - [[_COMMUNITY_Community 37|Community 37]]
 - [[_COMMUNITY_Community 38|Community 38]]
-- [[_COMMUNITY_Community 39|Community 39]]
 - [[_COMMUNITY_Community 40|Community 40]]
 - [[_COMMUNITY_Community 41|Community 41]]
 - [[_COMMUNITY_Community 42|Community 42]]
 - [[_COMMUNITY_Community 43|Community 43]]
 - [[_COMMUNITY_Community 44|Community 44]]
-- [[_COMMUNITY_Community 45|Community 45]]
 - [[_COMMUNITY_Community 46|Community 46]]
 - [[_COMMUNITY_Community 47|Community 47]]
-- [[_COMMUNITY_Community 48|Community 48]]
 - [[_COMMUNITY_Community 49|Community 49]]
 - [[_COMMUNITY_Community 50|Community 50]]
 - [[_COMMUNITY_Community 51|Community 51]]
-- [[_COMMUNITY_Community 52|Community 52]]
 - [[_COMMUNITY_Community 53|Community 53]]
 - [[_COMMUNITY_Community 54|Community 54]]
 - [[_COMMUNITY_Community 56|Community 56]]
 - [[_COMMUNITY_Community 57|Community 57]]
-- [[_COMMUNITY_Community 58|Community 58]]
-- [[_COMMUNITY_Community 59|Community 59]]
-- [[_COMMUNITY_Community 60|Community 60]]
 - [[_COMMUNITY_Community 61|Community 61]]
 - [[_COMMUNITY_Community 62|Community 62]]
 - [[_COMMUNITY_Community 63|Community 63]]
-- [[_COMMUNITY_Community 64|Community 64]]
 - [[_COMMUNITY_Community 65|Community 65]]
 - [[_COMMUNITY_Community 66|Community 66]]
 - [[_COMMUNITY_Community 67|Community 67]]
 - [[_COMMUNITY_Community 68|Community 68]]
 - [[_COMMUNITY_Community 69|Community 69]]
 - [[_COMMUNITY_Community 70|Community 70]]
-- [[_COMMUNITY_Community 71|Community 71]]
 - [[_COMMUNITY_Community 72|Community 72]]
 - [[_COMMUNITY_Community 73|Community 73]]
 - [[_COMMUNITY_Community 74|Community 74]]
@@ -95,6 +86,7 @@
 - [[_COMMUNITY_Community 81|Community 81]]
 - [[_COMMUNITY_Community 84|Community 84]]
 - [[_COMMUNITY_Community 88|Community 88]]
+- [[_COMMUNITY_Community 92|Community 92]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Graphify Knowledge Graph Tool` - 30 edges
@@ -122,6 +114,7 @@
 
 ## Import Cycles
 - 1-file cycle: `src/output.rs -> src/output.rs`
+- 1-file cycle: `src/visualizer.rs -> src/visualizer.rs`
 
 ## Hyperedges (group relationships)
 - **Caveman Toolkit Ecosystem** — caveman_skill_caveman, caveman_commit_skill_caveman_commit, caveman_compress_skill_caveman_compress, caveman_help_skill_caveman_help, caveman_review_skill_caveman_review, caveman_stats_skill_caveman_stats [EXTRACTED 1.00]
@@ -134,7 +127,7 @@
 - **Karpathy Guidelines Principles** — karpathy_guidelines_think_before_coding, karpathy_guidelines_simplicity_first, karpathy_guidelines_surgical_changes, karpathy_guidelines_goal_driven_execution, karpathy_guidelines_skill [EXTRACTED 1.00]
 - **Filler Implementation Artifacts** — plan_deeppro, plan_implementation_tracker, requirements_audit, requirements_requirements [EXTRACTED 1.00]
 
-## Communities (93 total, 18 thin omitted)
+## Communities (84 total, 18 thin omitted)
 
 ### Community 0 - "Graphify Core Pipeline"
 Cohesion: 0.06
@@ -157,8 +150,8 @@ Cohesion: 0.18
 Nodes (16): main(), print_usage(), Path, build_compress_prompt(), build_fix_prompt(), call_claude(), compress_file(), is_sensitive_path() (+8 more)
 
 ### Community 5 - "Filler DeepPro Plan"
-Cohesion: 0.08
-Nodes (28): Aggressive Heatmap (BFS from Opponent), Byte-Level Grid Storage Variant, Deterministic Tiebreak Rule (Lower Row then Lower Col), Negative-Offset Placement Search, Never Panic Guardrail, Strategy Tuning Guide, Test-Driven Development Cycle, 80% Win-Rate Threshold (+20 more)
+Cohesion: 0.09
+Nodes (26): Aggressive Heatmap (BFS from Opponent), Byte-Level Grid Storage Variant, Deterministic Tiebreak Rule (Lower Row then Lower Col), Negative-Offset Placement Search, Never Panic Guardrail, Strategy Tuning Guide, Test-Driven Development Cycle, 80% Win-Rate Threshold (+18 more)
 
 ### Community 6 - "File Type Detection Utils"
 Cohesion: 0.24
@@ -206,7 +199,7 @@ Nodes (37): Admin (requires admin access), Authentication, Branches, Checkout PR
 
 ### Community 31 - "Community 31"
 Cohesion: 0.14
-Nodes (23): Box, BufRead, mock_stdin(), Error, GameState, R, main(), Result (+15 more)
+Nodes (23): Box, BufRead, mock_stdin(), Error, GameState, main(), Result, parse_anfield() (+15 more)
 
 ### Community 32 - "Community 32"
 Cohesion: 0.08
@@ -236,13 +229,9 @@ Nodes (14): 3. Module B: Placement Validator — `src/validator.rs`, B1: Boundar
 Cohesion: 0.14
 Nodes (14): 8.1. Benchmark Harness — `benches/turn_benchmark.rs`, 8.2. E2E Replay Validation Test — `tests/e2e.rs`, 8.3. Multi-Turn Territory Growth Test — `tests/multi_turn.rs`, 8.4. Deterministic Tie-Breaker Test — `tests/strategy_tests.rs`, 8. Integration Tests — `tests/integration_tests.rs`, Goal, IT-1: P1 single valid turn — places on own territory, IT-2: P2 single valid turn (+6 more)
 
-### Community 39 - "Community 39"
-Cohesion: 0.15
-Nodes (12): 🔍 Edge Case Quick Reference, Filler Rust Implementation Tracker, 🛠️ Implementation Tasks, Phase 1: Cargo & Types Setup, Phase 2: Stdin Parser (Module A), Phase 3: Legality Validator (Module B), Phase 4: Strategy Heatmap & Scorer (Module C), Phase 5: Main Entry & Loop (+4 more)
-
 ### Community 40 - "Community 40"
-Cohesion: 0.15
-Nodes (13): Can you confirm that the project runs correctly?, Can you confirm that the student player is placing the pieces correctly with the overlapping of just on cell?, Can you confirm that the student player won at least 4 out of 5 times?, Can you confirm that the student player won at least 4 out of 5 times?, Can you confirm that the student player won at least 4 out of 5 times?, Can you confirm that the student was able to create the image and container correctly?, Functional, Try to run `./game_engine -f maps/map00 -p1 <path to student player> -p2 robots/wall_e` five times changing the position of the players each time so that the student player can be the `p1` and the `p2`. (+5 more)
+Cohesion: 0.05
+Nodes (37): +Are the tests checking each possible case?, Are there specific tests for **Input Parsing** (e.g., verifying the robot correctly reads the Anfield dimensions and the piece shape from stdin)?, Are there tests for **Boundary Detection** to ensure pieces are never placed partially outside the grid?, Are there tests for **Placement Validation** (e.g., checking that a move is rejected if it overlaps two of your own cells or one of the opponent's)?, Basic, Bonus, Can you confirm that the project runs correctly?, Can you confirm that the student player is placing the pieces correctly with the overlapping of just on cell? (+29 more)
 
 ### Community 41 - "Community 41"
 Cohesion: 0.33
@@ -257,12 +246,8 @@ Cohesion: 0.27
 Nodes (11): choose_best_placement(), generate_heatmap(), Grid, Option, Piece, Player, Point, Vec (+3 more)
 
 ### Community 44 - "Community 44"
-Cohesion: 0.20
-Nodes (10): Caveman Commit Skill, Caveman Help, Configure Default Mode, Deactivate, Language, Modes, More, Skills (+2 more)
-
-### Community 45 - "Community 45"
-Cohesion: 0.20
-Nodes (10): Bonus, Docker, Filler, The Anfield:, The Game:, The Game_engine, The pieces, The Robots (+2 more)
+Cohesion: 0.05
+Nodes (42): caveman-commit, Example output, How to invoke, See also, What it does, Caveman Commit Skill, Caveman Compress, caveman-help (+34 more)
 
 ### Community 46 - "Community 46"
 Cohesion: 0.22
@@ -271,10 +256,6 @@ Nodes (8): graphify reference: extra exports and benchmark, Step 6b - Wiki (only
 ### Community 47 - "Community 47"
 Cohesion: 0.22
 Nodes (8): graphify reference: extra exports and benchmark, Step 6b - Wiki (only if --wiki flag), Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag), Step 7a - FalkorDB export (only if --falkordb or --falkordb-push flag), Step 7b - SVG export (only if --svg flag), Step 7c - GraphML export (only if --graphml flag), Step 7d - MCP server (only if --mcp flag), Step 8 - Token reduction benchmark (only if total_words > 5000)
-
-### Community 48 - "Community 48"
-Cohesion: 0.29
-Nodes (7): Caveman Compress, caveman, Example output, How to invoke, See also, What it does, Caveman Skill Definition
 
 ### Community 49 - "Community 49"
 Cohesion: 0.25
@@ -287,10 +268,6 @@ Nodes (7): 1. Test-Driven Development (TDD), 2. Robust Error Handling (Never Pan
 ### Community 51 - "Community 51"
 Cohesion: 0.29
 Nodes (6): Auto-clarity (inherited), Chaining patterns, Output contracts, What NOT to do, When to use cavecrew vs alternatives, Why this exists (the real win)
-
-### Community 52 - "Community 52"
-Cohesion: 0.29
-Nodes (6): caveman-stats, Example output, How to invoke, See also, What it does, Caveman Stats Skill
 
 ### Community 53 - "Community 53"
 Cohesion: 0.62
@@ -305,20 +282,8 @@ Cohesion: 0.33
 Nodes (5): 1. Think Before Coding, 2. Simplicity First, 3. Surgical Changes, 4. Goal-Driven Execution, Karpathy Guidelines
 
 ### Community 57 - "Community 57"
-Cohesion: 0.33
-Nodes (5): cavecrew, Example chaining, How to invoke, See also, What it does
-
-### Community 58 - "Community 58"
-Cohesion: 0.33
-Nodes (5): caveman-commit, Example output, How to invoke, See also, What it does
-
-### Community 59 - "Community 59"
-Cohesion: 0.33
-Nodes (5): caveman-help, Example output, How to invoke, See also, What it does
-
-### Community 60 - "Community 60"
-Cohesion: 0.33
-Nodes (5): caveman-review, Example output, How to invoke, See also, What it does
+Cohesion: 0.24
+Nodes (9): cavecrew, Example chaining, How to invoke, See also, What it does, Cavecrew Builder, Cavecrew Skill Definition, Cavecrew Investigator (+1 more)
 
 ### Community 61 - "Community 61"
 Cohesion: 0.33
@@ -331,10 +296,6 @@ Nodes (4): Auto-Clarity, Boundaries, Examples, Rules
 ### Community 63 - "Community 63"
 Cohesion: 0.40
 Nodes (4): Auto-Clarity, Boundaries, Examples, Rules
-
-### Community 64 - "Community 64"
-Cohesion: 0.40
-Nodes (4): Boundaries, Intensity, Persistence, Rules
 
 ### Community 65 - "Community 65"
 Cohesion: 0.40
@@ -360,10 +321,6 @@ Nodes (3): For /graphify explain, For /graphify path, graphify reference: query,
 Cohesion: 0.50
 Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphify reference: incremental update and cluster-only
 
-### Community 71 - "Community 71"
-Cohesion: 0.83
-Nodes (4): Cavecrew Builder, Cavecrew Skill Definition, Cavecrew Investigator, Cavecrew Reviewer
-
 ### Community 72 - "Community 72"
 Cohesion: 0.50
 Nodes (3): Meta commands (use directly), RTK — Token-Optimized CLI, Rule
@@ -384,8 +341,12 @@ Nodes (3): For /graphify explain, For /graphify path, graphify reference: query,
 Cohesion: 0.50
 Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphify reference: incremental update and cluster-only
 
+### Community 92 - "Community 92"
+Cohesion: 0.21
+Nodes (15): Duration, Frame, parse_anfield_header(), play(), read_replay(), render_frame(), Grid, R (+7 more)
+
 ## Knowledge Gaps
-- **406 isolated node(s):** `$schema`, `plugin`, `@opencode-ai/plugin`, `Result`, `Box` (+401 more)
+- **410 isolated node(s):** `$schema`, `plugin`, `@opencode-ai/plugin`, `Result`, `Box` (+405 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **18 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -393,15 +354,15 @@ Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphif
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Filler Implementation Plan — TDD in Rust (DeepPro Edition)` connect `Community 29` to `Community 37`, `Filler DeepPro Plan`, `Community 38`?**
-  _High betweenness centrality (0.030) - this node is a cross-community bridge._
+  _High betweenness centrality (0.029) - this node is a cross-community bridge._
 - **Why does `Final Cross-Plan Analysis: Enrichments for Deeppro` connect `Community 34` to `Filler DeepPro Plan`?**
-  _High betweenness centrality (0.012) - this node is a cross-community bridge._
+  _High betweenness centrality (0.011) - this node is a cross-community bridge._
 - **Why does `Cross-Plan Analysis: Enrichments for Deeppro from Gem & GLM Plans` connect `Community 35` to `Filler DeepPro Plan`?**
   _High betweenness centrality (0.010) - this node is a cross-community bridge._
 - **Are the 2 inferred relationships involving `Caveman Compress` (e.g. with `Compress` and `RTK CLI Proxy`) actually correct?**
   _`Caveman Compress` has 2 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `Caveman compress scripts.  This package provides tools to compress natural langu`, `Split YAML frontmatter from body. Returns (frontmatter, body).      Memory files`, `Resolve the out-of-tree backup directory for a given source file.      Backups m` to the rest of the system?**
-  _440 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _444 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Graphify Core Pipeline` be split into smaller, more focused modules?**
   _Cohesion score 0.06349206349206349 - nodes in this community are weakly interconnected._
 - **Should `Caveman Agent Skills` be split into smaller, more focused modules?**

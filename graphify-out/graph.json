@@ -1380,7 +1380,7 @@
       "label": "main()",
       "file_type": "code",
       "source_file": "benches/turn_benchmark.rs",
-      "source_location": "L4",
+      "source_location": "L8",
       "_origin": "ast",
       "id": "benches_turn_benchmark_main",
       "community": 82,
@@ -1688,7 +1688,7 @@
       "label": "parse_player_line()",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L16",
+      "source_location": "L19",
       "_origin": "ast",
       "id": "src_parser_parse_player_line",
       "community": 31,
@@ -1698,7 +1698,7 @@
       "label": "Player",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L16",
+      "source_location": "L19",
       "_origin": "ast",
       "id": "src_parser_rs_player",
       "community": 31,
@@ -1708,7 +1708,7 @@
       "label": "parse_anfield_header()",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L27",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "src_parser_parse_anfield_header",
       "community": 31,
@@ -1718,7 +1718,7 @@
       "label": "parse_anfield()",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L41",
+      "source_location": "L46",
       "_origin": "ast",
       "id": "src_parser_parse_anfield",
       "community": 31,
@@ -1728,7 +1728,7 @@
       "label": "Grid",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L41",
+      "source_location": "L46",
       "_origin": "ast",
       "id": "src_parser_rs_grid",
       "community": 31,
@@ -1738,7 +1738,7 @@
       "label": "parse_piece_header()",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L63",
+      "source_location": "L72",
       "_origin": "ast",
       "id": "src_parser_parse_piece_header",
       "community": 31,
@@ -1748,7 +1748,7 @@
       "label": "parse_piece()",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L76",
+      "source_location": "L85",
       "_origin": "ast",
       "id": "src_parser_parse_piece",
       "community": 31,
@@ -1758,7 +1758,7 @@
       "label": "Piece",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L76",
+      "source_location": "L85",
       "_origin": "ast",
       "id": "src_parser_rs_piece",
       "community": 31,
@@ -1768,7 +1768,7 @@
       "label": "parse_turn()",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L95",
+      "source_location": "L106",
       "_origin": "ast",
       "id": "src_parser_parse_turn",
       "community": 31,
@@ -1778,7 +1778,7 @@
       "label": "Option",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L95",
+      "source_location": "L106",
       "_origin": "ast",
       "id": "src_parser_rs_option",
       "community": 31,
@@ -1788,7 +1788,7 @@
       "label": "GameState",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L95",
+      "source_location": "L106",
       "_origin": "ast",
       "id": "gamestate",
       "community": 31,
@@ -1798,7 +1798,7 @@
       "label": "test_parse_player_line()",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L123",
+      "source_location": "L139",
       "_origin": "ast",
       "id": "src_parser_test_parse_player_line",
       "community": 31,
@@ -1808,7 +1808,7 @@
       "label": "test_parse_anfield()",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L131",
+      "source_location": "L153",
       "_origin": "ast",
       "id": "src_parser_test_parse_anfield",
       "community": 31,
@@ -1818,7 +1818,7 @@
       "label": "test_parse_piece()",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L142",
+      "source_location": "L170",
       "_origin": "ast",
       "id": "src_parser_test_parse_piece",
       "community": 31,
@@ -1908,7 +1908,7 @@
       "label": "choose_best_placement()",
       "file_type": "code",
       "source_file": "src/strategy.rs",
-      "source_location": "L115",
+      "source_location": "L111",
       "_origin": "ast",
       "id": "src_strategy_choose_best_placement",
       "community": 43,
@@ -1918,7 +1918,7 @@
       "label": "Option",
       "file_type": "code",
       "source_file": "src/strategy.rs",
-      "source_location": "L115",
+      "source_location": "L111",
       "_origin": "ast",
       "id": "src_strategy_rs_option",
       "community": 43,
@@ -1928,7 +1928,7 @@
       "label": "test_heatmap_generation()",
       "file_type": "code",
       "source_file": "src/strategy.rs",
-      "source_location": "L148",
+      "source_location": "L144",
       "_origin": "ast",
       "id": "src_strategy_test_heatmap_generation",
       "community": 43,
@@ -1938,7 +1938,7 @@
       "label": "test_tiebreak_by_row_then_col()",
       "file_type": "code",
       "source_file": "src/strategy.rs",
-      "source_location": "L166",
+      "source_location": "L162",
       "_origin": "ast",
       "id": "src_strategy_test_tiebreak_by_row_then_col",
       "community": 43,
@@ -1958,7 +1958,7 @@
       "label": "Player",
       "file_type": "code",
       "source_file": "src/types.rs",
-      "source_location": "L4",
+      "source_location": "L3",
       "_origin": "ast",
       "id": "src_types_player",
       "community": 42,
@@ -1968,7 +1968,7 @@
       "label": ".chars()",
       "file_type": "code",
       "source_file": "src/types.rs",
-      "source_location": "L12",
+      "source_location": "L11",
       "_origin": "ast",
       "id": "src_types_player_chars",
       "community": 42,
@@ -1978,7 +1978,7 @@
       "label": "Cell",
       "file_type": "code",
       "source_file": "src/types.rs",
-      "source_location": "L22",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "src_types_cell",
       "community": 42,
@@ -1988,7 +1988,7 @@
       "label": ".from_char()",
       "file_type": "code",
       "source_file": "src/types.rs",
-      "source_location": "L31",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "src_types_cell_from_char",
       "community": 42,
@@ -1998,7 +1998,7 @@
       "label": "Self",
       "file_type": "code",
       "source_file": "src/types.rs",
-      "source_location": "L31",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "self",
       "community": 42,
@@ -2008,7 +2008,7 @@
       "label": ".belongs_to()",
       "file_type": "code",
       "source_file": "src/types.rs",
-      "source_location": "L43",
+      "source_location": "L42",
       "_origin": "ast",
       "id": "src_types_cell_belongs_to",
       "community": 42,
@@ -2018,7 +2018,7 @@
       "label": "Grid",
       "file_type": "code",
       "source_file": "src/types.rs",
-      "source_location": "L54",
+      "source_location": "L53",
       "_origin": "ast",
       "id": "src_types_grid",
       "community": 42,
@@ -2028,7 +2028,7 @@
       "label": "Vec",
       "file_type": "code",
       "source_file": "src/types.rs",
-      "source_location": "L57",
+      "source_location": "L56",
       "_origin": "ast",
       "id": "src_types_rs_vec",
       "community": 42,
@@ -2038,7 +2038,7 @@
       "label": "Point",
       "file_type": "code",
       "source_file": "src/types.rs",
-      "source_location": "L63",
+      "source_location": "L62",
       "_origin": "ast",
       "id": "src_types_point",
       "community": 42,
@@ -2048,7 +2048,7 @@
       "label": "Piece",
       "file_type": "code",
       "source_file": "src/types.rs",
-      "source_location": "L70",
+      "source_location": "L69",
       "_origin": "ast",
       "id": "src_types_piece",
       "community": 42,
@@ -2058,7 +2058,7 @@
       "label": "GameState",
       "file_type": "code",
       "source_file": "src/types.rs",
-      "source_location": "L80",
+      "source_location": "L79",
       "_origin": "ast",
       "id": "src_types_gamestate",
       "community": 42,
@@ -2138,7 +2138,7 @@
       "label": "find_valid_placements()",
       "file_type": "code",
       "source_file": "src/validator.rs",
-      "source_location": "L45",
+      "source_location": "L40",
       "_origin": "ast",
       "id": "src_validator_find_valid_placements",
       "community": 41,
@@ -2148,7 +2148,7 @@
       "label": "Vec",
       "file_type": "code",
       "source_file": "src/validator.rs",
-      "source_location": "L45",
+      "source_location": "L40",
       "_origin": "ast",
       "id": "src_validator_rs_vec",
       "community": 41,
@@ -2158,7 +2158,7 @@
       "label": "build_test_grid()",
       "file_type": "code",
       "source_file": "src/validator.rs",
-      "source_location": "L71",
+      "source_location": "L62",
       "_origin": "ast",
       "id": "src_validator_build_test_grid",
       "community": 41,
@@ -2168,7 +2168,7 @@
       "label": "test_is_in_bounds()",
       "file_type": "code",
       "source_file": "src/validator.rs",
-      "source_location": "L89",
+      "source_location": "L80",
       "_origin": "ast",
       "id": "src_validator_test_is_in_bounds",
       "community": 41,
@@ -2178,7 +2178,7 @@
       "label": "test_is_valid_placement()",
       "file_type": "code",
       "source_file": "src/validator.rs",
-      "source_location": "L106",
+      "source_location": "L97",
       "_origin": "ast",
       "id": "src_validator_test_is_valid_placement",
       "community": 41,
@@ -2188,7 +2188,7 @@
       "label": "test_negative_offset_placement()",
       "file_type": "code",
       "source_file": "src/validator.rs",
-      "source_location": "L141",
+      "source_location": "L157",
       "_origin": "ast",
       "id": "src_validator_test_negative_offset_placement",
       "community": 41,
@@ -2258,7 +2258,7 @@
       "label": "read_replay()",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L26",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "src_visualizer_read_replay",
       "community": 92,
@@ -2268,7 +2268,7 @@
       "label": "R",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L26",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "src_visualizer_rs_r",
       "community": 92,
@@ -2278,7 +2278,7 @@
       "label": "Vec",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L26",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "src_visualizer_rs_vec",
       "community": 92,
@@ -2288,7 +2288,7 @@
       "label": "render_frame()",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L80",
+      "source_location": "L84",
       "_origin": "ast",
       "id": "src_visualizer_render_frame",
       "community": 92,
@@ -2298,7 +2298,7 @@
       "label": "Write",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L80",
+      "source_location": "L84",
       "_origin": "ast",
       "id": "write",
       "community": 92,
@@ -2308,7 +2308,7 @@
       "label": "play()",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L103",
+      "source_location": "L107",
       "_origin": "ast",
       "id": "src_visualizer_play",
       "community": 92,
@@ -2318,7 +2318,7 @@
       "label": "Duration",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L103",
+      "source_location": "L107",
       "_origin": "ast",
       "id": "duration",
       "community": 92,
@@ -2328,7 +2328,7 @@
       "label": "test_parse_single_frame()",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L120",
+      "source_location": "L124",
       "_origin": "ast",
       "id": "src_visualizer_test_parse_single_frame",
       "community": 92,
@@ -2338,7 +2338,7 @@
       "label": "test_parse_multiple_frames_with_noise()",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L138",
+      "source_location": "L143",
       "_origin": "ast",
       "id": "src_visualizer_test_parse_multiple_frames_with_noise",
       "community": 92,
@@ -2348,7 +2348,7 @@
       "label": "test_parse_invalid_grid_handling()",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L164",
+      "source_location": "L178",
       "_origin": "ast",
       "id": "src_visualizer_test_parse_invalid_grid_handling",
       "community": 92,
@@ -2358,7 +2358,7 @@
       "label": "test_render_frame_output()",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L186",
+      "source_location": "L191",
       "_origin": "ast",
       "id": "src_visualizer_test_render_frame_output",
       "community": 92,
@@ -2508,7 +2508,7 @@
       "label": "test_territory_monotonically_increases()",
       "file_type": "code",
       "source_file": "tests/multi_turn.rs",
-      "source_location": "L4",
+      "source_location": "L8",
       "_origin": "ast",
       "id": "tests_multi_turn_test_territory_monotonically_increases",
       "community": 86,
@@ -5865,6 +5865,46 @@
       "norm_label": "documentation & implementation tracking"
     },
     {
+      "label": "METHODOLOGY.md",
+      "file_type": "document",
+      "source_file": "METHODOLOGY.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "methodology",
+      "community": 39,
+      "norm_label": "methodology.md"
+    },
+    {
+      "label": "Implementation Methodology",
+      "file_type": "document",
+      "source_file": "METHODOLOGY.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "methodology_implementation_methodology",
+      "community": 39,
+      "norm_label": "implementation methodology"
+    },
+    {
+      "label": "Multi-Agent Architecture",
+      "file_type": "document",
+      "source_file": "METHODOLOGY.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "methodology_multi_agent_architecture",
+      "community": 39,
+      "norm_label": "multi-agent architecture"
+    },
+    {
+      "label": "Development Principles",
+      "file_type": "document",
+      "source_file": "METHODOLOGY.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "methodology_development_principles",
+      "community": 39,
+      "norm_label": "development principles"
+    },
+    {
       "label": "deeppro.md",
       "file_type": "document",
       "source_file": "docs/plan/deeppro.md",
@@ -6658,7 +6698,7 @@
       "label": "Phase 7: Audit Script & Docker Setup",
       "file_type": "document",
       "source_file": "docs/plan/implementation_tracker.md",
-      "source_location": "L45",
+      "source_location": "L46",
       "_origin": "ast",
       "id": "plan_implementation_tracker_phase_7_audit_script_docker_setup",
       "community": 5,
@@ -6668,7 +6708,7 @@
       "label": "Phase 8: Visualizer (Bonus)",
       "file_type": "document",
       "source_file": "docs/plan/implementation_tracker.md",
-      "source_location": "L49",
+      "source_location": "L50",
       "_origin": "ast",
       "id": "plan_implementation_tracker_phase_8_visualizer_bonus",
       "community": 5,
@@ -6678,7 +6718,7 @@
       "label": "\ud83d\udd0d Edge Case Quick Reference",
       "file_type": "document",
       "source_file": "docs/plan/implementation_tracker.md",
-      "source_location": "L54",
+      "source_location": "L55",
       "_origin": "ast",
       "id": "plan_implementation_tracker_edge_case_quick_reference",
       "community": 5,
@@ -6688,7 +6728,7 @@
       "label": "\ud83d\udcd1 Requirements / Audit Map",
       "file_type": "document",
       "source_file": "docs/plan/implementation_tracker.md",
-      "source_location": "L62",
+      "source_location": "L63",
       "_origin": "ast",
       "id": "plan_implementation_tracker_requirements_audit_map",
       "community": 5,
@@ -10977,9 +11017,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "context": "parameter_type",
+      "confidence_score": 1.0,
       "source": "src_parser_read_line",
-      "target": "src_parser_rs_r",
-      "confidence_score": 1.0
+      "target": "src_parser_rs_r"
     },
     {
       "relation": "references",
@@ -11010,9 +11050,9 @@
       "source_location": "L41",
       "weight": 1.0,
       "context": "parameter_type",
+      "confidence_score": 1.0,
       "source": "src_parser_parse_anfield",
-      "target": "src_parser_rs_r",
-      "confidence_score": 1.0
+      "target": "src_parser_rs_r"
     },
     {
       "relation": "references",
@@ -11021,9 +11061,9 @@
       "source_location": "L76",
       "weight": 1.0,
       "context": "parameter_type",
+      "confidence_score": 1.0,
       "source": "src_parser_parse_piece",
-      "target": "src_parser_rs_r",
-      "confidence_score": 1.0
+      "target": "src_parser_rs_r"
     },
     {
       "relation": "references",
@@ -11032,9 +11072,9 @@
       "source_location": "L95",
       "weight": 1.0,
       "context": "parameter_type",
+      "confidence_score": 1.0,
       "source": "src_parser_parse_turn",
-      "target": "src_parser_rs_r",
-      "confidence_score": 1.0
+      "target": "src_parser_rs_r"
     },
     {
       "relation": "references",
@@ -11957,9 +11997,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "context": "import",
+      "confidence_score": 1.0,
       "source": "src_visualizer",
-      "target": "duration",
-      "confidence_score": 1.0
+      "target": "duration"
     },
     {
       "relation": "contains",
@@ -11967,9 +12007,9 @@
       "source_file": "src/visualizer.rs",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_visualizer",
-      "target": "src_visualizer_frame",
-      "confidence_score": 1.0
+      "target": "src_visualizer_frame"
     },
     {
       "relation": "contains",
@@ -11977,9 +12017,9 @@
       "source_file": "src/visualizer.rs",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_visualizer",
-      "target": "src_visualizer_parse_anfield_header",
-      "confidence_score": 1.0
+      "target": "src_visualizer_parse_anfield_header"
     },
     {
       "relation": "contains",
@@ -11987,9 +12027,9 @@
       "source_file": "src/visualizer.rs",
       "source_location": "L103",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_visualizer",
-      "target": "src_visualizer_play",
-      "confidence_score": 1.0
+      "target": "src_visualizer_play"
     },
     {
       "relation": "contains",
@@ -11997,9 +12037,9 @@
       "source_file": "src/visualizer.rs",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_visualizer",
-      "target": "src_visualizer_read_replay",
-      "confidence_score": 1.0
+      "target": "src_visualizer_read_replay"
     },
     {
       "relation": "contains",
@@ -12007,9 +12047,9 @@
       "source_file": "src/visualizer.rs",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_visualizer",
-      "target": "src_visualizer_render_frame",
-      "confidence_score": 1.0
+      "target": "src_visualizer_render_frame"
     },
     {
       "relation": "contains",
@@ -12017,9 +12057,9 @@
       "source_file": "src/visualizer.rs",
       "source_location": "L164",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_visualizer",
-      "target": "src_visualizer_test_parse_invalid_grid_handling",
-      "confidence_score": 1.0
+      "target": "src_visualizer_test_parse_invalid_grid_handling"
     },
     {
       "relation": "contains",
@@ -12027,9 +12067,9 @@
       "source_file": "src/visualizer.rs",
       "source_location": "L138",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_visualizer",
-      "target": "src_visualizer_test_parse_multiple_frames_with_noise",
-      "confidence_score": 1.0
+      "target": "src_visualizer_test_parse_multiple_frames_with_noise"
     },
     {
       "relation": "contains",
@@ -12037,9 +12077,9 @@
       "source_file": "src/visualizer.rs",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_visualizer",
-      "target": "src_visualizer_test_parse_single_frame",
-      "confidence_score": 1.0
+      "target": "src_visualizer_test_parse_single_frame"
     },
     {
       "relation": "contains",
@@ -12047,9 +12087,9 @@
       "source_file": "src/visualizer.rs",
       "source_location": "L186",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_visualizer",
-      "target": "src_visualizer_test_render_frame_output",
-      "confidence_score": 1.0
+      "target": "src_visualizer_test_render_frame_output"
     },
     {
       "relation": "references",
@@ -12058,9 +12098,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "context": "field",
+      "confidence_score": 1.0,
       "source": "src_visualizer_frame",
-      "target": "src_visualizer_rs_grid",
-      "confidence_score": 1.0
+      "target": "src_visualizer_rs_grid"
     },
     {
       "relation": "references",
@@ -12069,9 +12109,9 @@
       "source_location": "L103",
       "weight": 1.0,
       "context": "parameter_type",
+      "confidence_score": 1.0,
       "source": "src_visualizer_play",
-      "target": "src_visualizer_frame",
-      "confidence_score": 1.0
+      "target": "src_visualizer_frame"
     },
     {
       "relation": "references",
@@ -12080,9 +12120,9 @@
       "source_location": "L26",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "src_visualizer_read_replay",
-      "target": "src_visualizer_frame",
-      "confidence_score": 1.0
+      "target": "src_visualizer_frame"
     },
     {
       "relation": "references",
@@ -12091,9 +12131,9 @@
       "source_location": "L80",
       "weight": 1.0,
       "context": "parameter_type",
+      "confidence_score": 1.0,
       "source": "src_visualizer_render_frame",
-      "target": "src_visualizer_frame",
-      "confidence_score": 1.0
+      "target": "src_visualizer_frame"
     },
     {
       "relation": "references",
@@ -12102,9 +12142,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "context": "return_type",
+      "confidence_score": 1.0,
       "source": "src_visualizer_parse_anfield_header",
-      "target": "src_visualizer_rs_result",
-      "confidence_score": 1.0
+      "target": "src_visualizer_rs_result"
     },
     {
       "relation": "references",
@@ -12113,9 +12153,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "src_visualizer_parse_anfield_header",
-      "target": "src_visualizer_rs_string",
-      "confidence_score": 1.0
+      "target": "src_visualizer_rs_string"
     },
     {
       "relation": "calls",
@@ -12124,9 +12164,9 @@
       "source_file": "src/visualizer.rs",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_visualizer_read_replay",
-      "target": "src_visualizer_parse_anfield_header",
-      "confidence_score": 1.0
+      "target": "src_visualizer_parse_anfield_header"
     },
     {
       "relation": "references",
@@ -12135,9 +12175,9 @@
       "source_location": "L26",
       "weight": 1.0,
       "context": "return_type",
+      "confidence_score": 1.0,
       "source": "src_visualizer_read_replay",
-      "target": "src_visualizer_rs_result",
-      "confidence_score": 1.0
+      "target": "src_visualizer_rs_result"
     },
     {
       "relation": "references",
@@ -12146,9 +12186,9 @@
       "source_location": "L80",
       "weight": 1.0,
       "context": "return_type",
+      "confidence_score": 1.0,
       "source": "src_visualizer_render_frame",
-      "target": "src_visualizer_rs_result",
-      "confidence_score": 1.0
+      "target": "src_visualizer_rs_result"
     },
     {
       "relation": "references",
@@ -12157,9 +12197,9 @@
       "source_location": "L26",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "src_visualizer_read_replay",
-      "target": "src_visualizer_rs_string",
-      "confidence_score": 1.0
+      "target": "src_visualizer_rs_string"
     },
     {
       "relation": "references",
@@ -12168,9 +12208,9 @@
       "source_location": "L26",
       "weight": 1.0,
       "context": "parameter_type",
+      "confidence_score": 1.0,
       "source": "src_visualizer_read_replay",
-      "target": "src_visualizer_rs_r",
-      "confidence_score": 1.0
+      "target": "src_visualizer_rs_r"
     },
     {
       "relation": "references",
@@ -12179,9 +12219,9 @@
       "source_location": "L26",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "src_visualizer_read_replay",
-      "target": "src_visualizer_rs_vec",
-      "confidence_score": 1.0
+      "target": "src_visualizer_rs_vec"
     },
     {
       "relation": "calls",
@@ -12190,9 +12230,9 @@
       "source_file": "src/visualizer.rs",
       "source_location": "L154",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_visualizer_test_parse_multiple_frames_with_noise",
-      "target": "src_visualizer_read_replay",
-      "confidence_score": 1.0
+      "target": "src_visualizer_read_replay"
     },
     {
       "relation": "calls",
@@ -12201,9 +12241,9 @@
       "source_file": "src/visualizer.rs",
       "source_location": "L128",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_visualizer_test_parse_single_frame",
-      "target": "src_visualizer_read_replay",
-      "confidence_score": 1.0
+      "target": "src_visualizer_read_replay"
     },
     {
       "relation": "calls",
@@ -12212,9 +12252,9 @@
       "source_file": "src/visualizer.rs",
       "source_location": "L105",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_visualizer_play",
-      "target": "src_visualizer_render_frame",
-      "confidence_score": 1.0
+      "target": "src_visualizer_render_frame"
     },
     {
       "relation": "references",
@@ -12223,9 +12263,9 @@
       "source_location": "L80",
       "weight": 1.0,
       "context": "parameter_type",
+      "confidence_score": 1.0,
       "source": "src_visualizer_render_frame",
-      "target": "write",
-      "confidence_score": 1.0
+      "target": "write"
     },
     {
       "relation": "calls",
@@ -12234,9 +12274,9 @@
       "source_file": "src/visualizer.rs",
       "source_location": "L197",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_visualizer_test_render_frame_output",
-      "target": "src_visualizer_render_frame",
-      "confidence_score": 1.0
+      "target": "src_visualizer_render_frame"
     },
     {
       "relation": "references",
@@ -12245,9 +12285,9 @@
       "source_location": "L103",
       "weight": 1.0,
       "context": "parameter_type",
+      "confidence_score": 1.0,
       "source": "src_visualizer_play",
-      "target": "duration",
-      "confidence_score": 1.0
+      "target": "duration"
     },
     {
       "relation": "contains",
@@ -15511,6 +15551,36 @@
       "target": "agents_karpathy_guidelines"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "METHODOLOGY.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "methodology",
+      "target": "methodology_implementation_methodology",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "METHODOLOGY.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "methodology_implementation_methodology",
+      "target": "methodology_development_principles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "METHODOLOGY.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "methodology_implementation_methodology",
+      "target": "methodology_multi_agent_architecture",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "conceptually_related_to",
       "confidence": "INFERRED",
       "confidence_score": 0.95,
@@ -18133,5 +18203,5 @@
       "source_file": "docs/plan/deeppro.md"
     }
   ],
-  "built_at_commit": "ca21bbcef882fe665c25dac2c2e776036bc7153d"
+  "built_at_commit": "9f5835d7824fe5d0b83864e1d519ba412ce0b134"
 }
