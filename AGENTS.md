@@ -14,3 +14,10 @@ Rules:
 - If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
 - Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
 - After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).
+
+## Documentation & Implementation Tracking
+
+Before performing implementation tasks, agents must reference and read the appropriate project documentation:
+- **Implementation Tracker**: Always reference the checklist in [implementation_tracker.md](file:///home/ertval/code/zone-modules/filler/docs/plan/implementation_tracker.md) (also referred to as `@implementation-tracker`) to guide tasks and check off completed work.
+- **DeepPro Design Plan**: Consult [deeppro.md](file:///home/ertval/code/zone-modules/filler/docs/plan/deeppro.md) for the core specifications, architecture, and step-by-step TDD guidelines.
+- **Enrichments & Enhancements**: Refer to [final-cross-plan-enrichments.md](file:///home/ertval/code/zone-modules/filler/docs/report/final-cross-plan-enrichments.md) for critical bug fixes (such as negative coordinate support) and strategy enhancements.
