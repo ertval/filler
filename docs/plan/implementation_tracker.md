@@ -32,7 +32,8 @@ Use this checklist to implement `filler` in Rust. You do not need to read the en
 
 
 ### Phase 5: Main Entry & Loop
-- [ ] **T5.1: Main Loop** - Buffering IO, no-panic guardrail, clean EOF exit | [src/main.rs](file:///home/ertval/code/zone-modules/filler/src/main.rs) | [deeppro.md:808-886](file:///home/ertval/code/zone-modules/filler/docs/plan/deeppro.md#L808-L886)
+- [x] **T5.1: Main Loop** - Buffering IO, no-panic guardrail, clean EOF exit | [src/main.rs](file:///home/ertval/code/zone-modules/filler/src/main.rs) | [deeppro.md:808-886](file:///home/ertval/code/zone-modules/filler/docs/plan/deeppro.md#L808-L886)
+
 
 ### Phase 6: Integration Tests & Quality Gates
 - [ ] **T6.1: Test Helpers & Fixtures** - Define standard 5x5 Anfield and mock stdin | [tests/common/mod.rs](file:///home/ertval/code/zone-modules/filler/tests/common/mod.rs) | [deeppro.md:934-951](file:///home/ertval/code/zone-modules/filler/docs/plan/deeppro.md#L934-L951)

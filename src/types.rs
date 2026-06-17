@@ -1,4 +1,3 @@
-use std::fmt;
 
 /// Player identity as reported by game engine
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
