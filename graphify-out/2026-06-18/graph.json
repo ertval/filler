@@ -5865,6 +5865,46 @@
       "norm_label": "documentation & implementation tracking"
     },
     {
+      "label": "METHODOLOGY.md",
+      "file_type": "document",
+      "source_file": "METHODOLOGY.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "methodology",
+      "community": 39,
+      "norm_label": "methodology.md"
+    },
+    {
+      "label": "Implementation Methodology",
+      "file_type": "document",
+      "source_file": "METHODOLOGY.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "methodology_implementation_methodology",
+      "community": 39,
+      "norm_label": "implementation methodology"
+    },
+    {
+      "label": "Multi-Agent Architecture",
+      "file_type": "document",
+      "source_file": "METHODOLOGY.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "methodology_multi_agent_architecture",
+      "community": 39,
+      "norm_label": "multi-agent architecture"
+    },
+    {
+      "label": "Development Principles",
+      "file_type": "document",
+      "source_file": "METHODOLOGY.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "methodology_development_principles",
+      "community": 39,
+      "norm_label": "development principles"
+    },
+    {
       "label": "deeppro.md",
       "file_type": "document",
       "source_file": "docs/plan/deeppro.md",
@@ -15511,6 +15551,36 @@
       "target": "agents_karpathy_guidelines"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "METHODOLOGY.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "methodology",
+      "target": "methodology_implementation_methodology",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "METHODOLOGY.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "methodology_implementation_methodology",
+      "target": "methodology_development_principles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "METHODOLOGY.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "methodology_implementation_methodology",
+      "target": "methodology_multi_agent_architecture",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "conceptually_related_to",
       "confidence": "INFERRED",
       "confidence_score": 0.95,
@@ -18133,5 +18203,5 @@
       "source_file": "docs/plan/deeppro.md"
     }
   ],
-  "built_at_commit": "13990897d8258e554feed55e7332bc46296a56b6"
+  "built_at_commit": "9f5835d7824fe5d0b83864e1d519ba412ce0b134"
 }

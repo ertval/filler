@@ -1,6 +1,6 @@
 # Implementation Methodology
 
-This project was developed by the Antigravity AI agent utilizing a modular, test-driven approach.
+This project was developed by the AI agent utilizing a modular, test-driven approach.
 
 ## Multi-Agent Architecture
 

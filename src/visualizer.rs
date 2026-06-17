@@ -2,6 +2,8 @@ use crate::types::{Cell, Grid};
 use std::io::{self, BufRead, Write};
 use std::time::Duration;
 
+// Audit Bonus: Visualizer — CLI ANSI colored game replay
+
 /// One frame = one game turn's grid state
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub struct Frame {

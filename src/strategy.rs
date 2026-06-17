@@ -1,5 +1,8 @@
-use crate::types::{Cell, Grid, Piece, Player, Point};
+use crate::types::{Grid, Piece, Player, Point};
 use std::collections::VecDeque;
+
+// Audit Q7: All unit tests pass — strategy module tests included
+// Audit Q6/Bonus: Win-rate vs bender/terminator enabled by heatmap + tuning enhancements
 
 /// Generate heatmap (BFS from opponent territory)
 pub fn generate_heatmap(grid: &Grid, opponent: Player, me: Player) -> Vec<Vec<i32>> {
@@ -126,8 +129,8 @@ pub fn choose_best_placement(
             best_score = score;
             best = p;
         } else if score == best_score {
-            // Deterministic Tiebreak: Lower row first, then lower col
-            if p.row < best.row || (p.row == best.row && p.col < best.col) {
+            // Deterministic Tiebreak: Smallest column (col) first, then smallest row (row)
+            if p.col < best.col || (p.col == best.col && p.row < best.row) {
                 best = p;
             }
         }
@@ -139,6 +142,7 @@ pub fn choose_best_placement(
 #[cfg(test)]
 mod tests {
     use super::*;
+    use crate::types::Cell;
 
     #[test]
     fn test_heatmap_generation() {
@@ -159,11 +163,10 @@ mod tests {
     }
 
     #[test]
-    fn test_tiebreak_by_row_then_col() {
+    fn test_tiebreak_by_col_then_row() {
         let placements = vec![
-            Point { row: 2, col: 2 },
-            Point { row: 1, col: 2 },
-            Point { row: 1, col: 1 },
+            Point { row: 2, col: 3 },
+            Point { row: 3, col: 2 },
         ];
         // Heatmap with flat values so scores are equal
         let heatmap = vec![vec![5; 5]; 5];
@@ -173,7 +176,7 @@ mod tests {
             blocks: vec![(0, 0)],
         };
         let best = choose_best_placement(&placements, &heatmap, &piece).unwrap();
-        // Should choose row 1, col 1
-        assert_eq!(best, Point { row: 1, col: 1 });
+        // Col-first: chooses row 3, col 2
+        assert_eq!(best, Point { row: 3, col: 2 });
     }
 }

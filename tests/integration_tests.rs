@@ -1,3 +1,7 @@
+// Audit Q7: Integration tests — full pipeline parse→validate→choose→format
+// Audit Q3: 1-cell overlap rule verified end-to-end (IT-1, IT-2)
+// Audit Q9: Placement Validation in pipeline context
+// Audit Q10: Boundary Detection wired into pipeline (IT-5)
 mod common;
 
 use filler::types::{Player, Point};

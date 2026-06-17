@@ -1494,7 +1494,7 @@
       "label": "check_winrate()",
       "file_type": "code",
       "source_file": "e2e/run_audit_suite.sh",
-      "source_location": "L55",
+      "source_location": "L59",
       "metadata": {
         "language": "bash",
         "kind": "bash_function"
@@ -1503,6 +1503,26 @@
       "id": "e2e_run_audit_suite_check_winrate",
       "community": 53,
       "norm_label": "check_winrate()"
+    },
+    {
+      "label": "visualizer.rs",
+      "file_type": "code",
+      "source_file": "src/bin/visualizer.rs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "bin_visualizer",
+      "community": 92,
+      "norm_label": "visualizer.rs"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "src/bin/visualizer.rs",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "bin_visualizer_main",
+      "community": 92,
+      "norm_label": "main()"
     },
     {
       "label": "lib.rs",
@@ -1528,7 +1548,7 @@
       "label": "main()",
       "file_type": "code",
       "source_file": "src/main.rs",
-      "source_location": "L8",
+      "source_location": "L11",
       "_origin": "ast",
       "id": "src_main_main",
       "community": 31,
@@ -1538,7 +1558,7 @@
       "label": "Result",
       "file_type": "code",
       "source_file": "src/main.rs",
-      "source_location": "L8",
+      "source_location": "L11",
       "_origin": "ast",
       "id": "src_main_rs_result",
       "community": 31,
@@ -1548,7 +1568,7 @@
       "label": "Box",
       "file_type": "code",
       "source_file": "src/main.rs",
-      "source_location": "L8",
+      "source_location": "L11",
       "_origin": "ast",
       "id": "box",
       "community": 31,
@@ -1558,9 +1578,9 @@
       "label": "Error",
       "file_type": "code",
       "source_file": "src/main.rs",
-      "source_location": "L8",
+      "source_location": "L11",
       "_origin": "ast",
-      "id": "error",
+      "id": "src_main_rs_error",
       "community": 31,
       "norm_label": "error"
     },
@@ -1578,7 +1598,7 @@
       "label": "format_move()",
       "file_type": "code",
       "source_file": "src/output.rs",
-      "source_location": "L5",
+      "source_location": "L7",
       "_origin": "ast",
       "id": "src_output_format_move",
       "community": 54,
@@ -1588,7 +1608,7 @@
       "label": "Point",
       "file_type": "code",
       "source_file": "src/output.rs",
-      "source_location": "L5",
+      "source_location": "L7",
       "_origin": "ast",
       "id": "src_output_rs_point",
       "community": 54,
@@ -1598,7 +1618,7 @@
       "label": "String",
       "file_type": "code",
       "source_file": "src/output.rs",
-      "source_location": "L5",
+      "source_location": "L7",
       "_origin": "ast",
       "id": "src_output_rs_string",
       "community": 54,
@@ -1608,7 +1628,7 @@
       "label": "format_no_move()",
       "file_type": "code",
       "source_file": "src/output.rs",
-      "source_location": "L10",
+      "source_location": "L12",
       "_origin": "ast",
       "id": "src_output_format_no_move",
       "community": 54,
@@ -1618,7 +1638,7 @@
       "label": "test_format_move()",
       "file_type": "code",
       "source_file": "src/output.rs",
-      "source_location": "L19",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "src_output_test_format_move",
       "community": 54,
@@ -1628,7 +1648,7 @@
       "label": "test_format_no_move()",
       "file_type": "code",
       "source_file": "src/output.rs",
-      "source_location": "L28",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "src_output_test_format_no_move",
       "community": 54,
@@ -1648,7 +1668,7 @@
       "label": "read_line()",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L5",
+      "source_location": "L8",
       "_origin": "ast",
       "id": "src_parser_read_line",
       "community": 31,
@@ -1658,7 +1678,7 @@
       "label": "R",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L5",
+      "source_location": "L8",
       "_origin": "ast",
       "id": "src_parser_rs_r",
       "community": 31,
@@ -1668,7 +1688,7 @@
       "label": "Result",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L5",
+      "source_location": "L8",
       "_origin": "ast",
       "id": "src_parser_rs_result",
       "community": 31,
@@ -1678,7 +1698,7 @@
       "label": "String",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L5",
+      "source_location": "L8",
       "_origin": "ast",
       "id": "src_parser_rs_string",
       "community": 31,
@@ -1688,7 +1708,7 @@
       "label": "parse_player_line()",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L19",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "src_parser_parse_player_line",
       "community": 31,
@@ -1698,7 +1718,7 @@
       "label": "Player",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L19",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "src_parser_rs_player",
       "community": 31,
@@ -1708,7 +1728,7 @@
       "label": "parse_anfield_header()",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L30",
+      "source_location": "L34",
       "_origin": "ast",
       "id": "src_parser_parse_anfield_header",
       "community": 31,
@@ -1718,7 +1738,7 @@
       "label": "parse_anfield()",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L46",
+      "source_location": "L53",
       "_origin": "ast",
       "id": "src_parser_parse_anfield",
       "community": 31,
@@ -1728,7 +1748,7 @@
       "label": "Grid",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L46",
+      "source_location": "L53",
       "_origin": "ast",
       "id": "src_parser_rs_grid",
       "community": 31,
@@ -1738,7 +1758,7 @@
       "label": "parse_piece_header()",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L72",
+      "source_location": "L88",
       "_origin": "ast",
       "id": "src_parser_parse_piece_header",
       "community": 31,
@@ -1748,7 +1768,7 @@
       "label": "parse_piece()",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L85",
+      "source_location": "L104",
       "_origin": "ast",
       "id": "src_parser_parse_piece",
       "community": 31,
@@ -1758,7 +1778,7 @@
       "label": "Piece",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L85",
+      "source_location": "L104",
       "_origin": "ast",
       "id": "src_parser_rs_piece",
       "community": 31,
@@ -1768,7 +1788,7 @@
       "label": "parse_turn()",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L106",
+      "source_location": "L125",
       "_origin": "ast",
       "id": "src_parser_parse_turn",
       "community": 31,
@@ -1778,7 +1798,7 @@
       "label": "Option",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L106",
+      "source_location": "L125",
       "_origin": "ast",
       "id": "src_parser_rs_option",
       "community": 31,
@@ -1788,41 +1808,11 @@
       "label": "GameState",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L106",
+      "source_location": "L125",
       "_origin": "ast",
       "id": "gamestate",
       "community": 31,
       "norm_label": "gamestate"
-    },
-    {
-      "label": "test_parse_player_line()",
-      "file_type": "code",
-      "source_file": "src/parser.rs",
-      "source_location": "L139",
-      "_origin": "ast",
-      "id": "src_parser_test_parse_player_line",
-      "community": 31,
-      "norm_label": "test_parse_player_line()"
-    },
-    {
-      "label": "test_parse_anfield()",
-      "file_type": "code",
-      "source_file": "src/parser.rs",
-      "source_location": "L153",
-      "_origin": "ast",
-      "id": "src_parser_test_parse_anfield",
-      "community": 31,
-      "norm_label": "test_parse_anfield()"
-    },
-    {
-      "label": "test_parse_piece()",
-      "file_type": "code",
-      "source_file": "src/parser.rs",
-      "source_location": "L170",
-      "_origin": "ast",
-      "id": "src_parser_test_parse_piece",
-      "community": 31,
-      "norm_label": "test_parse_piece()"
     },
     {
       "label": "strategy.rs",
@@ -1838,7 +1828,7 @@
       "label": "generate_heatmap()",
       "file_type": "code",
       "source_file": "src/strategy.rs",
-      "source_location": "L5",
+      "source_location": "L8",
       "_origin": "ast",
       "id": "src_strategy_generate_heatmap",
       "community": 43,
@@ -1848,7 +1838,7 @@
       "label": "Grid",
       "file_type": "code",
       "source_file": "src/strategy.rs",
-      "source_location": "L5",
+      "source_location": "L8",
       "_origin": "ast",
       "id": "src_strategy_rs_grid",
       "community": 43,
@@ -1858,7 +1848,7 @@
       "label": "Player",
       "file_type": "code",
       "source_file": "src/strategy.rs",
-      "source_location": "L5",
+      "source_location": "L8",
       "_origin": "ast",
       "id": "src_strategy_rs_player",
       "community": 43,
@@ -1868,7 +1858,7 @@
       "label": "Vec",
       "file_type": "code",
       "source_file": "src/strategy.rs",
-      "source_location": "L5",
+      "source_location": "L8",
       "_origin": "ast",
       "id": "src_strategy_rs_vec",
       "community": 43,
@@ -1878,7 +1868,7 @@
       "label": "score_placement()",
       "file_type": "code",
       "source_file": "src/strategy.rs",
-      "source_location": "L90",
+      "source_location": "L93",
       "_origin": "ast",
       "id": "src_strategy_score_placement",
       "community": 43,
@@ -1888,7 +1878,7 @@
       "label": "Piece",
       "file_type": "code",
       "source_file": "src/strategy.rs",
-      "source_location": "L90",
+      "source_location": "L93",
       "_origin": "ast",
       "id": "src_strategy_rs_piece",
       "community": 43,
@@ -1898,7 +1888,7 @@
       "label": "Point",
       "file_type": "code",
       "source_file": "src/strategy.rs",
-      "source_location": "L90",
+      "source_location": "L93",
       "_origin": "ast",
       "id": "src_strategy_rs_point",
       "community": 43,
@@ -1908,7 +1898,7 @@
       "label": "choose_best_placement()",
       "file_type": "code",
       "source_file": "src/strategy.rs",
-      "source_location": "L111",
+      "source_location": "L114",
       "_origin": "ast",
       "id": "src_strategy_choose_best_placement",
       "community": 43,
@@ -1918,7 +1908,7 @@
       "label": "Option",
       "file_type": "code",
       "source_file": "src/strategy.rs",
-      "source_location": "L111",
+      "source_location": "L114",
       "_origin": "ast",
       "id": "src_strategy_rs_option",
       "community": 43,
@@ -1928,21 +1918,21 @@
       "label": "test_heatmap_generation()",
       "file_type": "code",
       "source_file": "src/strategy.rs",
-      "source_location": "L144",
+      "source_location": "L148",
       "_origin": "ast",
       "id": "src_strategy_test_heatmap_generation",
       "community": 43,
       "norm_label": "test_heatmap_generation()"
     },
     {
-      "label": "test_tiebreak_by_row_then_col()",
+      "label": "test_tiebreak_by_col_then_row()",
       "file_type": "code",
       "source_file": "src/strategy.rs",
-      "source_location": "L162",
+      "source_location": "L166",
       "_origin": "ast",
-      "id": "src_strategy_test_tiebreak_by_row_then_col",
+      "id": "src_strategy_test_tiebreak_by_col_then_row",
       "community": 43,
-      "norm_label": "test_tiebreak_by_row_then_col()"
+      "norm_label": "test_tiebreak_by_col_then_row()"
     },
     {
       "label": "types.rs",
@@ -1965,10 +1955,60 @@
       "norm_label": "player"
     },
     {
-      "label": ".chars()",
+      "label": "TryFrom",
+      "file_type": "code",
+      "source_file": "src/types.rs",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "tryfrom",
+      "community": 42,
+      "norm_label": "tryfrom"
+    },
+    {
+      "label": ".try_from()",
       "file_type": "code",
       "source_file": "src/types.rs",
       "source_location": "L11",
+      "_origin": "ast",
+      "id": "src_types_player_try_from",
+      "community": 42,
+      "norm_label": ".try_from()"
+    },
+    {
+      "label": "Result",
+      "file_type": "code",
+      "source_file": "src/types.rs",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "src_types_rs_result",
+      "community": 42,
+      "norm_label": "result"
+    },
+    {
+      "label": "Self",
+      "file_type": "code",
+      "source_file": "src/types.rs",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "self",
+      "community": 42,
+      "norm_label": "self"
+    },
+    {
+      "label": "Error",
+      "file_type": "code",
+      "source_file": "src/types.rs",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "src_types_rs_error",
+      "community": 42,
+      "norm_label": "error"
+    },
+    {
+      "label": ".chars()",
+      "file_type": "code",
+      "source_file": "src/types.rs",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "src_types_player_chars",
       "community": 42,
@@ -1978,37 +2018,37 @@
       "label": "Cell",
       "file_type": "code",
       "source_file": "src/types.rs",
-      "source_location": "L21",
+      "source_location": "L33",
       "_origin": "ast",
       "id": "src_types_cell",
       "community": 42,
       "norm_label": "cell"
     },
     {
+      "label": ".try_from()",
+      "file_type": "code",
+      "source_file": "src/types.rs",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "src_types_cell_try_from",
+      "community": 42,
+      "norm_label": ".try_from()"
+    },
+    {
       "label": ".from_char()",
       "file_type": "code",
       "source_file": "src/types.rs",
-      "source_location": "L30",
+      "source_location": "L57",
       "_origin": "ast",
       "id": "src_types_cell_from_char",
       "community": 42,
       "norm_label": ".from_char()"
     },
     {
-      "label": "Self",
-      "file_type": "code",
-      "source_file": "src/types.rs",
-      "source_location": "L30",
-      "_origin": "ast",
-      "id": "self",
-      "community": 42,
-      "norm_label": "self"
-    },
-    {
       "label": ".belongs_to()",
       "file_type": "code",
       "source_file": "src/types.rs",
-      "source_location": "L42",
+      "source_location": "L62",
       "_origin": "ast",
       "id": "src_types_cell_belongs_to",
       "community": 42,
@@ -2018,7 +2058,7 @@
       "label": "Grid",
       "file_type": "code",
       "source_file": "src/types.rs",
-      "source_location": "L53",
+      "source_location": "L73",
       "_origin": "ast",
       "id": "src_types_grid",
       "community": 42,
@@ -2028,7 +2068,7 @@
       "label": "Vec",
       "file_type": "code",
       "source_file": "src/types.rs",
-      "source_location": "L56",
+      "source_location": "L76",
       "_origin": "ast",
       "id": "src_types_rs_vec",
       "community": 42,
@@ -2038,7 +2078,7 @@
       "label": "Point",
       "file_type": "code",
       "source_file": "src/types.rs",
-      "source_location": "L62",
+      "source_location": "L82",
       "_origin": "ast",
       "id": "src_types_point",
       "community": 42,
@@ -2048,7 +2088,7 @@
       "label": "Piece",
       "file_type": "code",
       "source_file": "src/types.rs",
-      "source_location": "L69",
+      "source_location": "L89",
       "_origin": "ast",
       "id": "src_types_piece",
       "community": 42,
@@ -2058,7 +2098,7 @@
       "label": "GameState",
       "file_type": "code",
       "source_file": "src/types.rs",
-      "source_location": "L79",
+      "source_location": "L99",
       "_origin": "ast",
       "id": "src_types_gamestate",
       "community": 42,
@@ -2078,7 +2118,7 @@
       "label": "is_in_bounds()",
       "file_type": "code",
       "source_file": "src/validator.rs",
-      "source_location": "L4",
+      "source_location": "L8",
       "_origin": "ast",
       "id": "src_validator_is_in_bounds",
       "community": 41,
@@ -2088,7 +2128,7 @@
       "label": "Grid",
       "file_type": "code",
       "source_file": "src/validator.rs",
-      "source_location": "L4",
+      "source_location": "L8",
       "_origin": "ast",
       "id": "src_validator_rs_grid",
       "community": 41,
@@ -2098,7 +2138,7 @@
       "label": "Piece",
       "file_type": "code",
       "source_file": "src/validator.rs",
-      "source_location": "L4",
+      "source_location": "L8",
       "_origin": "ast",
       "id": "src_validator_rs_piece",
       "community": 41,
@@ -2108,7 +2148,7 @@
       "label": "Point",
       "file_type": "code",
       "source_file": "src/validator.rs",
-      "source_location": "L4",
+      "source_location": "L8",
       "_origin": "ast",
       "id": "src_validator_rs_point",
       "community": 41,
@@ -2118,7 +2158,7 @@
       "label": "is_valid_placement()",
       "file_type": "code",
       "source_file": "src/validator.rs",
-      "source_location": "L16",
+      "source_location": "L20",
       "_origin": "ast",
       "id": "src_validator_is_valid_placement",
       "community": 41,
@@ -2128,7 +2168,7 @@
       "label": "Player",
       "file_type": "code",
       "source_file": "src/validator.rs",
-      "source_location": "L16",
+      "source_location": "L20",
       "_origin": "ast",
       "id": "src_validator_rs_player",
       "community": 41,
@@ -2138,7 +2178,7 @@
       "label": "find_valid_placements()",
       "file_type": "code",
       "source_file": "src/validator.rs",
-      "source_location": "L40",
+      "source_location": "L49",
       "_origin": "ast",
       "id": "src_validator_find_valid_placements",
       "community": 41,
@@ -2148,51 +2188,11 @@
       "label": "Vec",
       "file_type": "code",
       "source_file": "src/validator.rs",
-      "source_location": "L40",
+      "source_location": "L49",
       "_origin": "ast",
       "id": "src_validator_rs_vec",
       "community": 41,
       "norm_label": "vec"
-    },
-    {
-      "label": "build_test_grid()",
-      "file_type": "code",
-      "source_file": "src/validator.rs",
-      "source_location": "L62",
-      "_origin": "ast",
-      "id": "src_validator_build_test_grid",
-      "community": 41,
-      "norm_label": "build_test_grid()"
-    },
-    {
-      "label": "test_is_in_bounds()",
-      "file_type": "code",
-      "source_file": "src/validator.rs",
-      "source_location": "L80",
-      "_origin": "ast",
-      "id": "src_validator_test_is_in_bounds",
-      "community": 41,
-      "norm_label": "test_is_in_bounds()"
-    },
-    {
-      "label": "test_is_valid_placement()",
-      "file_type": "code",
-      "source_file": "src/validator.rs",
-      "source_location": "L97",
-      "_origin": "ast",
-      "id": "src_validator_test_is_valid_placement",
-      "community": 41,
-      "norm_label": "test_is_valid_placement()"
-    },
-    {
-      "label": "test_negative_offset_placement()",
-      "file_type": "code",
-      "source_file": "src/validator.rs",
-      "source_location": "L157",
-      "_origin": "ast",
-      "id": "src_validator_test_negative_offset_placement",
-      "community": 41,
-      "norm_label": "test_negative_offset_placement()"
     },
     {
       "label": "visualizer.rs",
@@ -2208,7 +2208,7 @@
       "label": "Frame",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L7",
+      "source_location": "L9",
       "_origin": "ast",
       "id": "src_visualizer_frame",
       "community": 92,
@@ -2218,7 +2218,7 @@
       "label": "Grid",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L8",
+      "source_location": "L10",
       "_origin": "ast",
       "id": "src_visualizer_rs_grid",
       "community": 92,
@@ -2228,7 +2228,7 @@
       "label": "parse_anfield_header()",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L12",
+      "source_location": "L14",
       "_origin": "ast",
       "id": "src_visualizer_parse_anfield_header",
       "community": 92,
@@ -2238,7 +2238,7 @@
       "label": "Result",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L12",
+      "source_location": "L14",
       "_origin": "ast",
       "id": "src_visualizer_rs_result",
       "community": 92,
@@ -2248,7 +2248,7 @@
       "label": "String",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L12",
+      "source_location": "L14",
       "_origin": "ast",
       "id": "src_visualizer_rs_string",
       "community": 92,
@@ -2258,7 +2258,7 @@
       "label": "read_replay()",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L28",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "src_visualizer_read_replay",
       "community": 92,
@@ -2268,7 +2268,7 @@
       "label": "R",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L28",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "src_visualizer_rs_r",
       "community": 92,
@@ -2278,7 +2278,7 @@
       "label": "Vec",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L28",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "src_visualizer_rs_vec",
       "community": 92,
@@ -2288,7 +2288,7 @@
       "label": "render_frame()",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L84",
+      "source_location": "L86",
       "_origin": "ast",
       "id": "src_visualizer_render_frame",
       "community": 92,
@@ -2298,7 +2298,7 @@
       "label": "Write",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L84",
+      "source_location": "L86",
       "_origin": "ast",
       "id": "write",
       "community": 92,
@@ -2308,7 +2308,7 @@
       "label": "play()",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L107",
+      "source_location": "L109",
       "_origin": "ast",
       "id": "src_visualizer_play",
       "community": 92,
@@ -2318,7 +2318,7 @@
       "label": "Duration",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L107",
+      "source_location": "L109",
       "_origin": "ast",
       "id": "duration",
       "community": 92,
@@ -2328,7 +2328,7 @@
       "label": "test_parse_single_frame()",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L124",
+      "source_location": "L126",
       "_origin": "ast",
       "id": "src_visualizer_test_parse_single_frame",
       "community": 92,
@@ -2338,7 +2338,7 @@
       "label": "test_parse_multiple_frames_with_noise()",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L143",
+      "source_location": "L145",
       "_origin": "ast",
       "id": "src_visualizer_test_parse_multiple_frames_with_noise",
       "community": 92,
@@ -2348,7 +2348,7 @@
       "label": "test_parse_invalid_grid_handling()",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L178",
+      "source_location": "L180",
       "_origin": "ast",
       "id": "src_visualizer_test_parse_invalid_grid_handling",
       "community": 92,
@@ -2358,7 +2358,7 @@
       "label": "test_render_frame_output()",
       "file_type": "code",
       "source_file": "src/visualizer.rs",
-      "source_location": "L191",
+      "source_location": "L193",
       "_origin": "ast",
       "id": "src_visualizer_test_render_frame_output",
       "community": 92,
@@ -2418,7 +2418,7 @@
       "label": "test_replay_move_correctness()",
       "file_type": "code",
       "source_file": "tests/e2e.rs",
-      "source_location": "L3",
+      "source_location": "L5",
       "_origin": "ast",
       "id": "tests_e2e_test_replay_move_correctness",
       "community": 85,
@@ -2438,7 +2438,7 @@
       "label": "test_it1_p1_single_valid_turn()",
       "file_type": "code",
       "source_file": "tests/integration_tests.rs",
-      "source_location": "L7",
+      "source_location": "L11",
       "_origin": "ast",
       "id": "tests_integration_tests_test_it1_p1_single_valid_turn",
       "community": 55,
@@ -2448,7 +2448,7 @@
       "label": "test_it2_p2_single_valid_turn()",
       "file_type": "code",
       "source_file": "tests/integration_tests.rs",
-      "source_location": "L35",
+      "source_location": "L39",
       "_origin": "ast",
       "id": "tests_integration_tests_test_it2_p2_single_valid_turn",
       "community": 55,
@@ -2458,7 +2458,7 @@
       "label": "test_it3_no_valid_placement_fallback()",
       "file_type": "code",
       "source_file": "tests/integration_tests.rs",
-      "source_location": "L62",
+      "source_location": "L66",
       "_origin": "ast",
       "id": "tests_integration_tests_test_it3_no_valid_placement_fallback",
       "community": 55,
@@ -2468,7 +2468,7 @@
       "label": "test_it4_multiple_valid_placements_closest()",
       "file_type": "code",
       "source_file": "tests/integration_tests.rs",
-      "source_location": "L84",
+      "source_location": "L88",
       "_origin": "ast",
       "id": "tests_integration_tests_test_it4_multiple_valid_placements_closest",
       "community": 55,
@@ -2478,7 +2478,7 @@
       "label": "test_it5_boundary_rejection()",
       "file_type": "code",
       "source_file": "tests/integration_tests.rs",
-      "source_location": "L114",
+      "source_location": "L118",
       "_origin": "ast",
       "id": "tests_integration_tests_test_it5_boundary_rejection",
       "community": 55,
@@ -2488,7 +2488,7 @@
       "label": "test_it6_two_consecutive_turns()",
       "file_type": "code",
       "source_file": "tests/integration_tests.rs",
-      "source_location": "L137",
+      "source_location": "L141",
       "_origin": "ast",
       "id": "tests_integration_tests_test_it6_two_consecutive_turns",
       "community": 55,
@@ -2508,11 +2508,131 @@
       "label": "test_territory_monotonically_increases()",
       "file_type": "code",
       "source_file": "tests/multi_turn.rs",
-      "source_location": "L8",
+      "source_location": "L9",
       "_origin": "ast",
       "id": "tests_multi_turn_test_territory_monotonically_increases",
       "community": 86,
       "norm_label": "test_territory_monotonically_increases()"
+    },
+    {
+      "label": "parser_tests.rs",
+      "file_type": "code",
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_parser_tests",
+      "community": 31,
+      "norm_label": "parser_tests.rs"
+    },
+    {
+      "label": "test_parse_player_line_valid()",
+      "file_type": "code",
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "tests_parser_tests_test_parse_player_line_valid",
+      "community": 31,
+      "norm_label": "test_parse_player_line_valid()"
+    },
+    {
+      "label": "test_parse_player_line_malformed()",
+      "file_type": "code",
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "tests_parser_tests_test_parse_player_line_malformed",
+      "community": 31,
+      "norm_label": "test_parse_player_line_malformed()"
+    },
+    {
+      "label": "test_parse_anfield_valid()",
+      "file_type": "code",
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "tests_parser_tests_test_parse_anfield_valid",
+      "community": 31,
+      "norm_label": "test_parse_anfield_valid()"
+    },
+    {
+      "label": "test_parse_anfield_large_row_prefix()",
+      "file_type": "code",
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "tests_parser_tests_test_parse_anfield_large_row_prefix",
+      "community": 31,
+      "norm_label": "test_parse_anfield_large_row_prefix()"
+    },
+    {
+      "label": "test_parse_anfield_invalid_dimensions()",
+      "file_type": "code",
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "tests_parser_tests_test_parse_anfield_invalid_dimensions",
+      "community": 31,
+      "norm_label": "test_parse_anfield_invalid_dimensions()"
+    },
+    {
+      "label": "test_parse_anfield_invalid_char()",
+      "file_type": "code",
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "tests_parser_tests_test_parse_anfield_invalid_char",
+      "community": 31,
+      "norm_label": "test_parse_anfield_invalid_char()"
+    },
+    {
+      "label": "test_parse_anfield_header_missing_cols()",
+      "file_type": "code",
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L81",
+      "_origin": "ast",
+      "id": "tests_parser_tests_test_parse_anfield_header_missing_cols",
+      "community": 31,
+      "norm_label": "test_parse_anfield_header_missing_cols()"
+    },
+    {
+      "label": "test_parse_piece_valid()",
+      "file_type": "code",
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "tests_parser_tests_test_parse_piece_valid",
+      "community": 31,
+      "norm_label": "test_parse_piece_valid()"
+    },
+    {
+      "label": "test_parse_piece_zero_dimensions()",
+      "file_type": "code",
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "tests_parser_tests_test_parse_piece_zero_dimensions",
+      "community": 31,
+      "norm_label": "test_parse_piece_zero_dimensions()"
+    },
+    {
+      "label": "test_blank_line_tolerance()",
+      "file_type": "code",
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L105",
+      "_origin": "ast",
+      "id": "tests_parser_tests_test_blank_line_tolerance",
+      "community": 31,
+      "norm_label": "test_blank_line_tolerance()"
+    },
+    {
+      "label": "test_parse_eof_mid_turn()",
+      "file_type": "code",
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L116",
+      "_origin": "ast",
+      "id": "tests_parser_tests_test_parse_eof_mid_turn",
+      "community": 31,
+      "norm_label": "test_parse_eof_mid_turn()"
     },
     {
       "label": "strategy_tests.rs",
@@ -2525,14 +2645,124 @@
       "norm_label": "strategy_tests.rs"
     },
     {
-      "label": "test_tiebreak_by_row_then_col()",
+      "label": "test_tiebreak_by_col_then_row()",
       "file_type": "code",
       "source_file": "tests/strategy_tests.rs",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "tests_strategy_tests_test_tiebreak_by_row_then_col",
+      "id": "tests_strategy_tests_test_tiebreak_by_col_then_row",
       "community": 87,
-      "norm_label": "test_tiebreak_by_row_then_col()"
+      "norm_label": "test_tiebreak_by_col_then_row()"
+    },
+    {
+      "label": "validator_tests.rs",
+      "file_type": "code",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_validator_tests",
+      "community": 41,
+      "norm_label": "validator_tests.rs"
+    },
+    {
+      "label": "build_test_grid()",
+      "file_type": "code",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "tests_validator_tests_build_test_grid",
+      "community": 41,
+      "norm_label": "build_test_grid()"
+    },
+    {
+      "label": "Grid",
+      "file_type": "code",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "tests_validator_tests_rs_grid",
+      "community": 41,
+      "norm_label": "grid"
+    },
+    {
+      "label": "test_is_in_bounds()",
+      "file_type": "code",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "tests_validator_tests_test_is_in_bounds",
+      "community": 41,
+      "norm_label": "test_is_in_bounds()"
+    },
+    {
+      "label": "test_is_valid_placement_basic()",
+      "file_type": "code",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "tests_validator_tests_test_is_valid_placement_basic",
+      "community": 41,
+      "norm_label": "test_is_valid_placement_basic()"
+    },
+    {
+      "label": "test_e4_zero_blocks_piece()",
+      "file_type": "code",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "tests_validator_tests_test_e4_zero_blocks_piece",
+      "community": 41,
+      "norm_label": "test_e4_zero_blocks_piece()"
+    },
+    {
+      "label": "test_e5_grid_entirely_filled()",
+      "file_type": "code",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "tests_validator_tests_test_e5_grid_entirely_filled",
+      "community": 41,
+      "norm_label": "test_e5_grid_entirely_filled()"
+    },
+    {
+      "label": "test_piece_larger_than_grid()",
+      "file_type": "code",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "tests_validator_tests_test_piece_larger_than_grid",
+      "community": 41,
+      "norm_label": "test_piece_larger_than_grid()"
+    },
+    {
+      "label": "test_e8_opponent_chars_rejected()",
+      "file_type": "code",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L102",
+      "_origin": "ast",
+      "id": "tests_validator_tests_test_e8_opponent_chars_rejected",
+      "community": 41,
+      "norm_label": "test_e8_opponent_chars_rejected()"
+    },
+    {
+      "label": "test_e9_own_chars_overlap()",
+      "file_type": "code",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L120",
+      "_origin": "ast",
+      "id": "tests_validator_tests_test_e9_own_chars_overlap",
+      "community": 41,
+      "norm_label": "test_e9_own_chars_overlap()"
+    },
+    {
+      "label": "test_negative_offset_placements()",
+      "file_type": "code",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L138",
+      "_origin": "ast",
+      "id": "tests_validator_tests_test_negative_offset_placements",
+      "community": 41,
+      "norm_label": "test_negative_offset_placements()"
     },
     {
       "label": "antigravity-rtk-rules.md",
@@ -2881,7 +3111,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "caveman_commit_readme",
-      "community": 44,
+      "community": 60,
       "norm_label": "readme.md"
     },
     {
@@ -2891,7 +3121,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "caveman_commit_readme_caveman_commit",
-      "community": 44,
+      "community": 60,
       "norm_label": "caveman-commit"
     },
     {
@@ -2901,7 +3131,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "caveman_commit_readme_what_it_does",
-      "community": 44,
+      "community": 60,
       "norm_label": "what it does"
     },
     {
@@ -2911,7 +3141,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "caveman_commit_readme_how_to_invoke",
-      "community": 44,
+      "community": 60,
       "norm_label": "how to invoke"
     },
     {
@@ -2921,7 +3151,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "caveman_commit_readme_example_output",
-      "community": 44,
+      "community": 60,
       "norm_label": "example output"
     },
     {
@@ -2931,7 +3161,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "caveman_commit_readme_see_also",
-      "community": 44,
+      "community": 60,
       "norm_label": "see also"
     },
     {
@@ -3331,7 +3561,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "caveman_help_readme",
-      "community": 44,
+      "community": 64,
       "norm_label": "readme.md"
     },
     {
@@ -3341,7 +3571,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "caveman_help_readme_caveman_help",
-      "community": 44,
+      "community": 64,
       "norm_label": "caveman-help"
     },
     {
@@ -3351,7 +3581,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "caveman_help_readme_what_it_does",
-      "community": 44,
+      "community": 64,
       "norm_label": "what it does"
     },
     {
@@ -3361,7 +3591,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "caveman_help_readme_how_to_invoke",
-      "community": 44,
+      "community": 64,
       "norm_label": "how to invoke"
     },
     {
@@ -3371,7 +3601,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "caveman_help_readme_example_output",
-      "community": 44,
+      "community": 64,
       "norm_label": "example output"
     },
     {
@@ -3381,7 +3611,7 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "caveman_help_readme_see_also",
-      "community": 44,
+      "community": 64,
       "norm_label": "see also"
     },
     {
@@ -3471,7 +3701,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "caveman_review_readme",
-      "community": 44,
+      "community": 71,
       "norm_label": "readme.md"
     },
     {
@@ -3481,7 +3711,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "caveman_review_readme_caveman_review",
-      "community": 44,
+      "community": 71,
       "norm_label": "caveman-review"
     },
     {
@@ -3491,7 +3721,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "caveman_review_readme_what_it_does",
-      "community": 44,
+      "community": 71,
       "norm_label": "what it does"
     },
     {
@@ -3501,7 +3731,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "caveman_review_readme_how_to_invoke",
-      "community": 44,
+      "community": 71,
       "norm_label": "how to invoke"
     },
     {
@@ -3511,7 +3741,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "caveman_review_readme_example_output",
-      "community": 44,
+      "community": 71,
       "norm_label": "example output"
     },
     {
@@ -3521,7 +3751,7 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "caveman_review_readme_see_also",
-      "community": 44,
+      "community": 71,
       "norm_label": "see also"
     },
     {
@@ -3581,7 +3811,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "caveman_stats_readme",
-      "community": 44,
+      "community": 59,
       "norm_label": "readme.md"
     },
     {
@@ -3591,7 +3821,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "caveman_stats_readme_caveman_stats",
-      "community": 44,
+      "community": 59,
       "norm_label": "caveman-stats"
     },
     {
@@ -3601,7 +3831,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "caveman_stats_readme_what_it_does",
-      "community": 44,
+      "community": 59,
       "norm_label": "what it does"
     },
     {
@@ -3611,7 +3841,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "caveman_stats_readme_how_to_invoke",
-      "community": 44,
+      "community": 59,
       "norm_label": "how to invoke"
     },
     {
@@ -3621,7 +3851,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "caveman_stats_readme_example_output",
-      "community": 44,
+      "community": 59,
       "norm_label": "example output"
     },
     {
@@ -3631,7 +3861,7 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "caveman_stats_readme_see_also",
-      "community": 44,
+      "community": 59,
       "norm_label": "see also"
     },
     {
@@ -3651,7 +3881,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "caveman_readme",
-      "community": 44,
+      "community": 58,
       "norm_label": "readme.md"
     },
     {
@@ -3661,7 +3891,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "caveman_readme_caveman",
-      "community": 44,
+      "community": 58,
       "norm_label": "caveman"
     },
     {
@@ -3671,7 +3901,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "caveman_readme_what_it_does",
-      "community": 44,
+      "community": 58,
       "norm_label": "what it does"
     },
     {
@@ -3681,7 +3911,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "caveman_readme_how_to_invoke",
-      "community": 44,
+      "community": 58,
       "norm_label": "how to invoke"
     },
     {
@@ -3691,7 +3921,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "caveman_readme_example_output",
-      "community": 44,
+      "community": 58,
       "norm_label": "example output"
     },
     {
@@ -3701,7 +3931,7 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "caveman_readme_see_also",
-      "community": 44,
+      "community": 58,
       "norm_label": "see also"
     },
     {
@@ -3711,7 +3941,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "caveman_skill",
-      "community": 44,
+      "community": 95,
       "norm_label": "skill.md"
     },
     {
@@ -3721,7 +3951,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "caveman_skill_persistence",
-      "community": 44,
+      "community": 95,
       "norm_label": "persistence"
     },
     {
@@ -3731,7 +3961,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "caveman_skill_rules",
-      "community": 44,
+      "community": 95,
       "norm_label": "rules"
     },
     {
@@ -3741,7 +3971,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "caveman_skill_intensity",
-      "community": 44,
+      "community": 95,
       "norm_label": "intensity"
     },
     {
@@ -3761,7 +3991,7 @@
       "source_location": "L76",
       "_origin": "ast",
       "id": "caveman_skill_boundaries",
-      "community": 44,
+      "community": 95,
       "norm_label": "boundaries"
     },
     {
@@ -5905,13 +6135,203 @@
       "norm_label": "development principles"
     },
     {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme",
+      "community": 45,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "filler",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "readme_filler",
+      "community": 45,
+      "norm_label": "filler"
+    },
+    {
+      "label": "The Game",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "readme_the_game",
+      "community": 45,
+      "norm_label": "the game"
+    },
+    {
+      "label": "How It Works",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "readme_how_it_works",
+      "community": 45,
+      "norm_label": "how it works"
+    },
+    {
+      "label": "Strategy Enhancements",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "readme_strategy_enhancements",
+      "community": 45,
+      "norm_label": "strategy enhancements"
+    },
+    {
+      "label": "Project Structure",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "readme_project_structure",
+      "community": 45,
+      "norm_label": "project structure"
+    },
+    {
+      "label": "Quick Start",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L102",
+      "_origin": "ast",
+      "id": "readme_quick_start",
+      "community": 45,
+      "norm_label": "quick start"
+    },
+    {
+      "label": "Build",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L104",
+      "_origin": "ast",
+      "id": "readme_build",
+      "community": 45,
+      "norm_label": "build"
+    },
+    {
+      "label": "Run (Inside Game Engine)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L113",
+      "_origin": "ast",
+      "id": "readme_run_inside_game_engine",
+      "community": 45,
+      "norm_label": "run (inside game engine)"
+    },
+    {
+      "label": "Unit Tests",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L122",
+      "_origin": "ast",
+      "id": "readme_unit_tests",
+      "community": 45,
+      "norm_label": "unit tests"
+    },
+    {
+      "label": "All Tests (Unit + Integration)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L130",
+      "_origin": "ast",
+      "id": "readme_all_tests_unit_integration",
+      "community": 45,
+      "norm_label": "all tests (unit + integration)"
+    },
+    {
+      "label": "E2E Replay Validation",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L136",
+      "_origin": "ast",
+      "id": "readme_e2e_replay_validation",
+      "community": 45,
+      "norm_label": "e2e replay validation"
+    },
+    {
+      "label": "Performance Benchmark",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L144",
+      "_origin": "ast",
+      "id": "readme_performance_benchmark",
+      "community": 45,
+      "norm_label": "performance benchmark"
+    },
+    {
+      "label": "Audit Suite",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L153",
+      "_origin": "ast",
+      "id": "readme_audit_suite",
+      "community": 45,
+      "norm_label": "audit suite"
+    },
+    {
+      "label": "Docker",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L162",
+      "_origin": "ast",
+      "id": "readme_docker",
+      "community": 45,
+      "norm_label": "docker"
+    },
+    {
+      "label": "CLI Reference",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L174",
+      "_origin": "ast",
+      "id": "readme_cli_reference",
+      "community": 45,
+      "norm_label": "cli reference"
+    },
+    {
+      "label": "Module Map",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L183",
+      "_origin": "ast",
+      "id": "readme_module_map",
+      "community": 45,
+      "norm_label": "module map"
+    },
+    {
+      "label": "Audit Compliance",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L196",
+      "_origin": "ast",
+      "id": "readme_audit_compliance",
+      "community": 45,
+      "norm_label": "audit compliance"
+    },
+    {
+      "label": "License",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L214",
+      "_origin": "ast",
+      "id": "readme_license",
+      "community": 45,
+      "norm_label": "license"
+    },
+    {
       "label": "deeppro.md",
       "file_type": "document",
       "source_file": "docs/plan/deeppro.md",
       "source_location": "L1",
       "_origin": "ast",
       "id": "plan_deeppro",
-      "community": 5,
+      "community": 40,
       "norm_label": "deeppro.md"
     },
     {
@@ -5941,7 +6361,7 @@
       "source_location": "L62",
       "_origin": "ast",
       "id": "plan_deeppro_1_data_structures_types_src_types_rs",
-      "community": 29,
+      "community": 99,
       "norm_label": "1. data structures & types \u2014 `src/types.rs`"
     },
     {
@@ -5951,7 +6371,7 @@
       "source_location": "L153",
       "_origin": "ast",
       "id": "plan_deeppro_coordinate_convention",
-      "community": 29,
+      "community": 99,
       "norm_label": "coordinate convention"
     },
     {
@@ -5961,7 +6381,7 @@
       "source_location": "L166",
       "_origin": "ast",
       "id": "plan_deeppro_architectural_variant_byte_level_grid_storage_performance_optimization",
-      "community": 29,
+      "community": 99,
       "norm_label": "architectural variant: byte-level grid storage (performance optimization)"
     },
     {
@@ -5971,7 +6391,7 @@
       "source_location": "L174",
       "_origin": "ast",
       "id": "plan_deeppro_2_module_a_parser_src_parser_rs",
-      "community": 29,
+      "community": 52,
       "norm_label": "2. module a: parser \u2014 `src/parser.rs`"
     },
     {
@@ -5981,7 +6401,7 @@
       "source_location": "L176",
       "_origin": "ast",
       "id": "plan_deeppro_goal",
-      "community": 29,
+      "community": 52,
       "norm_label": "goal"
     },
     {
@@ -5991,7 +6411,7 @@
       "source_location": "L179",
       "_origin": "ast",
       "id": "plan_deeppro_input_format_exact",
-      "community": 29,
+      "community": 52,
       "norm_label": "input format (exact)"
     },
     {
@@ -6001,7 +6421,7 @@
       "source_location": "L219",
       "_origin": "ast",
       "id": "plan_deeppro_step_by_step_implementation",
-      "community": 29,
+      "community": 52,
       "norm_label": "step-by-step implementation"
     },
     {
@@ -6011,7 +6431,7 @@
       "source_location": "L221",
       "_origin": "ast",
       "id": "plan_deeppro_a1_parse_player_identity",
-      "community": 29,
+      "community": 52,
       "norm_label": "a1: parse player identity"
     },
     {
@@ -6021,7 +6441,7 @@
       "source_location": "L253",
       "_origin": "ast",
       "id": "plan_deeppro_a2_parse_anfield_grid",
-      "community": 29,
+      "community": 52,
       "norm_label": "a2: parse anfield grid"
     },
     {
@@ -6031,7 +6451,7 @@
       "source_location": "L309",
       "_origin": "ast",
       "id": "plan_deeppro_a3_parse_piece",
-      "community": 29,
+      "community": 52,
       "norm_label": "a3: parse piece"
     },
     {
@@ -6041,7 +6461,7 @@
       "source_location": "L360",
       "_origin": "ast",
       "id": "plan_deeppro_a4_full_turn_parser",
-      "community": 29,
+      "community": 52,
       "norm_label": "a4: full turn parser"
     },
     {
@@ -6051,7 +6471,7 @@
       "source_location": "L406",
       "_origin": "ast",
       "id": "plan_deeppro_a5_helper_read_a_line",
-      "community": 29,
+      "community": 52,
       "norm_label": "a5: helper \u2014 read a line"
     },
     {
@@ -6141,7 +6561,7 @@
       "source_location": "L579",
       "_origin": "ast",
       "id": "plan_deeppro_strategy_aggressive_heatmap_distance_bfs",
-      "community": 37,
+      "community": 94,
       "norm_label": "strategy: aggressive heatmap (distance bfs)"
     },
     {
@@ -6151,7 +6571,7 @@
       "source_location": "L583",
       "_origin": "ast",
       "id": "plan_deeppro_c1_generate_heatmap_bfs_from_opponent_territory",
-      "community": 37,
+      "community": 94,
       "norm_label": "c1: generate heatmap (bfs from opponent territory)"
     },
     {
@@ -6161,7 +6581,7 @@
       "source_location": "L643",
       "_origin": "ast",
       "id": "plan_deeppro_c2_score_a_placement",
-      "community": 37,
+      "community": 94,
       "norm_label": "c2: score a placement"
     },
     {
@@ -6171,7 +6591,7 @@
       "source_location": "L688",
       "_origin": "ast",
       "id": "plan_deeppro_c3_choose_best_placement",
-      "community": 37,
+      "community": 94,
       "norm_label": "c3: choose best placement"
     },
     {
@@ -6181,7 +6601,7 @@
       "source_location": "L739",
       "_origin": "ast",
       "id": "plan_deeppro_c4_advanced_territory_control_bonus",
-      "community": 37,
+      "community": 94,
       "norm_label": "c4: advanced territory control (bonus)"
     },
     {
@@ -6191,7 +6611,7 @@
       "source_location": "L767",
       "_origin": "ast",
       "id": "plan_deeppro_c5_strategy_tuning_guide_win_rate_insurance",
-      "community": 37,
+      "community": 94,
       "norm_label": "c5: strategy tuning guide (win-rate insurance)"
     },
     {
@@ -6201,7 +6621,7 @@
       "source_location": "L784",
       "_origin": "ast",
       "id": "plan_deeppro_4_5_module_d_output_formatter_src_output_rs",
-      "community": 29,
+      "community": 100,
       "norm_label": "4.5. module d: output formatter \u2014 `src/output.rs`"
     },
     {
@@ -6211,7 +6631,7 @@
       "source_location": "L786",
       "_origin": "ast",
       "id": "plan_deeppro_goal_786",
-      "community": 29,
+      "community": 100,
       "norm_label": "goal"
     },
     {
@@ -6221,7 +6641,7 @@
       "source_location": "L789",
       "_origin": "ast",
       "id": "plan_deeppro_implementation_sketch",
-      "community": 29,
+      "community": 100,
       "norm_label": "implementation sketch"
     },
     {
@@ -6231,7 +6651,7 @@
       "source_location": "L808",
       "_origin": "ast",
       "id": "plan_deeppro_5_main_loop_src_main_rs",
-      "community": 29,
+      "community": 101,
       "norm_label": "5. main loop \u2014 `src/main.rs`"
     },
     {
@@ -6241,7 +6661,7 @@
       "source_location": "L810",
       "_origin": "ast",
       "id": "plan_deeppro_error_handling_guardrails",
-      "community": 29,
+      "community": 101,
       "norm_label": "error handling & guardrails"
     },
     {
@@ -6251,7 +6671,7 @@
       "source_location": "L878",
       "_origin": "ast",
       "id": "plan_deeppro_critical_io_behaviour",
-      "community": 29,
+      "community": 101,
       "norm_label": "critical io behaviour"
     },
     {
@@ -6441,7 +6861,7 @@
       "source_location": "L1253",
       "_origin": "ast",
       "id": "plan_deeppro_11_dockerfile_exclusions",
-      "community": 29,
+      "community": 97,
       "norm_label": "11. dockerfile & exclusions"
     },
     {
@@ -6451,7 +6871,7 @@
       "source_location": "L1255",
       "_origin": "ast",
       "id": "plan_deeppro_dockerignore",
-      "community": 29,
+      "community": 97,
       "norm_label": "`.dockerignore`"
     },
     {
@@ -6461,7 +6881,7 @@
       "source_location": "L1263",
       "_origin": "ast",
       "id": "plan_deeppro_dockerfile_base_debian_bookworm_slim",
-      "community": 29,
+      "community": 97,
       "norm_label": "dockerfile (base: debian bookworm slim)"
     },
     {
@@ -6471,7 +6891,7 @@
       "source_location": "L1279",
       "_origin": "ast",
       "id": "plan_deeppro_alternative_alpine_based_docker_minimal_image_size_variant",
-      "community": 29,
+      "community": 97,
       "norm_label": "alternative: alpine-based docker (minimal image size variant)"
     },
     {
@@ -6491,7 +6911,7 @@
       "source_location": "L1363",
       "_origin": "ast",
       "id": "plan_deeppro_13_full_tdd_execution_order_day_by_day",
-      "community": 29,
+      "community": 93,
       "norm_label": "13. full tdd execution order (day-by-day)"
     },
     {
@@ -6501,7 +6921,7 @@
       "source_location": "L1365",
       "_origin": "ast",
       "id": "plan_deeppro_day_1_project_setup_types_output_parser",
-      "community": 29,
+      "community": 93,
       "norm_label": "day 1: project setup + types + output + parser"
     },
     {
@@ -6511,7 +6931,7 @@
       "source_location": "L1378",
       "_origin": "ast",
       "id": "plan_deeppro_day_2_validator_strategy",
-      "community": 29,
+      "community": 93,
       "norm_label": "day 2: validator + strategy"
     },
     {
@@ -6521,7 +6941,7 @@
       "source_location": "L1387",
       "_origin": "ast",
       "id": "plan_deeppro_day_3_main_loop_integration_docker_benchmark",
-      "community": 29,
+      "community": 93,
       "norm_label": "day 3: main loop + integration + docker + benchmark"
     },
     {
@@ -6531,7 +6951,7 @@
       "source_location": "L1398",
       "_origin": "ast",
       "id": "plan_deeppro_day_4_e2e_replay_validation_multi_turn_testing_strategy_tuning",
-      "community": 29,
+      "community": 93,
       "norm_label": "day 4: e2e replay validation + multi-turn testing + strategy tuning"
     },
     {
@@ -6541,7 +6961,7 @@
       "source_location": "L1409",
       "_origin": "ast",
       "id": "plan_deeppro_day_5_visualizer_bonus_polish",
-      "community": 29,
+      "community": 93,
       "norm_label": "day 5: visualizer (bonus) + polish"
     },
     {
@@ -6571,7 +6991,7 @@
       "source_location": "L1465",
       "_origin": "ast",
       "id": "plan_deeppro_16_visualizer_specification_bonus",
-      "community": 29,
+      "community": 98,
       "norm_label": "16. visualizer specification (bonus)"
     },
     {
@@ -6581,7 +7001,7 @@
       "source_location": "L1467",
       "_origin": "ast",
       "id": "plan_deeppro_goal_1467",
-      "community": 29,
+      "community": 98,
       "norm_label": "goal"
     },
     {
@@ -6591,7 +7011,7 @@
       "source_location": "L1470",
       "_origin": "ast",
       "id": "plan_deeppro_implementation_sketch_1470",
-      "community": 29,
+      "community": 98,
       "norm_label": "implementation sketch"
     },
     {
@@ -6741,7 +7161,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "report_cross_plan_enrichments",
-      "community": 5,
+      "community": 40,
       "norm_label": "cross-plan-enrichments.md"
     },
     {
@@ -6951,7 +7371,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "report_final_cross_plan_enrichments",
-      "community": 5,
+      "community": 40,
       "norm_label": "final-cross-plan-enrichments.md"
     },
     {
@@ -7191,7 +7611,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "report_gem_report",
-      "community": 5,
+      "community": 40,
       "norm_label": "gem_report.md"
     },
     {
@@ -7201,7 +7621,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "report_gem_report_proposed_enrichments_for_deeppro_md",
-      "community": 5,
+      "community": 40,
       "norm_label": "proposed enrichments for `deeppro.md`"
     },
     {
@@ -7211,7 +7631,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "report_gem_report_1_negative_coordinate_placement_support_from_glm_md",
-      "community": 5,
+      "community": 40,
       "norm_label": "1. negative coordinate placement support (from `glm.md`)"
     },
     {
@@ -7221,7 +7641,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "report_gem_report_2_explicit_audit_targets_in_e2e_suite_from_gem_md",
-      "community": 5,
+      "community": 40,
       "norm_label": "2. explicit audit targets in e2e suite (from `gem.md`)"
     },
     {
@@ -7231,7 +7651,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "report_gem_report_3_turn_execution_performance_benchmarks_from_glm_md",
-      "community": 5,
+      "community": 40,
       "norm_label": "3. turn execution performance benchmarks (from `glm.md`)"
     },
     {
@@ -7241,7 +7661,7 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "report_gem_report_4_cli_testing_utilities_from_glm_md",
-      "community": 5,
+      "community": 40,
       "norm_label": "4. cli testing utilities (from `glm.md`)"
     },
     {
@@ -7251,7 +7671,7 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "report_gem_report_5_deterministic_tie_breaker_logic_from_glm_md",
-      "community": 5,
+      "community": 40,
       "norm_label": "5. deterministic tie-breaker logic (from `glm.md`)"
     },
     {
@@ -7271,7 +7691,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "requirements_audit_functional",
-      "community": 40,
+      "community": 48,
       "norm_label": "functional"
     },
     {
@@ -7281,7 +7701,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "requirements_audit_try_to_run_the_command_game_engine_f_maps_map01_p1_robots_bender_p2_robots_terminator_inside_the_container",
-      "community": 40,
+      "community": 48,
       "norm_label": "try to run the command `./game_engine -f maps/map01 -p1 robots/bender -p2 robots/terminator` inside the container."
     },
     {
@@ -7291,7 +7711,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "requirements_audit_can_you_confirm_that_the_student_was_able_to_create_the_image_and_container_correctly",
-      "community": 40,
+      "community": 48,
       "norm_label": "can you confirm that the student was able to create the image and container correctly?"
     },
     {
@@ -7301,7 +7721,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "requirements_audit_try_to_run_the_student_player_against_one_of_our_players",
-      "community": 40,
+      "community": 48,
       "norm_label": "try to run the student player against one of our players."
     },
     {
@@ -7311,7 +7731,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "requirements_audit_can_you_confirm_that_the_project_runs_correctly",
-      "community": 40,
+      "community": 48,
       "norm_label": "can you confirm that the project runs correctly?"
     },
     {
@@ -7321,7 +7741,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "requirements_audit_try_to_run_the_student_player_against_one_of_our_players_11",
-      "community": 40,
+      "community": 48,
       "norm_label": "try to run the student player against one of our players."
     },
     {
@@ -7331,7 +7751,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "requirements_audit_can_you_confirm_that_the_student_player_is_placing_the_pieces_correctly_with_the_overlapping_of_just_on_cell",
-      "community": 40,
+      "community": 48,
       "norm_label": "can you confirm that the student player is placing the pieces correctly with the overlapping of just on cell?"
     },
     {
@@ -7341,7 +7761,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "requirements_audit_try_to_run_game_engine_f_maps_map00_p1_path_to_student_player_p2_robots_wall_e_five_times_changing_the_position_of_the_players_each_time_so_that_the_student_player_can_be_the_p1_and_the_p2",
-      "community": 40,
+      "community": 48,
       "norm_label": "try to run `./game_engine -f maps/map00 -p1 <path to student player> -p2 robots/wall_e` five times changing the position of the players each time so that the student player can be the `p1` and the `p2`."
     },
     {
@@ -7351,7 +7771,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "requirements_audit_can_you_confirm_that_the_student_player_won_at_least_4_out_of_5_times",
-      "community": 40,
+      "community": 48,
       "norm_label": "can you confirm that the student player won at least 4 out of 5 times?"
     },
     {
@@ -7361,7 +7781,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "requirements_audit_try_to_run_game_engine_f_maps_map01_p1_path_to_student_player_p2_robots_h2_d2_five_times_changing_the_position_of_the_players_each_time_so_that_the_student_player_can_be_the_p1_and_the_p2",
-      "community": 40,
+      "community": 48,
       "norm_label": "try to run `./game_engine -f maps/map01 -p1 <path to student player> -p2 robots/h2_d2` five times changing the position of the players each time so that the student player can be the `p1` and the `p2`."
     },
     {
@@ -7371,7 +7791,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "requirements_audit_can_you_confirm_that_the_student_player_won_at_least_4_out_of_5_times_21",
-      "community": 40,
+      "community": 48,
       "norm_label": "can you confirm that the student player won at least 4 out of 5 times?"
     },
     {
@@ -7381,7 +7801,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "requirements_audit_try_to_run_game_engine_f_maps_map02_p1_path_to_student_player_p2_robots_bender_five_times_changing_the_position_of_the_players_each_time_so_that_the_student_player_can_be_the_p1_and_the_p2",
-      "community": 40,
+      "community": 48,
       "norm_label": "try to run `./game_engine -f maps/map02 -p1 <path to student player> -p2 robots/bender` five times changing the position of the players each time so that the student player can be the `p1` and the `p2`."
     },
     {
@@ -7391,7 +7811,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "requirements_audit_can_you_confirm_that_the_student_player_won_at_least_4_out_of_5_times_25",
-      "community": 40,
+      "community": 48,
       "norm_label": "can you confirm that the student player won at least 4 out of 5 times?"
     },
     {
@@ -7682,7 +8102,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 57,
+      "community": 96,
       "norm_label": "cavecrew skill definition",
       "id": "cavecrew_skill_cavecrew"
     },
@@ -7695,7 +8115,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 57,
+      "community": 96,
       "norm_label": "cavecrew investigator",
       "id": "cavecrew_skill_investigator"
     },
@@ -7708,7 +8128,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 57,
+      "community": 96,
       "norm_label": "cavecrew builder",
       "id": "cavecrew_skill_builder"
     },
@@ -7721,7 +8141,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 57,
+      "community": 96,
       "norm_label": "cavecrew reviewer",
       "id": "cavecrew_skill_reviewer"
     },
@@ -7734,7 +8154,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 44,
+      "community": 58,
       "norm_label": "caveman skill definition",
       "id": "caveman_skill_caveman"
     },
@@ -7760,7 +8180,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 44,
+      "community": 58,
       "norm_label": "caveman compress",
       "id": "caveman_compress_readme_caveman_compress"
     },
@@ -7799,7 +8219,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 44,
+      "community": 59,
       "norm_label": "caveman stats skill",
       "id": "caveman_stats_skill_caveman_stats"
     },
@@ -8475,7 +8895,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 40,
       "norm_label": "aggressive heatmap (bfs from opponent)",
       "id": "plan_deeppro_aggressive_heatmap"
     },
@@ -8489,7 +8909,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Game engine allows piece anchor at negative coordinates if filled blocks land in-bounds. Deeppro's Point { usize } cannot represent negatives \u2014 fixing to i32 with range starting at -(piece.rows/cols) is critical for correctness (#1178, cross-plan-enrichments item 1).",
-      "community": 5,
+      "community": 40,
       "norm_label": "negative-offset placement search",
       "id": "plan_deeppro_negative_offset_placement"
     },
@@ -8502,7 +8922,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 40,
       "norm_label": "never panic guardrail",
       "id": "plan_deeppro_never_panic_guardrail"
     },
@@ -8516,7 +8936,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Base strategy must achieve >=80% win rate vs wall_e, h2_d2, bender. Falls below threshold triggers strategy tuning guide enhancements (edge weighting, connectivity, blocking, center start, piece size bonus).",
-      "community": 5,
+      "community": 40,
       "norm_label": "80% win-rate threshold",
       "id": "plan_deeppro_winrate_threshold"
     },
@@ -8529,7 +8949,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 40,
       "norm_label": "test-driven development cycle",
       "id": "plan_deeppro_tdd_cycle"
     },
@@ -8543,7 +8963,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Catalog of 5 enhancements (edge weighting, territory connectivity, opponent blocking, center start bias, piece size bonus) for boosting win-rate when base strategy underperforms <80%. Cross-plan enrichment from glm.md Section 13.",
-      "community": 5,
+      "community": 40,
       "norm_label": "strategy tuning guide",
       "id": "plan_deeppro_strategy_tuning_guide"
     },
@@ -8557,7 +8977,7 @@
       "author": null,
       "contributor": null,
       "rationale": "When scores equal, pick lowest row first then lowest col. Ensures reproducibility across runs. Cross-plan enrichment from glm.md scorer.rs and gem_report.md item 5.",
-      "community": 5,
+      "community": 40,
       "norm_label": "deterministic tiebreak rule (lower row then lower col)",
       "id": "plan_deeppro_deterministic_tiebreak"
     },
@@ -8571,7 +8991,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Post-MVP performance optimization: store grid as u8 bytes instead of Cell enum for cache-friendly single-byte access and branchless comparisons. Trade-off: less type safety. Surfaced in final-cross-plan-enrichments.md item 16.",
-      "community": 5,
+      "community": 40,
       "norm_label": "byte-level grid storage variant",
       "id": "plan_deeppro_byte_level_grid_storage"
     },
@@ -10729,6 +11149,27 @@
       "target": "e2e_run_audit_suite_info"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bin/visualizer.rs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "bin_visualizer",
+      "target": "bin_visualizer_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bin/visualizer.rs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "context": "import",
+      "source": "bin_visualizer",
+      "target": "duration",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src/main.rs",
@@ -10764,12 +11205,12 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "src/main.rs",
-      "source_location": "L8",
+      "source_location": "L11",
       "weight": 1.0,
       "context": "generic_arg",
-      "confidence_score": 1.0,
       "source": "src_main_main",
-      "target": "error"
+      "target": "src_main_rs_error",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -10946,36 +11387,6 @@
       "confidence_score": 1.0,
       "source": "src_parser",
       "target": "src_parser_read_line"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/parser.rs",
-      "source_location": "L131",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_parser",
-      "target": "src_parser_test_parse_anfield"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/parser.rs",
-      "source_location": "L142",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_parser",
-      "target": "src_parser_test_parse_piece"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/parser.rs",
-      "source_location": "L123",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_parser",
-      "target": "src_parser_test_parse_player_line"
     },
     {
       "relation": "calls",
@@ -11266,12 +11677,23 @@
     {
       "relation": "calls",
       "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/parser.rs",
-      "source_location": "L134",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L54",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_parser_test_parse_anfield",
+      "source": "tests_parser_tests_test_parse_anfield_large_row_prefix",
+      "target": "src_parser_parse_anfield"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "tests_parser_tests_test_parse_anfield_valid",
       "target": "src_parser_parse_anfield"
     },
     {
@@ -11310,12 +11732,12 @@
     {
       "relation": "calls",
       "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/parser.rs",
-      "source_location": "L145",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L91",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_parser_test_parse_piece",
+      "source": "tests_parser_tests_test_parse_piece_valid",
       "target": "src_parser_parse_piece"
     },
     {
@@ -11339,6 +11761,28 @@
       "confidence_score": 1.0,
       "source": "src_parser_parse_turn",
       "target": "src_parser_rs_option"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "tests_parser_tests_test_blank_line_tolerance",
+      "target": "src_parser_parse_turn"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "tests_parser_tests_test_parse_eof_mid_turn",
+      "target": "src_parser_parse_turn"
     },
     {
       "relation": "contains",
@@ -11386,9 +11830,9 @@
       "source_file": "src/strategy.rs",
       "source_location": "L166",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "src_strategy",
-      "target": "src_strategy_test_tiebreak_by_row_then_col"
+      "target": "src_strategy_test_tiebreak_by_col_then_row",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -11527,11 +11971,11 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/strategy.rs",
-      "source_location": "L179",
+      "source_location": "L178",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_strategy_test_tiebreak_by_row_then_col",
-      "target": "src_strategy_choose_best_placement"
+      "source": "src_strategy_test_tiebreak_by_col_then_row",
+      "target": "src_strategy_choose_best_placement",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -11629,6 +12073,113 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/types.rs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_types_player",
+      "target": "src_types_player_try_from",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types.rs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_types_player",
+      "target": "tryfrom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types.rs",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "src_types_cell",
+      "target": "tryfrom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types.rs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "src_types_player_try_from",
+      "target": "self",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types.rs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "src_types_player_try_from",
+      "target": "src_types_rs_error",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types.rs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "src_types_player_try_from",
+      "target": "src_types_rs_result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types.rs",
+      "source_location": "L44",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "src_types_cell_try_from",
+      "target": "src_types_rs_result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types.rs",
+      "source_location": "L31",
+      "weight": 1.0,
+      "context": "return_type",
+      "confidence_score": 1.0,
+      "source": "src_types_cell_from_char",
+      "target": "self"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types.rs",
+      "source_location": "L44",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "src_types_cell_try_from",
+      "target": "self",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types.rs",
+      "source_location": "L44",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "src_types_cell_try_from",
+      "target": "src_types_rs_error",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types.rs",
       "source_location": "L43",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -11646,6 +12197,16 @@
       "target": "src_types_cell_from_char"
     },
     {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types.rs",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "src_types_cell",
+      "target": "src_types_cell_try_from",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "src/types.rs",
@@ -11657,15 +12218,15 @@
       "target": "src_types_cell"
     },
     {
-      "relation": "references",
+      "relation": "calls",
+      "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/types.rs",
-      "source_location": "L31",
+      "source_location": "L58",
       "weight": 1.0,
-      "context": "return_type",
-      "confidence_score": 1.0,
       "source": "src_types_cell_from_char",
-      "target": "self"
+      "target": "src_types_cell_try_from",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -11715,16 +12276,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/validator.rs",
-      "source_location": "L71",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_validator",
-      "target": "src_validator_build_test_grid"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/validator.rs",
       "source_location": "L45",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -11750,36 +12301,6 @@
       "confidence_score": 1.0,
       "source": "src_validator",
       "target": "src_validator_is_valid_placement"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/validator.rs",
-      "source_location": "L89",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_validator",
-      "target": "src_validator_test_is_in_bounds"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/validator.rs",
-      "source_location": "L106",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_validator",
-      "target": "src_validator_test_is_valid_placement"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/validator.rs",
-      "source_location": "L141",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_validator",
-      "target": "src_validator_test_negative_offset_placement"
     },
     {
       "relation": "references",
@@ -11824,17 +12345,6 @@
       "confidence_score": 1.0,
       "source": "src_validator_is_valid_placement",
       "target": "src_validator_is_in_bounds"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/validator.rs",
-      "source_location": "L71",
-      "weight": 1.0,
-      "context": "return_type",
-      "confidence_score": 1.0,
-      "source": "src_validator_build_test_grid",
-      "target": "src_validator_rs_grid"
     },
     {
       "relation": "references",
@@ -11949,46 +12459,46 @@
     {
       "relation": "calls",
       "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/validator.rs",
-      "source_location": "L154",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L66",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_validator_test_negative_offset_placement",
+      "source": "tests_validator_tests_test_e4_zero_blocks_piece",
       "target": "src_validator_find_valid_placements"
     },
     {
       "relation": "calls",
       "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/validator.rs",
-      "source_location": "L90",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L84",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_validator_test_is_in_bounds",
-      "target": "src_validator_build_test_grid"
+      "source": "tests_validator_tests_test_e5_grid_entirely_filled",
+      "target": "src_validator_find_valid_placements"
     },
     {
       "relation": "calls",
       "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/validator.rs",
-      "source_location": "L107",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L156",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_validator_test_is_valid_placement",
-      "target": "src_validator_build_test_grid"
+      "source": "tests_validator_tests_test_negative_offset_placements",
+      "target": "src_validator_find_valid_placements"
     },
     {
       "relation": "calls",
       "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/validator.rs",
-      "source_location": "L142",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L97",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_validator_test_negative_offset_placement",
-      "target": "src_validator_build_test_grid"
+      "source": "tests_validator_tests_test_piece_larger_than_grid",
+      "target": "src_validator_find_valid_placements"
     },
     {
       "relation": "imports_from",
@@ -12403,12 +12913,300 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "tests_parser_tests",
+      "target": "tests_parser_tests_test_blank_line_tolerance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "tests_parser_tests",
+      "target": "tests_parser_tests_test_parse_anfield_header_missing_cols",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "tests_parser_tests",
+      "target": "tests_parser_tests_test_parse_anfield_invalid_char",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "tests_parser_tests",
+      "target": "tests_parser_tests_test_parse_anfield_invalid_dimensions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "tests_parser_tests",
+      "target": "tests_parser_tests_test_parse_anfield_large_row_prefix",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "tests_parser_tests",
+      "target": "tests_parser_tests_test_parse_anfield_valid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "tests_parser_tests",
+      "target": "tests_parser_tests_test_parse_eof_mid_turn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "tests_parser_tests",
+      "target": "tests_parser_tests_test_parse_piece_valid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "tests_parser_tests",
+      "target": "tests_parser_tests_test_parse_piece_zero_dimensions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "tests_parser_tests",
+      "target": "tests_parser_tests_test_parse_player_line_malformed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/parser_tests.rs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "tests_parser_tests",
+      "target": "tests_parser_tests_test_parse_player_line_valid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "tests/strategy_tests.rs",
       "source_location": "L5",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "tests_strategy_tests",
-      "target": "tests_strategy_tests_test_tiebreak_by_row_then_col"
+      "target": "tests_strategy_tests_test_tiebreak_by_col_then_row",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "tests_validator_tests",
+      "target": "tests_validator_tests_build_test_grid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "tests_validator_tests",
+      "target": "tests_validator_tests_test_e4_zero_blocks_piece",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "tests_validator_tests",
+      "target": "tests_validator_tests_test_e5_grid_entirely_filled",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "tests_validator_tests",
+      "target": "tests_validator_tests_test_e8_opponent_chars_rejected",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "tests_validator_tests",
+      "target": "tests_validator_tests_test_e9_own_chars_overlap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "tests_validator_tests",
+      "target": "tests_validator_tests_test_is_in_bounds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "tests_validator_tests",
+      "target": "tests_validator_tests_test_is_valid_placement_basic",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "tests_validator_tests",
+      "target": "tests_validator_tests_test_negative_offset_placements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "tests_validator_tests",
+      "target": "tests_validator_tests_test_piece_larger_than_grid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "tests_validator_tests_build_test_grid",
+      "target": "tests_validator_tests_rs_grid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "tests_validator_tests_test_e4_zero_blocks_piece",
+      "target": "tests_validator_tests_build_test_grid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "tests_validator_tests_test_e8_opponent_chars_rejected",
+      "target": "tests_validator_tests_build_test_grid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "tests_validator_tests_test_e9_own_chars_overlap",
+      "target": "tests_validator_tests_build_test_grid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "tests_validator_tests_test_is_in_bounds",
+      "target": "tests_validator_tests_build_test_grid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "tests_validator_tests_test_is_valid_placement_basic",
+      "target": "tests_validator_tests_build_test_grid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "tests_validator_tests_test_negative_offset_placements",
+      "target": "tests_validator_tests_build_test_grid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/validator_tests.rs",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "tests_validator_tests_test_piece_larger_than_grid",
+      "target": "tests_validator_tests_build_test_grid",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15556,9 +16354,9 @@
       "source_file": "METHODOLOGY.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "methodology",
-      "target": "methodology_implementation_methodology",
-      "confidence_score": 1.0
+      "target": "methodology_implementation_methodology"
     },
     {
       "relation": "contains",
@@ -15566,9 +16364,9 @@
       "source_file": "METHODOLOGY.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "methodology_implementation_methodology",
-      "target": "methodology_development_principles",
-      "confidence_score": 1.0
+      "target": "methodology_development_principles"
     },
     {
       "relation": "contains",
@@ -15576,8 +16374,188 @@
       "source_file": "METHODOLOGY.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "methodology_implementation_methodology",
-      "target": "methodology_multi_agent_architecture",
+      "target": "methodology_multi_agent_architecture"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "readme",
+      "target": "readme_filler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L196",
+      "weight": 1.0,
+      "source": "readme_filler",
+      "target": "readme_audit_compliance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L174",
+      "weight": 1.0,
+      "source": "readme_filler",
+      "target": "readme_cli_reference",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "readme_filler",
+      "target": "readme_how_it_works",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L214",
+      "weight": 1.0,
+      "source": "readme_filler",
+      "target": "readme_license",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L183",
+      "weight": 1.0,
+      "source": "readme_filler",
+      "target": "readme_module_map",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "readme_filler",
+      "target": "readme_project_structure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "readme_filler",
+      "target": "readme_quick_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "readme_filler",
+      "target": "readme_the_game",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "readme_how_it_works",
+      "target": "readme_strategy_enhancements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L130",
+      "weight": 1.0,
+      "source": "readme_quick_start",
+      "target": "readme_all_tests_unit_integration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L153",
+      "weight": 1.0,
+      "source": "readme_quick_start",
+      "target": "readme_audit_suite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "readme_quick_start",
+      "target": "readme_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "readme_quick_start",
+      "target": "readme_docker",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L136",
+      "weight": 1.0,
+      "source": "readme_quick_start",
+      "target": "readme_e2e_replay_validation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L144",
+      "weight": 1.0,
+      "source": "readme_quick_start",
+      "target": "readme_performance_benchmark",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L113",
+      "weight": 1.0,
+      "source": "readme_quick_start",
+      "target": "readme_run_inside_game_engine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "readme_quick_start",
+      "target": "readme_unit_tests",
       "confidence_score": 1.0
     },
     {
@@ -18203,5 +19181,5 @@
       "source_file": "docs/plan/deeppro.md"
     }
   ],
-  "built_at_commit": "9f5835d7824fe5d0b83864e1d519ba412ce0b134"
+  "built_at_commit": "4af4311ef7ac79f7b0704f18aca9cc3c02bf6888"
 }

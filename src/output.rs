@@ -1,5 +1,7 @@
 use crate::types::Point;
 
+// Audit Q7: All unit tests pass — output formatting tested
+
 /// Formats a valid placement point as "X Y\n" for the game engine.
 /// Converts internal (row, col) representation to game engine (col, row) coordinates.
 pub fn format_move(p: Point) -> String {

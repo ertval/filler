@@ -27,4 +27,8 @@ harness = false
 name = "assert_winrate"
 path = "e2e/assert_winrate.rs"
 
+[[bin]]
+name = "visualizer"
+path = "src/bin/visualizer.rs"
+
 

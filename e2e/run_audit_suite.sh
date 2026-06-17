@@ -45,8 +45,12 @@ fi
 # -------------------------------------------------------------------
 # Audit Q3: Pieces placed with correct 1-cell overlap
 # -------------------------------------------------------------------
-info "Q3: 1-cell overlap rule verified by unit tests"
-info "  (validator_tests.rs covers: 0 overlap, 1 overlap, 2+ overlap, opponent overlap)"
+info "Q3: 1-cell overlap rule verified by unit tests and E2E replay"
+if cargo test --features e2e --test e2e 2>&1; then
+    green "1-cell overlap rule functional check passed"
+else
+    red "1-cell overlap rule functional check failed"
+fi
 
 # -------------------------------------------------------------------
 # Audit Q4-6: Win-rate checks

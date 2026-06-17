@@ -5,6 +5,18 @@ pub enum Player {
     P2,
 }
 
+impl TryFrom<u8> for Player {
+    type Error = String;
+
+    fn try_from(val: u8) -> Result<Self, Self::Error> {
+        match val {
+            1 => Ok(Player::P1),
+            2 => Ok(Player::P2),
+            _ => Err(format!("invalid player number: {val}")),
+        }
+    }
+}
+
 impl Player {
     /// Returns the two characters representing this player on the grid.
     /// P1 → ('@', 'a')   P2 → ('$', 's')
@@ -26,16 +38,24 @@ pub enum Cell {
     Player2Old,    // '$'
 }
 
+impl TryFrom<char> for Cell {
+    type Error = String;
+
+    fn try_from(c: char) -> Result<Self, Self::Error> {
+        match c {
+            '.' => Ok(Cell::Empty),
+            '@' => Ok(Cell::Player1Old),
+            'a' => Ok(Cell::Player1Recent),
+            '$' => Ok(Cell::Player2Old),
+            's' => Ok(Cell::Player2Recent),
+            _ => Err(format!("invalid cell char: '{}'", c)),
+        }
+    }
+}
+
 impl Cell {
     pub fn from_char(c: char) -> Self {
-        match c {
-            '.' => Cell::Empty,
-            '@' => Cell::Player1Old,
-            'a' => Cell::Player1Recent,
-            '$' => Cell::Player2Old,
-            's' => Cell::Player2Recent,
-            _ => Cell::Empty, // defensive
-        }
+        Self::try_from(c).unwrap_or(Cell::Empty)
     }
 
     /// Returns true if this cell belongs to the given player

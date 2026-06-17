@@ -1,16 +1,16 @@
 # Graph Report - filler  (2026-06-18)
 
 ## Corpus Check
-- 88 files · ~52,072 words
+- 89 files · ~52,240 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 816 nodes · 925 edges · 84 communities (66 shown, 18 thin omitted)
+- 820 nodes · 928 edges · 85 communities (67 shown, 18 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 17 edges (avg confidence: 0.91)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `13990897`
+- Built from commit: `9f5835d7`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -51,6 +51,7 @@
 - [[_COMMUNITY_Community 36|Community 36]]
 - [[_COMMUNITY_Community 37|Community 37]]
 - [[_COMMUNITY_Community 38|Community 38]]
+- [[_COMMUNITY_Community 39|Community 39]]
 - [[_COMMUNITY_Community 40|Community 40]]
 - [[_COMMUNITY_Community 41|Community 41]]
 - [[_COMMUNITY_Community 42|Community 42]]
@@ -127,7 +128,7 @@
 - **Karpathy Guidelines Principles** — karpathy_guidelines_think_before_coding, karpathy_guidelines_simplicity_first, karpathy_guidelines_surgical_changes, karpathy_guidelines_goal_driven_execution, karpathy_guidelines_skill [EXTRACTED 1.00]
 - **Filler Implementation Artifacts** — plan_deeppro, plan_implementation_tracker, requirements_audit, requirements_requirements [EXTRACTED 1.00]
 
-## Communities (84 total, 18 thin omitted)
+## Communities (85 total, 18 thin omitted)
 
 ### Community 0 - "Graphify Core Pipeline"
 Cohesion: 0.06
@@ -228,6 +229,10 @@ Nodes (14): 3. Module B: Placement Validator — `src/validator.rs`, B1: Boundar
 ### Community 38 - "Community 38"
 Cohesion: 0.14
 Nodes (14): 8.1. Benchmark Harness — `benches/turn_benchmark.rs`, 8.2. E2E Replay Validation Test — `tests/e2e.rs`, 8.3. Multi-Turn Territory Growth Test — `tests/multi_turn.rs`, 8.4. Deterministic Tie-Breaker Test — `tests/strategy_tests.rs`, 8. Integration Tests — `tests/integration_tests.rs`, Goal, IT-1: P1 single valid turn — places on own territory, IT-2: P2 single valid turn (+6 more)
+
+### Community 39 - "Community 39"
+Cohesion: 0.50
+Nodes (3): Development Principles, Implementation Methodology, Multi-Agent Architecture
 
 ### Community 40 - "Community 40"
 Cohesion: 0.05
@@ -346,7 +351,7 @@ Cohesion: 0.21
 Nodes (15): Duration, Frame, parse_anfield_header(), play(), read_replay(), render_frame(), Grid, R (+7 more)
 
 ## Knowledge Gaps
-- **410 isolated node(s):** `$schema`, `plugin`, `@opencode-ai/plugin`, `Result`, `Box` (+405 more)
+- **412 isolated node(s):** `$schema`, `plugin`, `@opencode-ai/plugin`, `Result`, `Box` (+407 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **18 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -362,7 +367,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Are the 2 inferred relationships involving `Caveman Compress` (e.g. with `Compress` and `RTK CLI Proxy`) actually correct?**
   _`Caveman Compress` has 2 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `Caveman compress scripts.  This package provides tools to compress natural langu`, `Split YAML frontmatter from body. Returns (frontmatter, body).      Memory files`, `Resolve the out-of-tree backup directory for a given source file.      Backups m` to the rest of the system?**
-  _444 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _446 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Graphify Core Pipeline` be split into smaller, more focused modules?**
   _Cohesion score 0.06349206349206349 - nodes in this community are weakly interconnected._
 - **Should `Caveman Agent Skills` be split into smaller, more focused modules?**

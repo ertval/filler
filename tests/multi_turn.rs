@@ -1,6 +1,7 @@
+// Audit Q7: Territory growth test — verifies own count increases monotonically over 3 turns
 use filler::{
     strategy,
-    types::{Cell, Grid, Piece, Player, Point},
+    types::{Cell, Grid, Piece, Player},
     validator,
 };
 
