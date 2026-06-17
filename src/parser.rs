@@ -1,5 +1,5 @@
+use crate::types::{Cell, GameState, Grid, Piece, Player};
 use std::io::BufRead;
-use crate::types::{Player, Cell, Grid, Piece, GameState};
 
 /// Helper — Read a line. Returns error containing "EOF" on end of file.
 fn read_line<R: BufRead>(reader: &mut R) -> Result<String, String> {
@@ -9,7 +9,10 @@ fn read_line<R: BufRead>(reader: &mut R) -> Result<String, String> {
         return Err("EOF".to_string());
     }
     // Trim only trailing newlines to preserve leading/trailing spaces in grid
-    Ok(buf.trim_end_matches('\n').trim_end_matches('\r').to_string())
+    Ok(buf
+        .trim_end_matches('\n')
+        .trim_end_matches('\r')
+        .to_string())
 }
 
 /// Parse player ID line (TDD)
@@ -20,13 +23,15 @@ pub fn parse_player_line(line: &str) -> Result<Player, String> {
     match line.as_bytes()[10] {
         b'1' => Ok(Player::P1),
         b'2' => Ok(Player::P2),
-        _    => Err(format!("unknown player in line: {line}")),
+        _ => Err(format!("unknown player in line: {line}")),
     }
 }
 
 fn parse_anfield_header(line: &str) -> Result<(usize, usize), String> {
     // "Anfield 20 15:"
-    let line = line.strip_prefix("Anfield ").ok_or("missing Anfield prefix")?;
+    let line = line
+        .strip_prefix("Anfield ")
+        .ok_or("missing Anfield prefix")?;
     let line = line.strip_suffix(':').ok_or("missing colon")?;
     let parts: Vec<&str> = line.split_whitespace().collect();
     if parts.len() != 2 {
@@ -50,7 +55,11 @@ pub fn parse_anfield<R: BufRead>(reader: &mut R) -> Result<Grid, String> {
         let line = read_line(reader)?;
         // Strip first 4 chars: "000 " for row number prefix
         if line.len() < 4 + cols {
-            return Err(format!("row line too short: expected {}, got {}", 4 + cols, line.len()));
+            return Err(format!(
+                "row line too short: expected {}, got {}",
+                4 + cols,
+                line.len()
+            ));
         }
         let row_chars = &line[4..4 + cols];
         let row: Vec<Cell> = row_chars.chars().map(Cell::from_char).collect();
@@ -81,7 +90,9 @@ pub fn parse_piece<R: BufRead>(reader: &mut R) -> Result<Piece, String> {
     for r in 0..rows {
         let line = read_line(reader)?;
         for (c, ch) in line.chars().enumerate() {
-            if c >= cols { break; }
+            if c >= cols {
+                break;
+            }
             if ch != '.' {
                 blocks.push((r, c));
             }
@@ -111,7 +122,12 @@ pub fn parse_turn<R: BufRead>(
     let grid = parse_anfield(reader)?;
     let piece = parse_piece(reader)?;
 
-    Ok(GameState { me, opponent, grid, piece })
+    Ok(GameState {
+        me,
+        opponent,
+        grid,
+        piece,
+    })
 }
 
 #[cfg(test)]
@@ -121,8 +137,14 @@ mod tests {
 
     #[test]
     fn test_parse_player_line() {
-        assert_eq!(parse_player_line("$$$ exec p1 : [robots/bender]").unwrap(), Player::P1);
-        assert_eq!(parse_player_line("$$$ exec p2 : [robots/bender]").unwrap(), Player::P2);
+        assert_eq!(
+            parse_player_line("$$$ exec p1 : [robots/bender]").unwrap(),
+            Player::P1
+        );
+        assert_eq!(
+            parse_player_line("$$$ exec p2 : [robots/bender]").unwrap(),
+            Player::P2
+        );
         assert!(parse_player_line("$$$ exec pX : [whatever]").is_err());
         assert!(parse_player_line("").is_err());
     }
@@ -134,8 +156,14 @@ mod tests {
         let grid = parse_anfield(&mut reader).unwrap();
         assert_eq!(grid.cols, 3);
         assert_eq!(grid.rows, 2);
-        assert_eq!(grid.data[0], vec![Cell::Empty, Cell::Player1Old, Cell::Empty]);
-        assert_eq!(grid.data[1], vec![Cell::Empty, Cell::Player2Old, Cell::Empty]);
+        assert_eq!(
+            grid.data[0],
+            vec![Cell::Empty, Cell::Player1Old, Cell::Empty]
+        );
+        assert_eq!(
+            grid.data[1],
+            vec![Cell::Empty, Cell::Player2Old, Cell::Empty]
+        );
     }
 
     #[test]

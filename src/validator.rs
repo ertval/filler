@@ -1,4 +1,4 @@
-use crate::types::{Grid, Piece, Point, Player, Cell};
+use crate::types::{Cell, Grid, Piece, Player, Point};
 
 /// Verify piece fits within grid boundary
 pub fn is_in_bounds(grid: &Grid, piece: &Piece, target: Point) -> bool {
@@ -13,12 +13,7 @@ pub fn is_in_bounds(grid: &Grid, piece: &Piece, target: Point) -> bool {
 }
 
 /// Assert 1 own cell and 0 opponent cells overlap
-pub fn is_valid_placement(
-    grid: &Grid,
-    piece: &Piece,
-    target: Point,
-    player: Player,
-) -> bool {
+pub fn is_valid_placement(grid: &Grid, piece: &Piece, target: Point, player: Player) -> bool {
     if !is_in_bounds(grid, piece, target) {
         return false;
     }
@@ -42,11 +37,7 @@ pub fn is_valid_placement(
 }
 
 /// Scan grid (including negative padding)
-pub fn find_valid_placements(
-    grid: &Grid,
-    piece: &Piece,
-    player: Player,
-) -> Vec<Point> {
+pub fn find_valid_placements(grid: &Grid, piece: &Piece, player: Player) -> Vec<Point> {
     let mut results = Vec::new();
     // Start search from negative offsets so pieces with top-left padding can anchor off-grid
     let min_row = -(piece.rows as i32);
@@ -105,14 +96,19 @@ mod tests {
     #[test]
     fn test_is_valid_placement() {
         let grid = build_test_grid();
-        
+
         // Scenario 1: Zero own overlap (far away)
         let piece_1x1 = Piece {
             rows: 1,
             cols: 1,
             blocks: vec![(0, 0)],
         };
-        assert!(!is_valid_placement(&grid, &piece_1x1, Point { row: 2, col: 2 }, Player::P1));
+        assert!(!is_valid_placement(
+            &grid,
+            &piece_1x1,
+            Point { row: 2, col: 2 },
+            Player::P1
+        ));
 
         // Scenario 2: Two own overlaps
         let mut grid_double = build_test_grid();
@@ -122,19 +118,39 @@ mod tests {
             cols: 2,
             blocks: vec![(0, 0), (0, 1)],
         };
-        assert!(!is_valid_placement(&grid_double, &piece_1x2, Point { row: 0, col: 0 }, Player::P1));
+        assert!(!is_valid_placement(
+            &grid_double,
+            &piece_1x2,
+            Point { row: 0, col: 0 },
+            Player::P1
+        ));
 
         // Scenario 3: One own + one opponent overlap
         // Piece 1x2 placed at (3,2) on P2's grid covers (3,2) and (3,3) which is P2
         let mut grid_p1_p2 = build_test_grid();
         grid_p1_p2.data[3][2] = Cell::Player1Old; // P1 at (3,2), P2 at (3,3)
-        assert!(!is_valid_placement(&grid_p1_p2, &piece_1x2, Point { row: 3, col: 2 }, Player::P1));
+        assert!(!is_valid_placement(
+            &grid_p1_p2,
+            &piece_1x2,
+            Point { row: 3, col: 2 },
+            Player::P1
+        ));
 
         // Scenario 4: Exactly 1 own, 0 opponent
-        assert!(is_valid_placement(&grid, &piece_1x2, Point { row: 0, col: 0 }, Player::P1));
+        assert!(is_valid_placement(
+            &grid,
+            &piece_1x2,
+            Point { row: 0, col: 0 },
+            Player::P1
+        ));
 
         // Scenario 9: Zero own + zero opponent (all empty)
-        assert!(!is_valid_placement(&grid, &piece_1x1, Point { row: 2, col: 2 }, Player::P1));
+        assert!(!is_valid_placement(
+            &grid,
+            &piece_1x1,
+            Point { row: 2, col: 2 },
+            Player::P1
+        ));
     }
 
     #[test]
@@ -149,7 +165,12 @@ mod tests {
         // Target at (-1, -1) offset.
         // Block (1,1) lands at (-1+1, -1+1) = (0,0) which is P1.
         // This is a valid placement since it overlaps P1 exactly once and has no opponent overlap.
-        assert!(is_valid_placement(&grid, &piece, Point { row: -1, col: -1 }, Player::P1));
+        assert!(is_valid_placement(
+            &grid,
+            &piece,
+            Point { row: -1, col: -1 },
+            Player::P1
+        ));
 
         let placements = find_valid_placements(&grid, &piece, Player::P1);
         assert!(placements.contains(&Point { row: -1, col: -1 }));

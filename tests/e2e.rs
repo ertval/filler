@@ -12,7 +12,14 @@ fn test_replay_move_correctness() {
 
     // Run game_engine
     let mut cmd = Command::new("./game_engine");
-    cmd.args(&["-f", "maps/map01", "-p1", "target/debug/filler", "-p2", "robots/bender"]);
+    cmd.args(&[
+        "-f",
+        "maps/map01",
+        "-p1",
+        "target/debug/filler",
+        "-p2",
+        "robots/bender",
+    ]);
     let assert = cmd.assert().success();
     let output = String::from_utf8_lossy(&assert.get_output().stdout);
 

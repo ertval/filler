@@ -1,4 +1,3 @@
-
 /// Player identity as reported by game engine
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum Player {
@@ -21,10 +20,10 @@ impl Player {
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum Cell {
     Empty,
-    Player1Recent,  // 'a'
-    Player1Old,     // '@'
-    Player2Recent,  // 's'
-    Player2Old,     // '$'
+    Player1Recent, // 'a'
+    Player1Old,    // '@'
+    Player2Recent, // 's'
+    Player2Old,    // '$'
 }
 
 impl Cell {
@@ -35,7 +34,7 @@ impl Cell {
             'a' => Cell::Player1Recent,
             '$' => Cell::Player2Old,
             's' => Cell::Player2Recent,
-            _   => Cell::Empty, // defensive
+            _ => Cell::Empty, // defensive
         }
     }
 

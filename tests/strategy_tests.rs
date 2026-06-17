@@ -1,5 +1,5 @@
 use filler::strategy;
-use filler::types::{Point, Piece};
+use filler::types::{Piece, Point};
 
 #[test]
 fn test_tiebreak_by_row_then_col() {

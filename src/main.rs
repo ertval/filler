@@ -1,9 +1,9 @@
-use std::io::{self, Write, BufWriter};
-use filler::parser;
-use filler::validator;
-use filler::strategy;
 use filler::output;
+use filler::parser;
+use filler::strategy;
 use filler::types::GameState;
+use filler::validator;
+use std::io::{self, BufWriter, Write};
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let stdin = io::stdin();
@@ -29,11 +29,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             }
         };
 
-        let valid = validator::find_valid_placements(
-            &turn.grid,
-            &turn.piece,
-            turn.me,
-        );
+        let valid = validator::find_valid_placements(&turn.grid, &turn.piece, turn.me);
 
         if valid.is_empty() {
             writer.write_all(output::format_no_move().as_bytes())?;
@@ -47,7 +43,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
         match chosen {
             Some(p) => writer.write_all(output::format_move(p).as_bytes())?,
-            None     => writer.write_all(output::format_no_move().as_bytes())?,
+            None => writer.write_all(output::format_no_move().as_bytes())?,
         }
         writer.flush()?;
 

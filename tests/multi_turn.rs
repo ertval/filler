@@ -1,4 +1,8 @@
-use filler::{validator, strategy, types::{Grid, Piece, Point, Player, Cell}};
+use filler::{
+    strategy,
+    types::{Cell, Grid, Piece, Player, Point},
+    validator,
+};
 
 #[test]
 fn test_territory_monotonically_increases() {
@@ -24,7 +28,11 @@ fn test_territory_monotonically_increases() {
 
     // Helper to count player cells
     let count_me = |g: &Grid| -> usize {
-        g.data.iter().flatten().filter(|&&c| c.belongs_to(me)).count()
+        g.data
+            .iter()
+            .flatten()
+            .filter(|&&c| c.belongs_to(me))
+            .count()
     };
 
     assert_eq!(count_me(&grid), 1);

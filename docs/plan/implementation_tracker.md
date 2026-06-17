@@ -36,11 +36,12 @@ Use this checklist to implement `filler` in Rust. You do not need to read the en
 
 
 ### Phase 6: Integration Tests & Quality Gates
-- [ ] **T6.1: Test Helpers & Fixtures** - Define standard 5x5 Anfield and mock stdin | [tests/common/mod.rs](file:///home/ertval/code/zone-modules/filler/tests/common/mod.rs) | [deeppro.md:934-951](file:///home/ertval/code/zone-modules/filler/docs/plan/deeppro.md#L934-L951)
-- [ ] **T6.2: E2E Replay Validation** - Assert move correctness | [tests/e2e.rs](file:///home/ertval/code/zone-modules/filler/tests/e2e.rs) | [deeppro.md:1014-1032](file:///home/ertval/code/zone-modules/filler/docs/plan/deeppro.md#L1014-L1032)
-- [ ] **T6.3: Integration Tests** - IT-1 to IT-6 turn pipeline simulation | [tests/integration_tests.rs](file:///home/ertval/code/zone-modules/filler/tests/integration_tests.rs) | [deeppro.md:929-985](file:///home/ertval/code/zone-modules/filler/docs/plan/deeppro.md#L929-L985)
-- [ ] **T6.4: Scorer Tie-breaker Test** - Verify deterministic selection | [tests/strategy_tests.rs](file:///home/ertval/code/zone-modules/filler/tests/strategy_tests.rs) | [deeppro.md:1051-1071](file:///home/ertval/code/zone-modules/filler/docs/plan/deeppro.md#L1051-L1071)
-- [ ] **T6.5: Growth & Performance** - Turn performance benchmark (< 500ms) & growth tests | [tests/multi_turn.rs](file:///home/ertval/code/zone-modules/filler/tests/multi_turn.rs) | [deeppro.md:987-1012,1034-1049](file:///home/ertval/code/zone-modules/filler/docs/plan/deeppro.md#L987-L1012)
+- [x] **T6.1: Test Helpers & Fixtures** - Define standard 5x5 Anfield and mock stdin | [tests/common/mod.rs](file:///home/ertval/code/zone-modules/filler/tests/common/mod.rs) | [deeppro.md:934-951](file:///home/ertval/code/zone-modules/filler/docs/plan/deeppro.md#L934-L951)
+- [x] **T6.2: E2E Replay Validation** - Assert move correctness | [tests/e2e.rs](file:///home/ertval/code/zone-modules/filler/tests/e2e.rs) | [deeppro.md:1014-1032](file:///home/ertval/code/zone-modules/filler/docs/plan/deeppro.md#L1014-L1032)
+- [x] **T6.3: Integration Tests** - IT-1 to IT-6 turn pipeline simulation | [tests/integration_tests.rs](file:///home/ertval/code/zone-modules/filler/tests/integration_tests.rs) | [deeppro.md:929-985](file:///home/ertval/code/zone-modules/filler/docs/plan/deeppro.md#L929-L985)
+- [x] **T6.4: Scorer Tie-breaker Test** - Verify deterministic selection | [tests/strategy_tests.rs](file:///home/ertval/code/zone-modules/filler/tests/strategy_tests.rs) | [deeppro.md:1051-1071](file:///home/ertval/code/zone-modules/filler/docs/plan/deeppro.md#L1051-L1071)
+- [x] **T6.5: Growth & Performance** - Turn performance benchmark (< 500ms) & growth tests | [tests/multi_turn.rs](file:///home/ertval/code/zone-modules/filler/tests/multi_turn.rs) | [deeppro.md:987-1012,1034-1049](file:///home/ertval/code/zone-modules/filler/docs/plan/deeppro.md#L987-L1012)
+
 
 ### Phase 7: Audit Script & Docker Setup
 - [x] **T7.1: Win-rate Checkers** - assert_winrate program & audit shell script | [e2e/assert_winrate.rs](file:///home/ertval/code/zone-modules/filler/e2e/assert_winrate.rs) | [deeppro.md:1073-1251](file:///home/ertval/code/zone-modules/filler/docs/plan/deeppro.md#L1073-L1251)

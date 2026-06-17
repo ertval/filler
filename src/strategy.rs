@@ -1,4 +1,4 @@
-use crate::types::{Grid, Piece, Point, Player, Cell};
+use crate::types::{Cell, Grid, Piece, Player, Point};
 use std::collections::VecDeque;
 
 /// Generate heatmap (BFS from opponent territory)
@@ -87,11 +87,7 @@ pub fn generate_heatmap(grid: &Grid, opponent: Player, me: Player) -> Vec<Vec<i3
 }
 
 /// Score a placement (returns (new_dist, own_dist))
-pub fn score_placement(
-    heatmap: &[Vec<i32>],
-    piece: &Piece,
-    target: Point,
-) -> (i32, i32) {
+pub fn score_placement(heatmap: &[Vec<i32>], piece: &Piece, target: Point) -> (i32, i32) {
     let mut new_dist = 0i32;
     let mut own_dist = 0i32;
     for &(dr, dc) in &piece.blocks {

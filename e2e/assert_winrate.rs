@@ -3,7 +3,7 @@ use std::process::Command;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
-    
+
     let mut map = String::new();
     let mut p1 = String::new();
     let mut p2 = String::new();
@@ -89,10 +89,14 @@ fn main() {
                 let stderr_str = String::from_utf8_lossy(&out.stderr);
                 let combined_output = format!("{}\n{}", stdout_str, stderr_str);
 
-                if combined_output.contains("Player 1 won") || combined_output.contains("Player 1 won!") {
+                if combined_output.contains("Player 1 won")
+                    || combined_output.contains("Player 1 won!")
+                {
                     p1_wins += 1;
                     println!("  Winner: Player 1");
-                } else if combined_output.contains("Player 2 won") || combined_output.contains("Player 2 won!") {
+                } else if combined_output.contains("Player 2 won")
+                    || combined_output.contains("Player 2 won!")
+                {
                     p2_wins += 1;
                     println!("  Winner: Player 2");
                 } else {

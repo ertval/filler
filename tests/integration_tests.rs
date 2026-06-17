@@ -1,7 +1,7 @@
 mod common;
 
-use filler::{parser, validator, strategy, output};
 use filler::types::{Player, Point};
+use filler::{output, parser, strategy, validator};
 
 #[test]
 fn test_it1_p1_single_valid_turn() {
