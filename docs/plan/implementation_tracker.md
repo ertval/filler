@@ -43,8 +43,8 @@ Use this checklist to implement `filler` in Rust. You do not need to read the en
 - [ ] **T6.5: Growth & Performance** - Turn performance benchmark (< 500ms) & growth tests | [tests/multi_turn.rs](file:///home/ertval/code/zone-modules/filler/tests/multi_turn.rs) | [deeppro.md:987-1012,1034-1049](file:///home/ertval/code/zone-modules/filler/docs/plan/deeppro.md#L987-L1012)
 
 ### Phase 7: Audit Script & Docker Setup
-- [ ] **T7.1: Win-rate Checkers** - assert_winrate program & audit shell script | [e2e/assert_winrate.rs](file:///home/ertval/code/zone-modules/filler/e2e/assert_winrate.rs) | [deeppro.md:1073-1251](file:///home/ertval/code/zone-modules/filler/docs/plan/deeppro.md#L1073-L1251)
-- [ ] **T7.2: Dockerization** - Build Debian Bookworm slim multi-stage image | [Dockerfile](file:///home/ertval/code/zone-modules/filler/Dockerfile) | [deeppro.md:1253-1314](file:///home/ertval/code/zone-modules/filler/docs/plan/deeppro.md#L1253-L1314)
+- [x] **T7.1: Win-rate Checkers** - assert_winrate program & audit shell script | [e2e/assert_winrate.rs](file:///home/ertval/code/zone-modules/filler/e2e/assert_winrate.rs) | [deeppro.md:1073-1251](file:///home/ertval/code/zone-modules/filler/docs/plan/deeppro.md#L1073-L1251)
+- [x] **T7.2: Dockerization** - Build Debian Bookworm slim multi-stage image | [Dockerfile](file:///home/ertval/code/zone-modules/filler/Dockerfile) | [deeppro.md:1253-1314](file:///home/ertval/code/zone-modules/filler/docs/plan/deeppro.md#L1253-L1314)
 
 ### Phase 8: Visualizer (Bonus)
 - [ ] **T8.1: Replay Renderer** - CLI ANSI colored game replay visualization | [src/visualizer.rs](file:///home/ertval/code/zone-modules/filler/src/visualizer.rs) | [deeppro.md:1465-1508](file:///home/ertval/code/zone-modules/filler/docs/plan/deeppro.md#L1465-L1508)

@@ -14,8 +14,6 @@ pub fn generate_heatmap(grid: &Grid, opponent: Player, me: Player) -> Vec<Vec<i3
             if grid.data[r][c].belongs_to(opponent) {
                 heatmap[r][c] = 0;
                 queue.push_back((r, c));
-            } else if grid.data[r][c].belongs_to(me) {
-                heatmap[r][c] = i32::MIN; // own territory identifier
             }
         }
     }
@@ -39,11 +37,17 @@ pub fn generate_heatmap(grid: &Grid, opponent: Player, me: Player) -> Vec<Vec<i3
         }
     }
 
-    // Apply Strategy Tuning Enhancements to heatmap values directly
+    // Apply Strategy Tuning Enhancements and negate own cells
     for r in 0..rows {
         for c in 0..cols {
             let val = heatmap[r][c];
-            if val > 0 && val != i32::MAX {
+            if grid.data[r][c].belongs_to(me) {
+                if val == i32::MAX {
+                    heatmap[r][c] = i32::MIN; // unreachable own territory
+                } else {
+                    heatmap[r][c] = -val; // negate distance for identification + retrieval
+                }
+            } else if val > 0 && val != i32::MAX {
                 let mut bonus = 0;
 
                 // 1. Edge Weighting: Bonus for cells near grid edges
@@ -82,27 +86,29 @@ pub fn generate_heatmap(grid: &Grid, opponent: Player, me: Player) -> Vec<Vec<i3
     heatmap
 }
 
-/// Score a placement (lower score is better/closer to opponent)
+/// Score a placement (returns (new_dist, own_dist))
 pub fn score_placement(
     heatmap: &[Vec<i32>],
     piece: &Piece,
     target: Point,
-) -> i32 {
-    let mut score = 0i32;
+) -> (i32, i32) {
+    let mut new_dist = 0i32;
+    let mut own_dist = 0i32;
     for &(dr, dc) in &piece.blocks {
         let r = (target.row + dr as i32) as usize;
         let c = (target.col + dc as i32) as usize;
         let h = heatmap[r][c];
-        if h == i32::MIN {
-            // Skip scoring own territory overlap cell
-            continue;
+        if h < 0 {
+            if h != i32::MIN {
+                own_dist = own_dist.saturating_add(-h);
+            }
         } else if h == i32::MAX {
-            score = score.saturating_add(1000); // penalty for unreachable
+            new_dist = new_dist.saturating_add(1000); // penalty for unreachable
         } else {
-            score = score.saturating_add(h);
+            new_dist = new_dist.saturating_add(h);
         }
     }
-    score
+    (new_dist, own_dist)
 }
 
 /// Choose best placement with deterministic tie-breaking
@@ -152,11 +158,8 @@ mod tests {
 
         let heatmap = generate_heatmap(&grid, Player::P2, Player::P1);
         assert_eq!(heatmap[0][0], 0);
-        assert_eq!(heatmap[1][1], i32::MIN);
-        // (0,1) is neighbor to (0,0) opponent and on edge.
-        // base dist = 1. edge bonus = 5. opponent blocking bonus = 5.
-        // val - bonus = 1 - 10 = -9 capped at 0.
-        assert_eq!(heatmap[0][1], 0);
+        // (1,1) is me, at dist 2 from (0,0). So it gets -2.
+        assert_eq!(heatmap[1][1], -2);
     }
 
     #[test]
