@@ -2,6 +2,7 @@
 FROM rust:1.78-slim-bookworm AS builder
 WORKDIR /filler
 COPY Cargo.toml Cargo.lock* ./
+COPY benches ./benches
 COPY src ./src
 COPY e2e ./e2e
 RUN cargo build --release
