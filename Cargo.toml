@@ -1,0 +1,20 @@
+[package]
+name = "filler"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+e2e = []  # Opt-in flag for E2E tests containing execution binaries
+
+[dependencies]
+# Minimal dependencies. Stdlib-only if possible.
+
+[dev-dependencies]
+assert_cmd = "2"   # CLI process testing
+predicates = "3"   # Command outcome assertions
+tempfile = "3"     # Temporary directories for E2E file logs
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
