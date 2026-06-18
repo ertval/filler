@@ -101,82 +101,27 @@ filler/
 
 ## Quick Start
 
-### Build
+### Make Commands
+
+| Command | What It Does |
+|---|---|
+| `make build` | Release build (LTO, single codegen) |
+| `make play MAP=map00 P1=filler P2=bender VIS=0` | Build + run game vs opponent (defaults in Makefile) |
+| `make run` | Show example game_engine invocation |
+| `make test-lib` | Unit tests only (parser, validator, strategy, output) |
+| `make test` | All unit + integration tests |
+| `make test-e2e` | E2E replay validation (needs `game_engine` binary) |
+| `make bench` | Performance benchmark (<500ms assert on 100×100) |
+| `make audit` | Full audit suite — Docker, crash-free, win-rates |
+| `make docker-build` | Multi-stage Docker build |
+| `make docker-run` | Run inside container |
+
+### Manual Build & Run
 
 ```bash
 cargo build --release
-```
-
-The release binary is optimized with LTO and single codegen unit for maximum
-performance.
-
-### Run (Inside Game Engine)
-
-```bash
 ./game_engine -f maps/map01 -p1 ./target/release/filler -p2 robots/bender
 ```
-
-The bot reads from stdin and writes to stdout — the game engine handles
-turn orchestration.
-
-### Unit Tests
-
-```bash
-cargo test --lib
-```
-
-14 tests across parser, validator, strategy, output, and visualizer modules.
-
-### All Tests (Unit + Integration)
-
-```bash
-cargo test
-```
-
-### E2E Replay Validation
-
-Requires the `game_engine` binary in the project root:
-
-```bash
-cargo test --features e2e --test e2e
-```
-
-### Performance Benchmark
-
-```bash
-cargo bench
-```
-
-Asserts a full decision cycle completes in under **500 ms** on a
-100×100 grid with a 20×20 piece.
-
-### Audit Suite
-
-```bash
-bash e2e/run_audit_suite.sh
-```
-
-Covers all audit questions: image creation, crash-free execution,
-1-cell overlap rule, win-rates vs wall_e, h2_d2, and bender.
-
-### Docker
-
-```bash
-docker build -t filler .
-docker run -v "$(pwd)/solution":/filler/solution -it filler
-```
-
-Multi-stage Debian Bookworm Slim build — minimal attack surface,
-small final image.
-
----
-
-## CLI Reference
-
-| Command | Description |
-|---|---|
-| `cargo run --bin assert_winrate -- --map <path> --p1 <path> --p2 <path>` | Run N games and report win count |
-| `cargo watch -x test` | Watch mode — re-run tests on every change |
 
 ---
 
