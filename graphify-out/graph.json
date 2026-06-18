@@ -1505,6 +1505,34 @@
       "norm_label": "check_winrate()"
     },
     {
+      "label": "run_game.sh",
+      "file_type": "code",
+      "source_file": "run_game.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "run_game",
+      "community": 103,
+      "norm_label": "run_game.sh"
+    },
+    {
+      "label": "run_game.sh script",
+      "file_type": "code",
+      "source_file": "run_game.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "home_ertval_code_zone_modules_filler_run_game_sh__entry",
+      "community": 103,
+      "norm_label": "run_game.sh script"
+    },
+    {
       "label": "visualizer.rs",
       "file_type": "code",
       "source_file": "src/bin/visualizer.rs",
@@ -2398,7 +2426,7 @@
       "label": "fixture_anfield_5x5()",
       "file_type": "code",
       "source_file": "tests/common/mod.rs",
-      "source_location": "L9",
+      "source_location": "L10",
       "_origin": "ast",
       "id": "common_mod_fixture_anfield_5x5",
       "community": 31,
@@ -6361,7 +6389,7 @@
       "source_location": "L62",
       "_origin": "ast",
       "id": "plan_deeppro_1_data_structures_types_src_types_rs",
-      "community": 99,
+      "community": 100,
       "norm_label": "1. data structures & types \u2014 `src/types.rs`"
     },
     {
@@ -6371,7 +6399,7 @@
       "source_location": "L153",
       "_origin": "ast",
       "id": "plan_deeppro_coordinate_convention",
-      "community": 99,
+      "community": 100,
       "norm_label": "coordinate convention"
     },
     {
@@ -6381,7 +6409,7 @@
       "source_location": "L166",
       "_origin": "ast",
       "id": "plan_deeppro_architectural_variant_byte_level_grid_storage_performance_optimization",
-      "community": 99,
+      "community": 100,
       "norm_label": "architectural variant: byte-level grid storage (performance optimization)"
     },
     {
@@ -6391,7 +6419,7 @@
       "source_location": "L174",
       "_origin": "ast",
       "id": "plan_deeppro_2_module_a_parser_src_parser_rs",
-      "community": 52,
+      "community": 93,
       "norm_label": "2. module a: parser \u2014 `src/parser.rs`"
     },
     {
@@ -6401,7 +6429,7 @@
       "source_location": "L176",
       "_origin": "ast",
       "id": "plan_deeppro_goal",
-      "community": 52,
+      "community": 93,
       "norm_label": "goal"
     },
     {
@@ -6411,7 +6439,7 @@
       "source_location": "L179",
       "_origin": "ast",
       "id": "plan_deeppro_input_format_exact",
-      "community": 52,
+      "community": 93,
       "norm_label": "input format (exact)"
     },
     {
@@ -6421,7 +6449,7 @@
       "source_location": "L219",
       "_origin": "ast",
       "id": "plan_deeppro_step_by_step_implementation",
-      "community": 52,
+      "community": 93,
       "norm_label": "step-by-step implementation"
     },
     {
@@ -6431,7 +6459,7 @@
       "source_location": "L221",
       "_origin": "ast",
       "id": "plan_deeppro_a1_parse_player_identity",
-      "community": 52,
+      "community": 93,
       "norm_label": "a1: parse player identity"
     },
     {
@@ -6441,7 +6469,7 @@
       "source_location": "L253",
       "_origin": "ast",
       "id": "plan_deeppro_a2_parse_anfield_grid",
-      "community": 52,
+      "community": 93,
       "norm_label": "a2: parse anfield grid"
     },
     {
@@ -6451,7 +6479,7 @@
       "source_location": "L309",
       "_origin": "ast",
       "id": "plan_deeppro_a3_parse_piece",
-      "community": 52,
+      "community": 93,
       "norm_label": "a3: parse piece"
     },
     {
@@ -6461,7 +6489,7 @@
       "source_location": "L360",
       "_origin": "ast",
       "id": "plan_deeppro_a4_full_turn_parser",
-      "community": 52,
+      "community": 93,
       "norm_label": "a4: full turn parser"
     },
     {
@@ -6471,7 +6499,7 @@
       "source_location": "L406",
       "_origin": "ast",
       "id": "plan_deeppro_a5_helper_read_a_line",
-      "community": 52,
+      "community": 93,
       "norm_label": "a5: helper \u2014 read a line"
     },
     {
@@ -6561,7 +6589,7 @@
       "source_location": "L579",
       "_origin": "ast",
       "id": "plan_deeppro_strategy_aggressive_heatmap_distance_bfs",
-      "community": 94,
+      "community": 37,
       "norm_label": "strategy: aggressive heatmap (distance bfs)"
     },
     {
@@ -6571,7 +6599,7 @@
       "source_location": "L583",
       "_origin": "ast",
       "id": "plan_deeppro_c1_generate_heatmap_bfs_from_opponent_territory",
-      "community": 94,
+      "community": 37,
       "norm_label": "c1: generate heatmap (bfs from opponent territory)"
     },
     {
@@ -6581,7 +6609,7 @@
       "source_location": "L643",
       "_origin": "ast",
       "id": "plan_deeppro_c2_score_a_placement",
-      "community": 94,
+      "community": 37,
       "norm_label": "c2: score a placement"
     },
     {
@@ -6591,7 +6619,7 @@
       "source_location": "L688",
       "_origin": "ast",
       "id": "plan_deeppro_c3_choose_best_placement",
-      "community": 94,
+      "community": 37,
       "norm_label": "c3: choose best placement"
     },
     {
@@ -6601,7 +6629,7 @@
       "source_location": "L739",
       "_origin": "ast",
       "id": "plan_deeppro_c4_advanced_territory_control_bonus",
-      "community": 94,
+      "community": 37,
       "norm_label": "c4: advanced territory control (bonus)"
     },
     {
@@ -6611,7 +6639,7 @@
       "source_location": "L767",
       "_origin": "ast",
       "id": "plan_deeppro_c5_strategy_tuning_guide_win_rate_insurance",
-      "community": 94,
+      "community": 37,
       "norm_label": "c5: strategy tuning guide (win-rate insurance)"
     },
     {
@@ -6621,7 +6649,7 @@
       "source_location": "L784",
       "_origin": "ast",
       "id": "plan_deeppro_4_5_module_d_output_formatter_src_output_rs",
-      "community": 100,
+      "community": 101,
       "norm_label": "4.5. module d: output formatter \u2014 `src/output.rs`"
     },
     {
@@ -6631,7 +6659,7 @@
       "source_location": "L786",
       "_origin": "ast",
       "id": "plan_deeppro_goal_786",
-      "community": 100,
+      "community": 101,
       "norm_label": "goal"
     },
     {
@@ -6641,7 +6669,7 @@
       "source_location": "L789",
       "_origin": "ast",
       "id": "plan_deeppro_implementation_sketch",
-      "community": 100,
+      "community": 101,
       "norm_label": "implementation sketch"
     },
     {
@@ -6651,7 +6679,7 @@
       "source_location": "L808",
       "_origin": "ast",
       "id": "plan_deeppro_5_main_loop_src_main_rs",
-      "community": 101,
+      "community": 102,
       "norm_label": "5. main loop \u2014 `src/main.rs`"
     },
     {
@@ -6661,7 +6689,7 @@
       "source_location": "L810",
       "_origin": "ast",
       "id": "plan_deeppro_error_handling_guardrails",
-      "community": 101,
+      "community": 102,
       "norm_label": "error handling & guardrails"
     },
     {
@@ -6671,7 +6699,7 @@
       "source_location": "L878",
       "_origin": "ast",
       "id": "plan_deeppro_critical_io_behaviour",
-      "community": 101,
+      "community": 102,
       "norm_label": "critical io behaviour"
     },
     {
@@ -6731,7 +6759,7 @@
       "source_location": "L952",
       "_origin": "ast",
       "id": "plan_deeppro_test_cases",
-      "community": 38,
+      "community": 94,
       "norm_label": "test cases"
     },
     {
@@ -6741,7 +6769,7 @@
       "source_location": "L954",
       "_origin": "ast",
       "id": "plan_deeppro_it_1_p1_single_valid_turn_places_on_own_territory",
-      "community": 38,
+      "community": 94,
       "norm_label": "it-1: p1 single valid turn \u2014 places on own territory"
     },
     {
@@ -6751,7 +6779,7 @@
       "source_location": "L970",
       "_origin": "ast",
       "id": "plan_deeppro_it_2_p2_single_valid_turn",
-      "community": 38,
+      "community": 94,
       "norm_label": "it-2: p2 single valid turn"
     },
     {
@@ -6761,7 +6789,7 @@
       "source_location": "L973",
       "_origin": "ast",
       "id": "plan_deeppro_it_3_no_valid_placement_fallback_0_0",
-      "community": 38,
+      "community": 94,
       "norm_label": "it-3: no valid placement \u2192 fallback `0 0`"
     },
     {
@@ -6771,7 +6799,7 @@
       "source_location": "L976",
       "_origin": "ast",
       "id": "plan_deeppro_it_4_multiple_valid_placements_picks_closest_to_opponent",
-      "community": 38,
+      "community": 94,
       "norm_label": "it-4: multiple valid placements \u2192 picks closest to opponent"
     },
     {
@@ -6781,7 +6809,7 @@
       "source_location": "L979",
       "_origin": "ast",
       "id": "plan_deeppro_it_5_boundary_rejection_wired_in_pipeline",
-      "community": 38,
+      "community": 94,
       "norm_label": "it-5: boundary rejection wired in pipeline"
     },
     {
@@ -6791,7 +6819,7 @@
       "source_location": "L982",
       "_origin": "ast",
       "id": "plan_deeppro_it_6_two_consecutive_turns_no_player_line_re_sent",
-      "community": 38,
+      "community": 94,
       "norm_label": "it-6: two consecutive turns (no player line re-sent)"
     },
     {
@@ -6861,7 +6889,7 @@
       "source_location": "L1253",
       "_origin": "ast",
       "id": "plan_deeppro_11_dockerfile_exclusions",
-      "community": 97,
+      "community": 98,
       "norm_label": "11. dockerfile & exclusions"
     },
     {
@@ -6871,7 +6899,7 @@
       "source_location": "L1255",
       "_origin": "ast",
       "id": "plan_deeppro_dockerignore",
-      "community": 97,
+      "community": 98,
       "norm_label": "`.dockerignore`"
     },
     {
@@ -6881,7 +6909,7 @@
       "source_location": "L1263",
       "_origin": "ast",
       "id": "plan_deeppro_dockerfile_base_debian_bookworm_slim",
-      "community": 97,
+      "community": 98,
       "norm_label": "dockerfile (base: debian bookworm slim)"
     },
     {
@@ -6891,7 +6919,7 @@
       "source_location": "L1279",
       "_origin": "ast",
       "id": "plan_deeppro_alternative_alpine_based_docker_minimal_image_size_variant",
-      "community": 97,
+      "community": 98,
       "norm_label": "alternative: alpine-based docker (minimal image size variant)"
     },
     {
@@ -6911,7 +6939,7 @@
       "source_location": "L1363",
       "_origin": "ast",
       "id": "plan_deeppro_13_full_tdd_execution_order_day_by_day",
-      "community": 93,
+      "community": 97,
       "norm_label": "13. full tdd execution order (day-by-day)"
     },
     {
@@ -6921,7 +6949,7 @@
       "source_location": "L1365",
       "_origin": "ast",
       "id": "plan_deeppro_day_1_project_setup_types_output_parser",
-      "community": 93,
+      "community": 97,
       "norm_label": "day 1: project setup + types + output + parser"
     },
     {
@@ -6931,7 +6959,7 @@
       "source_location": "L1378",
       "_origin": "ast",
       "id": "plan_deeppro_day_2_validator_strategy",
-      "community": 93,
+      "community": 97,
       "norm_label": "day 2: validator + strategy"
     },
     {
@@ -6941,7 +6969,7 @@
       "source_location": "L1387",
       "_origin": "ast",
       "id": "plan_deeppro_day_3_main_loop_integration_docker_benchmark",
-      "community": 93,
+      "community": 97,
       "norm_label": "day 3: main loop + integration + docker + benchmark"
     },
     {
@@ -6951,7 +6979,7 @@
       "source_location": "L1398",
       "_origin": "ast",
       "id": "plan_deeppro_day_4_e2e_replay_validation_multi_turn_testing_strategy_tuning",
-      "community": 93,
+      "community": 97,
       "norm_label": "day 4: e2e replay validation + multi-turn testing + strategy tuning"
     },
     {
@@ -6961,7 +6989,7 @@
       "source_location": "L1409",
       "_origin": "ast",
       "id": "plan_deeppro_day_5_visualizer_bonus_polish",
-      "community": 93,
+      "community": 97,
       "norm_label": "day 5: visualizer (bonus) + polish"
     },
     {
@@ -6991,7 +7019,7 @@
       "source_location": "L1465",
       "_origin": "ast",
       "id": "plan_deeppro_16_visualizer_specification_bonus",
-      "community": 98,
+      "community": 99,
       "norm_label": "16. visualizer specification (bonus)"
     },
     {
@@ -7001,7 +7029,7 @@
       "source_location": "L1467",
       "_origin": "ast",
       "id": "plan_deeppro_goal_1467",
-      "community": 98,
+      "community": 99,
       "norm_label": "goal"
     },
     {
@@ -7011,7 +7039,7 @@
       "source_location": "L1470",
       "_origin": "ast",
       "id": "plan_deeppro_implementation_sketch_1470",
-      "community": 98,
+      "community": 99,
       "norm_label": "implementation sketch"
     },
     {
@@ -7673,6 +7701,36 @@
       "id": "report_gem_report_5_deterministic_tie_breaker_logic_from_glm_md",
       "community": 40,
       "norm_label": "5. deterministic tie-breaker logic (from `glm.md`)"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "engine-maps-robots/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "engine_maps_robots_readme",
+      "community": 52,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Filler docker image",
+      "file_type": "document",
+      "source_file": "engine-maps-robots/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "engine_maps_robots_readme_filler_docker_image",
+      "community": 52,
+      "norm_label": "filler docker image"
+    },
+    {
+      "label": "Notes",
+      "file_type": "document",
+      "source_file": "engine-maps-robots/README.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "engine_maps_robots_readme_notes",
+      "community": 52,
+      "norm_label": "notes"
     },
     {
       "label": "audit.md",
@@ -11151,12 +11209,22 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "run_game.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "run_game",
+      "target": "home_ertval_code_zone_modules_filler_run_game_sh__entry"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/bin/visualizer.rs",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bin_visualizer",
-      "target": "bin_visualizer_main",
-      "confidence_score": 1.0
+      "target": "bin_visualizer_main"
     },
     {
       "relation": "imports_from",
@@ -11165,9 +11233,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "context": "import",
+      "confidence_score": 1.0,
       "source": "bin_visualizer",
-      "target": "duration",
-      "confidence_score": 1.0
+      "target": "duration"
     },
     {
       "relation": "imports_from",
@@ -11208,9 +11276,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "src_main_main",
-      "target": "src_main_rs_error",
-      "confidence_score": 1.0
+      "target": "src_main_rs_error"
     },
     {
       "relation": "references",
@@ -11830,9 +11898,9 @@
       "source_file": "src/strategy.rs",
       "source_location": "L166",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_strategy",
-      "target": "src_strategy_test_tiebreak_by_col_then_row",
-      "confidence_score": 1.0
+      "target": "src_strategy_test_tiebreak_by_col_then_row"
     },
     {
       "relation": "references",
@@ -11973,9 +12041,9 @@
       "source_file": "src/strategy.rs",
       "source_location": "L178",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_strategy_test_tiebreak_by_col_then_row",
-      "target": "src_strategy_choose_best_placement",
-      "confidence_score": 1.0
+      "target": "src_strategy_choose_best_placement"
     },
     {
       "relation": "contains",
@@ -12075,9 +12143,9 @@
       "source_file": "src/types.rs",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_types_player",
-      "target": "src_types_player_try_from",
-      "confidence_score": 1.0
+      "target": "src_types_player_try_from"
     },
     {
       "relation": "implements",
@@ -12085,9 +12153,9 @@
       "source_file": "src/types.rs",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_types_player",
-      "target": "tryfrom",
-      "confidence_score": 1.0
+      "target": "tryfrom"
     },
     {
       "relation": "implements",
@@ -12095,9 +12163,9 @@
       "source_file": "src/types.rs",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_types_cell",
-      "target": "tryfrom",
-      "confidence_score": 1.0
+      "target": "tryfrom"
     },
     {
       "relation": "references",
@@ -12106,9 +12174,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "src_types_player_try_from",
-      "target": "self",
-      "confidence_score": 1.0
+      "target": "self"
     },
     {
       "relation": "references",
@@ -12117,9 +12185,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "src_types_player_try_from",
-      "target": "src_types_rs_error",
-      "confidence_score": 1.0
+      "target": "src_types_rs_error"
     },
     {
       "relation": "references",
@@ -12128,9 +12196,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "context": "return_type",
+      "confidence_score": 1.0,
       "source": "src_types_player_try_from",
-      "target": "src_types_rs_result",
-      "confidence_score": 1.0
+      "target": "src_types_rs_result"
     },
     {
       "relation": "references",
@@ -12139,9 +12207,9 @@
       "source_location": "L44",
       "weight": 1.0,
       "context": "return_type",
+      "confidence_score": 1.0,
       "source": "src_types_cell_try_from",
-      "target": "src_types_rs_result",
-      "confidence_score": 1.0
+      "target": "src_types_rs_result"
     },
     {
       "relation": "references",
@@ -12161,9 +12229,9 @@
       "source_location": "L44",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "src_types_cell_try_from",
-      "target": "self",
-      "confidence_score": 1.0
+      "target": "self"
     },
     {
       "relation": "references",
@@ -12172,9 +12240,9 @@
       "source_location": "L44",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "src_types_cell_try_from",
-      "target": "src_types_rs_error",
-      "confidence_score": 1.0
+      "target": "src_types_rs_error"
     },
     {
       "relation": "method",
@@ -12202,9 +12270,9 @@
       "source_file": "src/types.rs",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_types_cell",
-      "target": "src_types_cell_try_from",
-      "confidence_score": 1.0
+      "target": "src_types_cell_try_from"
     },
     {
       "relation": "references",
@@ -12224,9 +12292,9 @@
       "source_file": "src/types.rs",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_types_cell_from_char",
-      "target": "src_types_cell_try_from",
-      "confidence_score": 1.0
+      "target": "src_types_cell_try_from"
     },
     {
       "relation": "references",
@@ -12916,9 +12984,9 @@
       "source_file": "tests/parser_tests.rs",
       "source_location": "L105",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_parser_tests",
-      "target": "tests_parser_tests_test_blank_line_tolerance",
-      "confidence_score": 1.0
+      "target": "tests_parser_tests_test_blank_line_tolerance"
     },
     {
       "relation": "contains",
@@ -12926,9 +12994,9 @@
       "source_file": "tests/parser_tests.rs",
       "source_location": "L81",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_parser_tests",
-      "target": "tests_parser_tests_test_parse_anfield_header_missing_cols",
-      "confidence_score": 1.0
+      "target": "tests_parser_tests_test_parse_anfield_header_missing_cols"
     },
     {
       "relation": "contains",
@@ -12936,9 +13004,9 @@
       "source_file": "tests/parser_tests.rs",
       "source_location": "L73",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_parser_tests",
-      "target": "tests_parser_tests_test_parse_anfield_invalid_char",
-      "confidence_score": 1.0
+      "target": "tests_parser_tests_test_parse_anfield_invalid_char"
     },
     {
       "relation": "contains",
@@ -12946,9 +13014,9 @@
       "source_file": "tests/parser_tests.rs",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_parser_tests",
-      "target": "tests_parser_tests_test_parse_anfield_invalid_dimensions",
-      "confidence_score": 1.0
+      "target": "tests_parser_tests_test_parse_anfield_invalid_dimensions"
     },
     {
       "relation": "contains",
@@ -12956,9 +13024,9 @@
       "source_file": "tests/parser_tests.rs",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_parser_tests",
-      "target": "tests_parser_tests_test_parse_anfield_large_row_prefix",
-      "confidence_score": 1.0
+      "target": "tests_parser_tests_test_parse_anfield_large_row_prefix"
     },
     {
       "relation": "contains",
@@ -12966,9 +13034,9 @@
       "source_file": "tests/parser_tests.rs",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_parser_tests",
-      "target": "tests_parser_tests_test_parse_anfield_valid",
-      "confidence_score": 1.0
+      "target": "tests_parser_tests_test_parse_anfield_valid"
     },
     {
       "relation": "contains",
@@ -12976,9 +13044,9 @@
       "source_file": "tests/parser_tests.rs",
       "source_location": "L116",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_parser_tests",
-      "target": "tests_parser_tests_test_parse_eof_mid_turn",
-      "confidence_score": 1.0
+      "target": "tests_parser_tests_test_parse_eof_mid_turn"
     },
     {
       "relation": "contains",
@@ -12986,9 +13054,9 @@
       "source_file": "tests/parser_tests.rs",
       "source_location": "L88",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_parser_tests",
-      "target": "tests_parser_tests_test_parse_piece_valid",
-      "confidence_score": 1.0
+      "target": "tests_parser_tests_test_parse_piece_valid"
     },
     {
       "relation": "contains",
@@ -12996,9 +13064,9 @@
       "source_file": "tests/parser_tests.rs",
       "source_location": "L98",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_parser_tests",
-      "target": "tests_parser_tests_test_parse_piece_zero_dimensions",
-      "confidence_score": 1.0
+      "target": "tests_parser_tests_test_parse_piece_zero_dimensions"
     },
     {
       "relation": "contains",
@@ -13006,9 +13074,9 @@
       "source_file": "tests/parser_tests.rs",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_parser_tests",
-      "target": "tests_parser_tests_test_parse_player_line_malformed",
-      "confidence_score": 1.0
+      "target": "tests_parser_tests_test_parse_player_line_malformed"
     },
     {
       "relation": "contains",
@@ -13016,9 +13084,9 @@
       "source_file": "tests/parser_tests.rs",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_parser_tests",
-      "target": "tests_parser_tests_test_parse_player_line_valid",
-      "confidence_score": 1.0
+      "target": "tests_parser_tests_test_parse_player_line_valid"
     },
     {
       "relation": "contains",
@@ -13026,9 +13094,9 @@
       "source_file": "tests/strategy_tests.rs",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_strategy_tests",
-      "target": "tests_strategy_tests_test_tiebreak_by_col_then_row",
-      "confidence_score": 1.0
+      "target": "tests_strategy_tests_test_tiebreak_by_col_then_row"
     },
     {
       "relation": "contains",
@@ -13036,9 +13104,9 @@
       "source_file": "tests/validator_tests.rs",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_validator_tests",
-      "target": "tests_validator_tests_build_test_grid",
-      "confidence_score": 1.0
+      "target": "tests_validator_tests_build_test_grid"
     },
     {
       "relation": "contains",
@@ -13046,9 +13114,9 @@
       "source_file": "tests/validator_tests.rs",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_validator_tests",
-      "target": "tests_validator_tests_test_e4_zero_blocks_piece",
-      "confidence_score": 1.0
+      "target": "tests_validator_tests_test_e4_zero_blocks_piece"
     },
     {
       "relation": "contains",
@@ -13056,9 +13124,9 @@
       "source_file": "tests/validator_tests.rs",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_validator_tests",
-      "target": "tests_validator_tests_test_e5_grid_entirely_filled",
-      "confidence_score": 1.0
+      "target": "tests_validator_tests_test_e5_grid_entirely_filled"
     },
     {
       "relation": "contains",
@@ -13066,9 +13134,9 @@
       "source_file": "tests/validator_tests.rs",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_validator_tests",
-      "target": "tests_validator_tests_test_e8_opponent_chars_rejected",
-      "confidence_score": 1.0
+      "target": "tests_validator_tests_test_e8_opponent_chars_rejected"
     },
     {
       "relation": "contains",
@@ -13076,9 +13144,9 @@
       "source_file": "tests/validator_tests.rs",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_validator_tests",
-      "target": "tests_validator_tests_test_e9_own_chars_overlap",
-      "confidence_score": 1.0
+      "target": "tests_validator_tests_test_e9_own_chars_overlap"
     },
     {
       "relation": "contains",
@@ -13086,9 +13154,9 @@
       "source_file": "tests/validator_tests.rs",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_validator_tests",
-      "target": "tests_validator_tests_test_is_in_bounds",
-      "confidence_score": 1.0
+      "target": "tests_validator_tests_test_is_in_bounds"
     },
     {
       "relation": "contains",
@@ -13096,9 +13164,9 @@
       "source_file": "tests/validator_tests.rs",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_validator_tests",
-      "target": "tests_validator_tests_test_is_valid_placement_basic",
-      "confidence_score": 1.0
+      "target": "tests_validator_tests_test_is_valid_placement_basic"
     },
     {
       "relation": "contains",
@@ -13106,9 +13174,9 @@
       "source_file": "tests/validator_tests.rs",
       "source_location": "L138",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_validator_tests",
-      "target": "tests_validator_tests_test_negative_offset_placements",
-      "confidence_score": 1.0
+      "target": "tests_validator_tests_test_negative_offset_placements"
     },
     {
       "relation": "contains",
@@ -13116,9 +13184,9 @@
       "source_file": "tests/validator_tests.rs",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_validator_tests",
-      "target": "tests_validator_tests_test_piece_larger_than_grid",
-      "confidence_score": 1.0
+      "target": "tests_validator_tests_test_piece_larger_than_grid"
     },
     {
       "relation": "references",
@@ -13127,9 +13195,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "context": "return_type",
+      "confidence_score": 1.0,
       "source": "tests_validator_tests_build_test_grid",
-      "target": "tests_validator_tests_rs_grid",
-      "confidence_score": 1.0
+      "target": "tests_validator_tests_rs_grid"
     },
     {
       "relation": "calls",
@@ -13138,9 +13206,9 @@
       "source_file": "tests/validator_tests.rs",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_validator_tests_test_e4_zero_blocks_piece",
-      "target": "tests_validator_tests_build_test_grid",
-      "confidence_score": 1.0
+      "target": "tests_validator_tests_build_test_grid"
     },
     {
       "relation": "calls",
@@ -13149,9 +13217,9 @@
       "source_file": "tests/validator_tests.rs",
       "source_location": "L104",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_validator_tests_test_e8_opponent_chars_rejected",
-      "target": "tests_validator_tests_build_test_grid",
-      "confidence_score": 1.0
+      "target": "tests_validator_tests_build_test_grid"
     },
     {
       "relation": "calls",
@@ -13160,9 +13228,9 @@
       "source_file": "tests/validator_tests.rs",
       "source_location": "L122",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_validator_tests_test_e9_own_chars_overlap",
-      "target": "tests_validator_tests_build_test_grid",
-      "confidence_score": 1.0
+      "target": "tests_validator_tests_build_test_grid"
     },
     {
       "relation": "calls",
@@ -13171,9 +13239,9 @@
       "source_file": "tests/validator_tests.rs",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_validator_tests_test_is_in_bounds",
-      "target": "tests_validator_tests_build_test_grid",
-      "confidence_score": 1.0
+      "target": "tests_validator_tests_build_test_grid"
     },
     {
       "relation": "calls",
@@ -13182,9 +13250,9 @@
       "source_file": "tests/validator_tests.rs",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_validator_tests_test_is_valid_placement_basic",
-      "target": "tests_validator_tests_build_test_grid",
-      "confidence_score": 1.0
+      "target": "tests_validator_tests_build_test_grid"
     },
     {
       "relation": "calls",
@@ -13193,9 +13261,9 @@
       "source_file": "tests/validator_tests.rs",
       "source_location": "L139",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_validator_tests_test_negative_offset_placements",
-      "target": "tests_validator_tests_build_test_grid",
-      "confidence_score": 1.0
+      "target": "tests_validator_tests_build_test_grid"
     },
     {
       "relation": "calls",
@@ -13204,9 +13272,9 @@
       "source_file": "tests/validator_tests.rs",
       "source_location": "L90",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_validator_tests_test_piece_larger_than_grid",
-      "target": "tests_validator_tests_build_test_grid",
-      "confidence_score": 1.0
+      "target": "tests_validator_tests_build_test_grid"
     },
     {
       "relation": "contains",
@@ -16384,9 +16452,9 @@
       "source_file": "README.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme",
-      "target": "readme_filler",
-      "confidence_score": 1.0
+      "target": "readme_filler"
     },
     {
       "relation": "contains",
@@ -16394,9 +16462,9 @@
       "source_file": "README.md",
       "source_location": "L196",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_filler",
-      "target": "readme_audit_compliance",
-      "confidence_score": 1.0
+      "target": "readme_audit_compliance"
     },
     {
       "relation": "contains",
@@ -16404,9 +16472,9 @@
       "source_file": "README.md",
       "source_location": "L174",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_filler",
-      "target": "readme_cli_reference",
-      "confidence_score": 1.0
+      "target": "readme_cli_reference"
     },
     {
       "relation": "contains",
@@ -16414,9 +16482,9 @@
       "source_file": "README.md",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_filler",
-      "target": "readme_how_it_works",
-      "confidence_score": 1.0
+      "target": "readme_how_it_works"
     },
     {
       "relation": "contains",
@@ -16424,9 +16492,9 @@
       "source_file": "README.md",
       "source_location": "L214",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_filler",
-      "target": "readme_license",
-      "confidence_score": 1.0
+      "target": "readme_license"
     },
     {
       "relation": "contains",
@@ -16434,9 +16502,9 @@
       "source_file": "README.md",
       "source_location": "L183",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_filler",
-      "target": "readme_module_map",
-      "confidence_score": 1.0
+      "target": "readme_module_map"
     },
     {
       "relation": "contains",
@@ -16444,9 +16512,9 @@
       "source_file": "README.md",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_filler",
-      "target": "readme_project_structure",
-      "confidence_score": 1.0
+      "target": "readme_project_structure"
     },
     {
       "relation": "contains",
@@ -16454,9 +16522,9 @@
       "source_file": "README.md",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_filler",
-      "target": "readme_quick_start",
-      "confidence_score": 1.0
+      "target": "readme_quick_start"
     },
     {
       "relation": "contains",
@@ -16464,9 +16532,9 @@
       "source_file": "README.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_filler",
-      "target": "readme_the_game",
-      "confidence_score": 1.0
+      "target": "readme_the_game"
     },
     {
       "relation": "contains",
@@ -16474,9 +16542,9 @@
       "source_file": "README.md",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_how_it_works",
-      "target": "readme_strategy_enhancements",
-      "confidence_score": 1.0
+      "target": "readme_strategy_enhancements"
     },
     {
       "relation": "contains",
@@ -16484,9 +16552,9 @@
       "source_file": "README.md",
       "source_location": "L130",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_quick_start",
-      "target": "readme_all_tests_unit_integration",
-      "confidence_score": 1.0
+      "target": "readme_all_tests_unit_integration"
     },
     {
       "relation": "contains",
@@ -16494,9 +16562,9 @@
       "source_file": "README.md",
       "source_location": "L153",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_quick_start",
-      "target": "readme_audit_suite",
-      "confidence_score": 1.0
+      "target": "readme_audit_suite"
     },
     {
       "relation": "contains",
@@ -16504,9 +16572,9 @@
       "source_file": "README.md",
       "source_location": "L104",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_quick_start",
-      "target": "readme_build",
-      "confidence_score": 1.0
+      "target": "readme_build"
     },
     {
       "relation": "contains",
@@ -16514,9 +16582,9 @@
       "source_file": "README.md",
       "source_location": "L162",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_quick_start",
-      "target": "readme_docker",
-      "confidence_score": 1.0
+      "target": "readme_docker"
     },
     {
       "relation": "contains",
@@ -16524,9 +16592,9 @@
       "source_file": "README.md",
       "source_location": "L136",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_quick_start",
-      "target": "readme_e2e_replay_validation",
-      "confidence_score": 1.0
+      "target": "readme_e2e_replay_validation"
     },
     {
       "relation": "contains",
@@ -16534,9 +16602,9 @@
       "source_file": "README.md",
       "source_location": "L144",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_quick_start",
-      "target": "readme_performance_benchmark",
-      "confidence_score": 1.0
+      "target": "readme_performance_benchmark"
     },
     {
       "relation": "contains",
@@ -16544,9 +16612,9 @@
       "source_file": "README.md",
       "source_location": "L113",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_quick_start",
-      "target": "readme_run_inside_game_engine",
-      "confidence_score": 1.0
+      "target": "readme_run_inside_game_engine"
     },
     {
       "relation": "contains",
@@ -16554,9 +16622,9 @@
       "source_file": "README.md",
       "source_location": "L122",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_quick_start",
-      "target": "readme_unit_tests",
-      "confidence_score": 1.0
+      "target": "readme_unit_tests"
     },
     {
       "relation": "conceptually_related_to",
@@ -18121,6 +18189,26 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "engine-maps-robots/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_maps_robots_readme",
+      "target": "engine_maps_robots_readme_filler_docker_image"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "engine-maps-robots/README.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_maps_robots_readme_filler_docker_image",
+      "target": "engine_maps_robots_readme_notes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "requirements/audit.md",
       "source_location": "L37",
       "weight": 1.0,
@@ -19181,5 +19269,5 @@
       "source_file": "docs/plan/deeppro.md"
     }
   ],
-  "built_at_commit": "4af4311ef7ac79f7b0704f18aca9cc3c02bf6888"
+  "built_at_commit": "00ac4c4f28adcf7416bac15f780f6df599aaeed5"
 }

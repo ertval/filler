@@ -117,9 +117,16 @@ fn main() {
                 let stderr_str = String::from_utf8_lossy(&out.stderr);
                 let combined_output = format!("{}\n{}", stdout_str, stderr_str);
 
-                if combined_output.contains("Player 1 won")
+                let p1_won = combined_output.contains("Player 1 won")
                     || combined_output.contains("Player 1 won!")
-                {
+                    || combined_output.contains("Player1 won")
+                    || combined_output.contains("Player1 won!");
+                let p2_won = combined_output.contains("Player 2 won")
+                    || combined_output.contains("Player 2 won!")
+                    || combined_output.contains("Player2 won")
+                    || combined_output.contains("Player2 won!");
+
+                if p1_won {
                     if student_is_p1 {
                         student_wins += 1;
                         println!("  Winner: Student (Player 1)");
@@ -127,9 +134,7 @@ fn main() {
                         bot_wins += 1;
                         println!("  Winner: Bot (Player 1)");
                     }
-                } else if combined_output.contains("Player 2 won")
-                    || combined_output.contains("Player 2 won!")
-                {
+                } else if p2_won {
                     if !student_is_p1 {
                         student_wins += 1;
                         println!("  Winner: Student (Player 2)");

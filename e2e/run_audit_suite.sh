@@ -70,7 +70,7 @@ check_winrate() {
     for i in $(seq 1 5); do
         local out
         out=$(run_game "$map" "$p1" "$p2")
-        if echo "$out" | grep -q "Player 1 won"; then
+        if echo "$out" | grep -q -e "Player 1 won" -e "Player1 won"; then
             ((wins++))
         fi
     done
@@ -78,7 +78,7 @@ check_winrate() {
     for i in $(seq 1 5); do
         local out
         out=$(run_game "$map" "$p2" "$p1")
-        if echo "$out" | grep -q "Player 2 won"; then
+        if echo "$out" | grep -q -e "Player 2 won" -e "Player2 won"; then
             ((wins++))
         fi
     done
