@@ -66,12 +66,14 @@ check_winrate() {
     info "Win-rate: $label (need $needed/10)"
     local wins=0
 
-    # Run 5 as p1, 5 as p2
     for i in $(seq 1 5); do
         local out
         out=$(run_game "$map" "$p1" "$p2")
         if echo "$out" | grep -q -e "Player 1 won" -e "Player1 won"; then
+            info "  Game $i (p1=$p1, p2=$p2): WON"
             ((wins++))
+        else
+            info "  Game $i (p1=$p1, p2=$p2): LOST"
         fi
     done
 
@@ -79,7 +81,10 @@ check_winrate() {
         local out
         out=$(run_game "$map" "$p2" "$p1")
         if echo "$out" | grep -q -e "Player 2 won" -e "Player2 won"; then
+            info "  Game $((i+5)) (p1=$p2, p2=$p1): WON"
             ((wins++))
+        else
+            info "  Game $((i+5)) (p1=$p2, p2=$p1): LOST"
         fi
     done
 

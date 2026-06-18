@@ -1,3 +1,7 @@
 /target/
 **/*.rs.bk
 *.log
+Cargo.lock
+
+engine-maps-robots/linux_game_engine
+engine-maps-robots/linux_robots/*

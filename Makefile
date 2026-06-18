@@ -2,8 +2,8 @@
 
 # Parameters for running games
 MAP ?= map00
-P1 ?= filler
-P2 ?= bender
+P1 ?= terminator
+P2 ?= filler
 VIS ?= 0
 
 build:
