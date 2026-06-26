@@ -269,3 +269,28 @@ make audit              # Full automated audit suite — Docker, crash-free, win
 make docker-build       # Docker image — multi-stage: builder → slim runtime
 make play MAP=map01 P1=filler P2=bender VIS=0   # build + run one game with optional visualizer
 ```
+
+## Per-Question Make Targets
+
+One-command per audit question. Run from project root:
+
+```bash
+make q1                 # Docker image build
+make q2                 # Smoke test (no crash vs bender)
+make q3                 # 1-cell overlap rule (via e2e replay)
+make q4                 # Win-rate vs wall_e on map00
+make q5                 # Win-rate vs h2_d2 on map01
+make q6                 # Win-rate vs bender on map02
+make q7                 # All unit tests pass
+make q8                 # Input parsing tests
+make q9                 # Placement validation tests
+make q10                # Boundary detection tests
+make q11                # Code quality (fmt + clippy)
+make q12                # Test files exist
+make q13                # Edge case coverage (manual check)
+
+make qb-visualizer      # Visualizer tests
+make qb-terminator      # Win-rate vs terminator
+```
+
+Each win-rate target (q4–q6, qb-terminator) runs 5 as P1 + 5 as P2 = 10 games, exits with error if below 8/10 threshold.
