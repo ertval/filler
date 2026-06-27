@@ -84,7 +84,10 @@ fn main() {
         (p1.clone(), p2.clone())
     };
 
-    println!("Running {} games on {} using engine {}...", runs, map, engine);
+    println!(
+        "Running {} games on {} using engine {}...",
+        runs, map, engine
+    );
     println!("Student: {}", student_path);
     println!("Bot: {}", bot_path);
 
@@ -100,7 +103,12 @@ fn main() {
             (&bot_path, &student_path)
         };
 
-        println!("Game {}/{} (Student is Player {})...", game, runs, if student_is_p1 { 1 } else { 2 });
+        println!(
+            "Game {}/{} (Student is Player {})...",
+            game,
+            runs,
+            if student_is_p1 { 1 } else { 2 }
+        );
         let output = Command::new(&engine)
             .arg("-f")
             .arg(&map)

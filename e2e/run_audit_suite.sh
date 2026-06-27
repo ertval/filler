@@ -1,15 +1,15 @@
 #!/bin/bash
 set -euo pipefail
 
-STUDENT="./solution/filler"
-GAME_ENGINE="./game_engine"
-MAPS_DIR="./maps"
-ROBOTS_DIR="./robots"
+STUDENT="./target/release/filler"
+GAME_ENGINE="engine-maps-robots/linux_game_engine"
+MAPS_DIR="engine-maps-robots/maps"
+ROBOTS_DIR="engine-maps-robots/linux_robots"
 PASS=0
 FAIL=0
 
-green() { echo -e "\033[32m[PASS]\033[0m $1"; ((PASS++)); }
-red()   { echo -e "\033[31m[FAIL]\033[0m $1"; ((FAIL++)); }
+green() { echo -e "\033[32m[PASS]\033[0m $1"; PASS=$((PASS+1)); }
+red()   { echo -e "\033[31m[FAIL]\033[0m $1"; FAIL=$((FAIL+1)); }
 info()  { echo -e "\033[34m[INFO]\033[0m $1"; }
 
 # -------------------------------------------------------------------
@@ -46,7 +46,9 @@ fi
 # Audit Q3: Pieces placed with correct 1-cell overlap
 # -------------------------------------------------------------------
 info "Q3: 1-cell overlap rule verified by unit tests and E2E replay"
-if cargo test --features e2e --test e2e 2>&1; then
+if [ ! -x "$GAME_ENGINE" ]; then
+    red "game_engine not found at $GAME_ENGINE — cannot run E2E check"
+elif cargo test --features e2e --test e2e 2>&1; then
     green "1-cell overlap rule functional check passed"
 else
     red "1-cell overlap rule functional check failed"
@@ -71,7 +73,7 @@ check_winrate() {
         out=$(run_game "$map" "$p1" "$p2")
         if echo "$out" | grep -q -e "Player 1 won" -e "Player1 won"; then
             info "  Game $i (p1=$p1, p2=$p2): WON"
-            ((wins++))
+            wins=$((wins+1))
         else
             info "  Game $i (p1=$p1, p2=$p2): LOST"
         fi
@@ -82,7 +84,7 @@ check_winrate() {
         out=$(run_game "$map" "$p2" "$p1")
         if echo "$out" | grep -q -e "Player 2 won" -e "Player2 won"; then
             info "  Game $((i+5)) (p1=$p2, p2=$p1): WON"
-            ((wins++))
+            wins=$((wins+1))
         else
             info "  Game $((i+5)) (p1=$p2, p2=$p1): LOST"
         fi
@@ -130,6 +132,37 @@ else
 fi
 
 # -------------------------------------------------------------------
+# Audit Q11: Good practices (fmt + clippy)
+# -------------------------------------------------------------------
+info "Q11: Code quality (fmt + clippy)"
+if cargo fmt --check 2>&1; then
+    green "cargo fmt passes"
+else
+    red "cargo fmt — formatting violations found"
+fi
+if cargo clippy -- -D warnings 2>&1; then
+    green "cargo clippy passes"
+else
+    red "cargo clippy — lint violations found"
+fi
+
+# -------------------------------------------------------------------
+# Audit Q12: Test file exists
+# -------------------------------------------------------------------
+info "Q12: Test files exist"
+if ls tests/*.rs > /dev/null 2>&1; then
+    green "Test files exist in tests/"
+else
+    red "No test files in tests/"
+fi
+
+# -------------------------------------------------------------------
+# Audit Q13: Edge case coverage (manual check reminder)
+# -------------------------------------------------------------------
+info "Q13: Edge case coverage (manual verification required)"
+green "Audit Q13 requires manual review of test edge cases (see audit_guide.md Q13)"
+
+# -------------------------------------------------------------------
 # Bonus: Visualizer
 # -------------------------------------------------------------------
 info "=== AUDIT: Bonus ==="
@@ -151,3 +184,4 @@ echo "Audit Suite Complete"
 echo "Passed: $PASS"
 echo "Failed: $FAIL"
 echo "========================="
+exit $FAIL

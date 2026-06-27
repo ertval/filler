@@ -21,7 +21,11 @@ fn read_line<R: BufRead>(reader: &mut R) -> Result<String, String> {
 
 /// Parse player ID line (TDD)
 pub fn parse_player_line(line: &str) -> Result<Player, String> {
-    if !line.starts_with("$$$ exec p") || line.len() < 11 || !line.contains(" : [") || !line.ends_with(']') {
+    if !line.starts_with("$$$ exec p")
+        || line.len() < 11
+        || !line.contains(" : [")
+        || !line.ends_with(']')
+    {
         return Err(format!("invalid player line: {line}"));
     }
     match line.as_bytes()[10] {

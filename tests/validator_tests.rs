@@ -103,7 +103,7 @@ fn test_e8_opponent_chars_rejected() {
     // Both 's' and '$' must be treated as opponent territory
     let mut grid = build_test_grid();
     grid.data[1][1] = Cell::Player2Recent; // 's'
-    grid.data[1][2] = Cell::Player2Old;    // '$'
+    grid.data[1][2] = Cell::Player2Old; // '$'
 
     let piece_1x1 = Piece {
         rows: 1,
@@ -112,8 +112,18 @@ fn test_e8_opponent_chars_rejected() {
     };
 
     // P1 attempting to place on 's' or '$' must be rejected
-    assert!(!is_valid_placement(&grid, &piece_1x1, Point { row: 1, col: 1 }, Player::P1));
-    assert!(!is_valid_placement(&grid, &piece_1x1, Point { row: 1, col: 2 }, Player::P1));
+    assert!(!is_valid_placement(
+        &grid,
+        &piece_1x1,
+        Point { row: 1, col: 1 },
+        Player::P1
+    ));
+    assert!(!is_valid_placement(
+        &grid,
+        &piece_1x1,
+        Point { row: 1, col: 2 },
+        Player::P1
+    ));
 }
 
 #[test]
@@ -121,7 +131,7 @@ fn test_e9_own_chars_overlap() {
     // Both 'a' and '@' must count as own territory
     let mut grid = build_test_grid();
     grid.data[1][1] = Cell::Player1Recent; // 'a'
-    grid.data[1][2] = Cell::Player1Old;    // '@'
+    grid.data[1][2] = Cell::Player1Old; // '@'
 
     let piece_1x1 = Piece {
         rows: 1,
@@ -130,8 +140,18 @@ fn test_e9_own_chars_overlap() {
     };
 
     // P1 placing on 'a' or '@' must be valid (overlap exactly 1 owned cell)
-    assert!(is_valid_placement(&grid, &piece_1x1, Point { row: 1, col: 1 }, Player::P1));
-    assert!(is_valid_placement(&grid, &piece_1x1, Point { row: 1, col: 2 }, Player::P1));
+    assert!(is_valid_placement(
+        &grid,
+        &piece_1x1,
+        Point { row: 1, col: 1 },
+        Player::P1
+    ));
+    assert!(is_valid_placement(
+        &grid,
+        &piece_1x1,
+        Point { row: 1, col: 2 },
+        Player::P1
+    ));
 }
 
 #[test]

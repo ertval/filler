@@ -60,11 +60,11 @@ impl Cell {
 
     /// Returns true if this cell belongs to the given player
     pub fn belongs_to(self, player: Player) -> bool {
-        match (self, player) {
-            (Cell::Player1Old | Cell::Player1Recent, Player::P1) => true,
-            (Cell::Player2Old | Cell::Player2Recent, Player::P2) => true,
-            _ => false,
-        }
+        matches!(
+            (self, player),
+            (Cell::Player1Old | Cell::Player1Recent, Player::P1)
+                | (Cell::Player2Old | Cell::Player2Recent, Player::P2)
+        )
     }
 }
 

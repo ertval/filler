@@ -12,10 +12,10 @@ pub fn generate_heatmap(grid: &Grid, opponent: Player, me: Player) -> Vec<Vec<i3
     let mut queue = VecDeque::new();
 
     // Initialize BFS queue with all opponent cells
-    for r in 0..rows {
-        for c in 0..cols {
+    for (r, row) in heatmap.iter_mut().enumerate() {
+        for (c, cell) in row.iter_mut().enumerate() {
             if grid.data[r][c].belongs_to(opponent) {
-                heatmap[r][c] = 0;
+                *cell = 0;
                 queue.push_back((r, c));
             }
         }
@@ -41,14 +41,14 @@ pub fn generate_heatmap(grid: &Grid, opponent: Player, me: Player) -> Vec<Vec<i3
     }
 
     // Apply Strategy Tuning Enhancements and negate own cells
-    for r in 0..rows {
-        for c in 0..cols {
-            let val = heatmap[r][c];
+    for (r, row) in heatmap.iter_mut().enumerate() {
+        for (c, cell) in row.iter_mut().enumerate() {
+            let val = *cell;
             if grid.data[r][c].belongs_to(me) {
                 if val == i32::MAX {
-                    heatmap[r][c] = i32::MIN; // unreachable own territory
+                    *cell = i32::MIN;
                 } else {
-                    heatmap[r][c] = -val; // negate distance for identification + retrieval
+                    *cell = -val;
                 }
             } else if val > 0 && val != i32::MAX {
                 let mut bonus = 0;
@@ -58,30 +58,31 @@ pub fn generate_heatmap(grid: &Grid, opponent: Player, me: Player) -> Vec<Vec<i3
                 let c_dist = std::cmp::min(c, cols - 1 - c);
                 let min_edge_dist = std::cmp::min(r_dist, c_dist);
                 if min_edge_dist == 0 {
-                    bonus += 5; // Strong preference for edges
+                    bonus += 5;
                 } else if min_edge_dist == 1 {
-                    bonus += 2; // Moderate preference
+                    bonus += 2;
                 }
 
                 // 2. Opponent Proximity Blocking:
-                // Check if any of the 4 neighbors contains an opponent cell
                 let mut near_opponent = false;
                 for &(dr, dc) in &directions {
                     let nr = r as isize + dr;
                     let nc = c as isize + dc;
-                    if nr >= 0 && nr < rows as isize && nc >= 0 && nc < cols as isize {
-                        if grid.data[nr as usize][nc as usize].belongs_to(opponent) {
-                            near_opponent = true;
-                            break;
-                        }
+                    if nr >= 0
+                        && nr < rows as isize
+                        && nc >= 0
+                        && nc < cols as isize
+                        && grid.data[nr as usize][nc as usize].belongs_to(opponent)
+                    {
+                        near_opponent = true;
+                        break;
                     }
                 }
                 if near_opponent {
                     bonus += 5;
                 }
 
-                // Apply bonus to lower the score (lower is better)
-                heatmap[r][c] = std::cmp::max(0, val - bonus);
+                *cell = std::cmp::max(0, val - bonus);
             }
         }
     }
@@ -90,19 +91,26 @@ pub fn generate_heatmap(grid: &Grid, opponent: Player, me: Player) -> Vec<Vec<i3
 }
 
 /// Score a placement (returns (new_dist, own_dist))
-pub fn score_placement(heatmap: &[Vec<i32>], piece: &Piece, target: Point) -> (i32, i32) {
-    let mut new_dist = 0i32;
-    let mut own_dist = 0i32;
+pub fn score_placement(heatmap: &Vec<Vec<i32>>, piece: &Piece, target: Point) -> (i32, i32) {
+    let rows = heatmap.len();
+    let cols = if rows > 0 { heatmap[0].len() } else { 0 };
+    let mut new_dist = 0_i32;
+    let mut own_dist = 0_i32;
     for &(dr, dc) in &piece.blocks {
-        let r = (target.row + dr as i32) as usize;
-        let c = (target.col + dc as i32) as usize;
+        let r = target.row + dr as i32;
+        let c = target.col + dc as i32;
+        if r < 0 || c < 0 || r >= rows as i32 || c >= cols as i32 {
+            continue; // skip out-of-bounds (shouldn't happen for valid placements, but guard anyway)
+        }
+        let r = r as usize;
+        let c = c as usize;
         let h = heatmap[r][c];
         if h < 0 {
             if h != i32::MIN {
                 own_dist = own_dist.saturating_add(-h);
             }
         } else if h == i32::MAX {
-            new_dist = new_dist.saturating_add(1000); // penalty for unreachable
+            new_dist = new_dist.saturating_add(1000);
         } else {
             new_dist = new_dist.saturating_add(h);
         }
@@ -113,7 +121,7 @@ pub fn score_placement(heatmap: &[Vec<i32>], piece: &Piece, target: Point) -> (i
 /// Choose best placement with deterministic tie-breaking
 pub fn choose_best_placement(
     placements: &[Point],
-    heatmap: &[Vec<i32>],
+    heatmap: &Vec<Vec<i32>>,
     piece: &Piece,
 ) -> Option<Point> {
     if placements.is_empty() {
@@ -164,10 +172,7 @@ mod tests {
 
     #[test]
     fn test_tiebreak_by_col_then_row() {
-        let placements = vec![
-            Point { row: 2, col: 3 },
-            Point { row: 3, col: 2 },
-        ];
+        let placements = vec![Point { row: 2, col: 3 }, Point { row: 3, col: 2 }];
         // Heatmap with flat values so scores are equal
         let heatmap = vec![vec![5; 5]; 5];
         let piece = Piece {

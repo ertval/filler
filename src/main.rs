@@ -58,7 +58,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 writer.flush()?;
             }
             Err(_) => {
-                eprintln!("Panic caught during turn execution! Recovering by outputting fallback move.");
+                eprintln!(
+                    "Panic caught during turn execution! Recovering by outputting fallback move."
+                );
                 writer.write_all(output::format_no_move().as_bytes())?;
                 writer.flush()?;
             }

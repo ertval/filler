@@ -73,6 +73,7 @@ aggressive expansion cuts off the opponent's growth space.
 filler/
 ├── Cargo.toml
 ├── Dockerfile
+├── Makefile
 ├── src/
 │   ├── main.rs          Entry point — stdin loop with panic guardrails
 │   ├── lib.rs           Module re-exports for testing
@@ -90,6 +91,9 @@ filler/
 │   └── e2e.rs                 Live game replay validation
 ├── benches/
 │   └── turn_benchmark.rs      Performance: 100×100 grid < 500ms
+├── scripts/
+│   ├── q1_audit.sh            Full Zone 01 audit (zone-filler + student vs bender)
+│   └── q1_simple.sh           Quick Docker image + binary check
 ├── e2e/
 │   ├── run_audit_suite.sh     Automated audit script
 │   └── assert_winrate.rs      Standalone win-rate checker
@@ -115,6 +119,8 @@ filler/
 | `make audit` | Full audit suite — Docker, crash-free, win-rates |
 | `make docker-build` | Multi-stage Docker build |
 | `make docker-run` | Run inside container |
+| `make q1` | Full Zone 01 audit (build zone-filler + student vs bender inside container) |
+| `make q1-s` | Simple Docker image check (verifies image + binary present) |
 
 ### Manual Build & Run
 
@@ -146,7 +152,7 @@ with `// Audit Q<N>` in the source.
 
 | Audit | Coverage |
 |---|---|
-| Q1 — Docker image | `e2e/run_audit_suite.sh` |
+| Q1 — Docker + Zone 01 audit | `scripts/q1_audit.sh` (full), `scripts/q1_simple.sh` (quick) |
 | Q2 — Runs correctly | `src/main.rs` guardrails, audit smoke test |
 | Q3 — 1-cell overlap | `src/validator.rs`, `tests/e2e.rs`, `tests/integration_tests.rs` |
 | Q4–6 — Win-rates (80%) | `e2e/run_audit_suite.sh` (wall_e, h2_d2, bender) |

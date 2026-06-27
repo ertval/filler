@@ -18,24 +18,38 @@ ls -l engine-maps-robots/linux_game_engine engine-maps-robots/linux_robots/  # f
 
 ## Functional
 
-### Q1 — Docker image
+### Q1 — Docker image + Zone 01 Audit
 
-**Run:**
-```bash
-make docker-build                          # invokes docker build -t filler .
-# or
-docker build -t filler .                   # multi-stage: stage 1 compiles, stage 2 is slim runtime
-```
+**Full audit (`make q1`):**
+Builds the `zone-filler` and `filler` Docker images, mounts the student binary inside the container, and runs the complete Zone 01 audit sequence: reference robots play each other (bender vs terminator), then student vs bender.
 
-**Check:**
+**Quick check (`make q1-s`):**
+Simply verifies the Docker image builds and the binary is present.
+
+**Run manually:**
 ```bash
-docker image inspect filler > /dev/null 2>&1 && echo "exists" || echo "missing"
-# ^ suppress stdout/stderr, only care about exit code; "exists" means image is present
+# Full audit (automated)
+make q1
+
+# Quick check only
+make q1-s
+
+# Manual step-by-step
+make build                                # compile release binary
+docker build -t zone-filler engine-maps-robots/  # build zone image
+docker build -t filler .                  # build filler image
+docker run -it --rm \
+  -v "$PWD/target/release/filler:/filler/student_filler" \
+  zone-filler sh -c '
+    ./linux_game_engine -f maps/map01 -p1 linux_robots/bender -p2 linux_robots/terminator
+    ./linux_game_engine -f maps/map01 -p1 ./student_filler -p2 linux_robots/bender
+  '
 ```
 
 **References:**
+- `scripts/q1_audit.sh` — full Zone 01 audit script
+- `scripts/q1_simple.sh` — quick image check script
 - `Dockerfile` — multi-stage Debian Bookworm Slim build
-- `e2e/run_audit_suite.sh:21-25` — automated check
 
 ---
 
@@ -52,6 +66,7 @@ engine-maps-robots/linux_game_engine -f engine-maps-robots/maps/map01 -p1 ./targ
 **Check:** No crash, no segfault, no panic. Game completes with a winner.
 
 **References:**
+- `Makefile:72-73` — q2 target
 - `src/main.rs:10-11` — panic catch-all, EOF exits cleanly
 - `src/main.rs:23` — `catch_unwind` wraps every turn
 - `src/main.rs:53-55` — EOF triggers clean break, not error
@@ -109,8 +124,8 @@ done
 **Check:** Student wins ≥8/10 total (≥4/5 of relevant games). P1 + P2 combined to prevent map-side bias.
 
 **References:**
-- `e2e/run_audit_suite.sh:93` — `check_winrate map00 student wall_e 8`
-- `e2e/run_audit_suite.sh:59-91` — `check_winrate` implementation: 5 as p1 + 5 as p2
+- `e2e/run_audit_suite.sh:100` — `check_winrate map00 student wall_e 8`
+- `e2e/run_audit_suite.sh:61-98` — `check_winrate` implementation: 5 as p1 + 5 as p2
 - `src/strategy.rs:8-90` — BFS heatmap drives aggressive expansion
 
 ---
@@ -120,7 +135,7 @@ done
 **Run:** Same as Q4, substituting `engine-maps-robots/maps/map01` and `engine-maps-robots/linux_robots/h2_d2`.
 <!-- h2_d2 is medium-strength; map01 layout has asymmetric start positions -->
 
-**Reference:** `e2e/run_audit_suite.sh:94`
+**Reference:** `e2e/run_audit_suite.sh:101`
 
 ---
 
@@ -129,7 +144,7 @@ done
 **Run:** Same as Q4, substituting `engine-maps-robots/maps/map02` and `engine-maps-robots/linux_robots/bender`.
 <!-- bender is strongest of the three required robots; map02 is larger with more distance -->
 
-**Reference:** `e2e/run_audit_suite.sh:95`, `src/strategy.rs:5`
+**Reference:** `e2e/run_audit_suite.sh:102`, `src/strategy.rs:5`
 
 ---
 
@@ -221,18 +236,45 @@ cargo test --lib -- is_in_bounds   # `--` separates cargo args from test binary 
 
 ### Q11 — Good practices
 
-Code follows Rust standard practices: `cargo fmt`, `cargo clippy`, meaningful names, no unsafe, documented modules.
+**Run:**
+```bash
+make q11                # runs cargo fmt --check + cargo clippy -- -D warnings
+```
+
+**Check:** No formatting violations, no clippy warnings/errors.
 <!-- Audit expects idiomatic Rust: formatting, lint-clean, no `unsafe` blocks, module-level docs -->
+
+**References:**
+- `Makefile:100-102` — q11 target
+- `e2e/run_audit_suite.sh:134-147` — automated check
 
 ### Q12 — Test file exists
 
-All tests in `tests/` directory with `#[test]` annotations.
+**Run:**
+```bash
+make q12                # checks tests/*.rs files exist
+```
+
+**Check:** `ls tests/*.rs` succeeds (non-empty test directory).
 <!-- Verifies separate test files exist (not just inline #[cfg(test)] modules); tests/ directory has 5+ files -->
+
+**References:**
+- `Makefile:104-105` — q12 target
+- `e2e/run_audit_suite.sh:149-157` — automated check
 
 ### Q13 — Tests check each case
 
-Tests cover: valid parse, malformed input, EOF, bounds, placement rules, opponent chars, own chars, zero-block pieces, filled grids, piece > grid, edge weighting, opponent blocking, tiebreak, multi-turn growth, full pipeline integration, live game replay.
+**Run:**
+```bash
+make q13                # prints manual check reminder
+```
+
+**Check:** Tests cover: valid parse, malformed input, EOF, bounds, placement rules, opponent chars, own chars, zero-block pieces, filled grids, piece > grid, edge weighting, opponent blocking, tiebreak, multi-turn growth, full pipeline integration, live game replay.
 <!-- Broad coverage = examiner checks that edge cases aren't ignored: malformed input, oversized pieces, negative offsets, empty grids -->
+
+**References:**
+- `Makefile:107-108` — q13 target (manual check)
+- `e2e/run_audit_suite.sh:162-163` — automated reminder
 
 ---
 
@@ -253,11 +295,11 @@ cargo test --lib visualizer::    # runs all tests in the visualizer module (file
 **Run:** Same as Q4 format, any map, `engine-maps-robots/linux_robots/terminator`.
 <!-- terminator is the hardest bonus robot; requires aggressive heatmap + edge-weighting strategy -->
 
-**Reference:** `e2e/run_audit_suite.sh:137-138`
+**Reference:** `e2e/run_audit_suite.sh:176`
 
 ---
 
-## Quick Reference: All Test Commands
+## Quick Reference: All Make Targets
 
 ```bash
 make build              # Release binary — single codegen unit, LTO enabled
@@ -265,9 +307,11 @@ make test-lib           # Unit tests — lib only (parser, validator, strategy, 
 make test               # All tests — includes integration_tests.rs and multi_turn.rs
 make test-e2e           # E2E replay — requires --features e2e flag + game_engine binary present
 make bench              # Performance benchmark — asserts <500ms on 100×100 grid
-make audit              # Full automated audit suite — Docker, crash-free, win-rates, unit tests
+make audit              # Full automated audit suite — Docker, crash-free, win-rates, code quality, unit tests
 make docker-build       # Docker image — multi-stage: builder → slim runtime
+make docker-run         # Run inside container with solution/ mount
 make play MAP=map01 P1=filler P2=bender VIS=0   # build + run one game with optional visualizer
+make help               # Show all targets
 ```
 
 ## Per-Question Make Targets
@@ -275,7 +319,8 @@ make play MAP=map01 P1=filler P2=bender VIS=0   # build + run one game with opti
 One-command per audit question. Run from project root:
 
 ```bash
-make q1                 # Docker image build
+make q1                 # Full Zone 01 audit (zone-filler + student vs bender)
+make q1-s               # Simple Docker image check (binary present)
 make q2                 # Smoke test (no crash vs bender)
 make q3                 # 1-cell overlap rule (via e2e replay)
 make q4                 # Win-rate vs wall_e on map00
@@ -293,4 +338,4 @@ make qb-visualizer      # Visualizer tests
 make qb-terminator      # Win-rate vs terminator
 ```
 
-Each win-rate target (q4–q6, qb-terminator) runs 5 as P1 + 5 as P2 = 10 games, exits with error if below 8/10 threshold.
+Each win-rate target (q4–q6, qb-terminator) runs 5 as P1 + 5 as P2 = 10 games with 15s timeout per game, exits with error if below 8/10 threshold. Targets q1 and q12 exit non-zero on failure. q11 runs `cargo fmt --check` then `cargo clippy -- -D warnings`. q13 is a manual verification reminder.
