@@ -41,7 +41,7 @@ fn test_territory_monotonically_increases() {
     // Turn 1
     let valid1 = validator::find_valid_placements(&grid, &piece, me);
     let heatmap1 = strategy::generate_heatmap(&grid, opponent, me);
-    let chosen1 = strategy::choose_best_placement(&valid1, &heatmap1, &piece).unwrap();
+    let chosen1 = strategy::choose_best_placement(&valid1, &heatmap1, &piece, &grid, me, opponent).unwrap();
 
     // Apply chosen1 to grid
     for &(dr, dc) in &piece.blocks {
@@ -54,7 +54,7 @@ fn test_territory_monotonically_increases() {
     // Turn 2
     let valid2 = validator::find_valid_placements(&grid, &piece, me);
     let heatmap2 = strategy::generate_heatmap(&grid, opponent, me);
-    let chosen2 = strategy::choose_best_placement(&valid2, &heatmap2, &piece).unwrap();
+    let chosen2 = strategy::choose_best_placement(&valid2, &heatmap2, &piece, &grid, me, opponent).unwrap();
 
     // Apply chosen2 to grid
     for &(dr, dc) in &piece.blocks {
@@ -67,7 +67,7 @@ fn test_territory_monotonically_increases() {
     // Turn 3
     let valid3 = validator::find_valid_placements(&grid, &piece, me);
     let heatmap3 = strategy::generate_heatmap(&grid, opponent, me);
-    let chosen3 = strategy::choose_best_placement(&valid3, &heatmap3, &piece).unwrap();
+    let chosen3 = strategy::choose_best_placement(&valid3, &heatmap3, &piece, &grid, me, opponent).unwrap();
 
     // Apply chosen3 to grid
     for &(dr, dc) in &piece.blocks {

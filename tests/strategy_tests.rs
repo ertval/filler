@@ -1,5 +1,5 @@
 use filler::strategy;
-use filler::types::{Piece, Point};
+use filler::types::{Cell, Grid, Piece, Player, Point};
 
 #[test]
 fn test_tiebreak_by_col_then_row() {
@@ -11,7 +11,12 @@ fn test_tiebreak_by_col_then_row() {
         cols: 1,
         blocks: vec![(0, 0)],
     };
-    let best = strategy::choose_best_placement(&placements, &heatmap, &piece).unwrap();
+    let grid = Grid {
+        rows: 10,
+        cols: 10,
+        data: vec![vec![Cell::Empty; 10]; 10],
+    };
+    let best = strategy::choose_best_placement(&placements, &heatmap, &piece, &grid, Player::P1, Player::P2).unwrap();
     // Col-first: chooses row 3, col 2
     assert_eq!(best, Point { row: 3, col: 2 });
 }

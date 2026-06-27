@@ -1494,7 +1494,7 @@
       "label": "check_winrate()",
       "file_type": "code",
       "source_file": "e2e/run_audit_suite.sh",
-      "source_location": "L61",
+      "source_location": "L59",
       "metadata": {
         "language": "bash",
         "kind": "bash_function"
@@ -1531,62 +1531,6 @@
       "id": "home_ertval_code_zone_modules_filler_run_game_sh__entry",
       "community": 103,
       "norm_label": "run_game.sh script"
-    },
-    {
-      "label": "q1_audit.sh",
-      "file_type": "code",
-      "source_file": "scripts/q1_audit.sh",
-      "source_location": "L1",
-      "metadata": {
-        "language": "bash",
-        "kind": "file"
-      },
-      "_origin": "ast",
-      "id": "scripts_q1_audit",
-      "community": 97,
-      "norm_label": "q1_audit.sh"
-    },
-    {
-      "label": "q1_audit.sh script",
-      "file_type": "code",
-      "source_file": "scripts/q1_audit.sh",
-      "source_location": "L1",
-      "metadata": {
-        "language": "bash",
-        "kind": "bash_entrypoint"
-      },
-      "_origin": "ast",
-      "id": "home_ertval_code_zone_modules_filler_scripts_q1_audit_sh__entry",
-      "community": 97,
-      "norm_label": "q1_audit.sh script"
-    },
-    {
-      "label": "q1_simple.sh",
-      "file_type": "code",
-      "source_file": "scripts/q1_simple.sh",
-      "source_location": "L1",
-      "metadata": {
-        "language": "bash",
-        "kind": "file"
-      },
-      "_origin": "ast",
-      "id": "scripts_q1_simple",
-      "community": 98,
-      "norm_label": "q1_simple.sh"
-    },
-    {
-      "label": "q1_simple.sh script",
-      "file_type": "code",
-      "source_file": "scripts/q1_simple.sh",
-      "source_location": "L1",
-      "metadata": {
-        "language": "bash",
-        "kind": "bash_entrypoint"
-      },
-      "_origin": "ast",
-      "id": "home_ertval_code_zone_modules_filler_scripts_q1_simple_sh__entry",
-      "community": 98,
-      "norm_label": "q1_simple.sh script"
     },
     {
       "label": "visualizer.rs",
@@ -1812,7 +1756,7 @@
       "label": "parse_anfield_header()",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L38",
+      "source_location": "L34",
       "_origin": "ast",
       "id": "src_parser_parse_anfield_header",
       "community": 31,
@@ -1822,7 +1766,7 @@
       "label": "parse_anfield()",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L57",
+      "source_location": "L53",
       "_origin": "ast",
       "id": "src_parser_parse_anfield",
       "community": 31,
@@ -1832,7 +1776,7 @@
       "label": "Grid",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L57",
+      "source_location": "L53",
       "_origin": "ast",
       "id": "src_parser_rs_grid",
       "community": 31,
@@ -1842,7 +1786,7 @@
       "label": "parse_piece_header()",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L92",
+      "source_location": "L88",
       "_origin": "ast",
       "id": "src_parser_parse_piece_header",
       "community": 31,
@@ -1852,7 +1796,7 @@
       "label": "parse_piece()",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L108",
+      "source_location": "L104",
       "_origin": "ast",
       "id": "src_parser_parse_piece",
       "community": 31,
@@ -1862,7 +1806,7 @@
       "label": "Piece",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L108",
+      "source_location": "L104",
       "_origin": "ast",
       "id": "src_parser_rs_piece",
       "community": 31,
@@ -1872,7 +1816,7 @@
       "label": "parse_turn()",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L129",
+      "source_location": "L125",
       "_origin": "ast",
       "id": "src_parser_parse_turn",
       "community": 31,
@@ -1882,7 +1826,7 @@
       "label": "Option",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L129",
+      "source_location": "L125",
       "_origin": "ast",
       "id": "src_parser_rs_option",
       "community": 31,
@@ -1892,7 +1836,7 @@
       "label": "GameState",
       "file_type": "code",
       "source_file": "src/parser.rs",
-      "source_location": "L129",
+      "source_location": "L125",
       "_origin": "ast",
       "id": "gamestate",
       "community": 31,
@@ -1909,100 +1853,40 @@
       "norm_label": "strategy.rs"
     },
     {
-      "label": "apply_placement()",
-      "file_type": "code",
-      "source_file": "src/strategy.rs",
-      "source_location": "L4",
-      "_origin": "ast",
-      "id": "src_strategy_apply_placement",
-      "community": 43,
-      "norm_label": "apply_placement()"
-    },
-    {
-      "label": "Grid",
-      "file_type": "code",
-      "source_file": "src/strategy.rs",
-      "source_location": "L4",
-      "_origin": "ast",
-      "id": "src_strategy_rs_grid",
-      "community": 43,
-      "norm_label": "grid"
-    },
-    {
-      "label": "Piece",
-      "file_type": "code",
-      "source_file": "src/strategy.rs",
-      "source_location": "L4",
-      "_origin": "ast",
-      "id": "src_strategy_rs_piece",
-      "community": 43,
-      "norm_label": "piece"
-    },
-    {
-      "label": "Point",
-      "file_type": "code",
-      "source_file": "src/strategy.rs",
-      "source_location": "L4",
-      "_origin": "ast",
-      "id": "src_strategy_rs_point",
-      "community": 43,
-      "norm_label": "point"
-    },
-    {
-      "label": "Player",
-      "file_type": "code",
-      "source_file": "src/strategy.rs",
-      "source_location": "L4",
-      "_origin": "ast",
-      "id": "src_strategy_rs_player",
-      "community": 43,
-      "norm_label": "player"
-    },
-    {
-      "label": "frontier_size()",
-      "file_type": "code",
-      "source_file": "src/strategy.rs",
-      "source_location": "L18",
-      "_origin": "ast",
-      "id": "src_strategy_frontier_size",
-      "community": 43,
-      "norm_label": "frontier_size()"
-    },
-    {
-      "label": "count_opponent_adjacent()",
-      "file_type": "code",
-      "source_file": "src/strategy.rs",
-      "source_location": "L41",
-      "_origin": "ast",
-      "id": "src_strategy_count_opponent_adjacent",
-      "community": 43,
-      "norm_label": "count_opponent_adjacent()"
-    },
-    {
-      "label": "reachable_area()",
-      "file_type": "code",
-      "source_file": "src/strategy.rs",
-      "source_location": "L61",
-      "_origin": "ast",
-      "id": "src_strategy_reachable_area",
-      "community": 43,
-      "norm_label": "reachable_area()"
-    },
-    {
       "label": "generate_heatmap()",
       "file_type": "code",
       "source_file": "src/strategy.rs",
-      "source_location": "L90",
+      "source_location": "L8",
       "_origin": "ast",
       "id": "src_strategy_generate_heatmap",
       "community": 43,
       "norm_label": "generate_heatmap()"
     },
     {
+      "label": "Grid",
+      "file_type": "code",
+      "source_file": "src/strategy.rs",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "src_strategy_rs_grid",
+      "community": 43,
+      "norm_label": "grid"
+    },
+    {
+      "label": "Player",
+      "file_type": "code",
+      "source_file": "src/strategy.rs",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "src_strategy_rs_player",
+      "community": 43,
+      "norm_label": "player"
+    },
+    {
       "label": "Vec",
       "file_type": "code",
       "source_file": "src/strategy.rs",
-      "source_location": "L90",
+      "source_location": "L8",
       "_origin": "ast",
       "id": "src_strategy_rs_vec",
       "community": 43,
@@ -2012,17 +1896,37 @@
       "label": "score_placement()",
       "file_type": "code",
       "source_file": "src/strategy.rs",
-      "source_location": "L167",
+      "source_location": "L93",
       "_origin": "ast",
       "id": "src_strategy_score_placement",
       "community": 43,
       "norm_label": "score_placement()"
     },
     {
+      "label": "Piece",
+      "file_type": "code",
+      "source_file": "src/strategy.rs",
+      "source_location": "L93",
+      "_origin": "ast",
+      "id": "src_strategy_rs_piece",
+      "community": 43,
+      "norm_label": "piece"
+    },
+    {
+      "label": "Point",
+      "file_type": "code",
+      "source_file": "src/strategy.rs",
+      "source_location": "L93",
+      "_origin": "ast",
+      "id": "src_strategy_rs_point",
+      "community": 43,
+      "norm_label": "point"
+    },
+    {
       "label": "choose_best_placement()",
       "file_type": "code",
       "source_file": "src/strategy.rs",
-      "source_location": "L194",
+      "source_location": "L114",
       "_origin": "ast",
       "id": "src_strategy_choose_best_placement",
       "community": 43,
@@ -2032,27 +1936,17 @@
       "label": "Option",
       "file_type": "code",
       "source_file": "src/strategy.rs",
-      "source_location": "L194",
+      "source_location": "L114",
       "_origin": "ast",
       "id": "src_strategy_rs_option",
       "community": 43,
       "norm_label": "option"
     },
     {
-      "label": "score_placement_full()",
-      "file_type": "code",
-      "source_file": "src/strategy.rs",
-      "source_location": "L224",
-      "_origin": "ast",
-      "id": "src_strategy_score_placement_full",
-      "community": 43,
-      "norm_label": "score_placement_full()"
-    },
-    {
       "label": "test_heatmap_generation()",
       "file_type": "code",
       "source_file": "src/strategy.rs",
-      "source_location": "L256",
+      "source_location": "L148",
       "_origin": "ast",
       "id": "src_strategy_test_heatmap_generation",
       "community": 43,
@@ -2062,7 +1956,7 @@
       "label": "test_tiebreak_by_col_then_row()",
       "file_type": "code",
       "source_file": "src/strategy.rs",
-      "source_location": "L272",
+      "source_location": "L166",
       "_origin": "ast",
       "id": "src_strategy_test_tiebreak_by_col_then_row",
       "community": 43,
@@ -2882,7 +2776,7 @@
       "label": "test_e9_own_chars_overlap()",
       "file_type": "code",
       "source_file": "tests/validator_tests.rs",
-      "source_location": "L130",
+      "source_location": "L120",
       "_origin": "ast",
       "id": "tests_validator_tests_test_e9_own_chars_overlap",
       "community": 41,
@@ -2892,7 +2786,7 @@
       "label": "test_negative_offset_placements()",
       "file_type": "code",
       "source_file": "tests/validator_tests.rs",
-      "source_location": "L158",
+      "source_location": "L138",
       "_origin": "ast",
       "id": "tests_validator_tests_test_negative_offset_placements",
       "community": 41,
@@ -6229,6 +6123,46 @@
       "norm_label": "documentation & implementation tracking"
     },
     {
+      "label": "METHODOLOGY.md",
+      "file_type": "document",
+      "source_file": "METHODOLOGY.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "methodology",
+      "community": 39,
+      "norm_label": "methodology.md"
+    },
+    {
+      "label": "Implementation Methodology",
+      "file_type": "document",
+      "source_file": "METHODOLOGY.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "methodology_implementation_methodology",
+      "community": 39,
+      "norm_label": "implementation methodology"
+    },
+    {
+      "label": "Multi-Agent Architecture",
+      "file_type": "document",
+      "source_file": "METHODOLOGY.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "methodology_multi_agent_architecture",
+      "community": 39,
+      "norm_label": "multi-agent architecture"
+    },
+    {
+      "label": "Development Principles",
+      "file_type": "document",
+      "source_file": "METHODOLOGY.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "methodology_development_principles",
+      "community": 39,
+      "norm_label": "development principles"
+    },
+    {
       "label": "README.md",
       "file_type": "document",
       "source_file": "README.md",
@@ -6292,37 +6226,107 @@
       "label": "Quick Start",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L106",
+      "source_location": "L102",
       "_origin": "ast",
       "id": "readme_quick_start",
       "community": 45,
       "norm_label": "quick start"
     },
     {
-      "label": "Make Commands",
+      "label": "Build",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L108",
+      "source_location": "L104",
       "_origin": "ast",
-      "id": "readme_make_commands",
+      "id": "readme_build",
       "community": 45,
-      "norm_label": "make commands"
+      "norm_label": "build"
     },
     {
-      "label": "Manual Build & Run",
+      "label": "Run (Inside Game Engine)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L125",
+      "source_location": "L113",
       "_origin": "ast",
-      "id": "readme_manual_build_run",
+      "id": "readme_run_inside_game_engine",
       "community": 45,
-      "norm_label": "manual build & run"
+      "norm_label": "run (inside game engine)"
+    },
+    {
+      "label": "Unit Tests",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L122",
+      "_origin": "ast",
+      "id": "readme_unit_tests",
+      "community": 45,
+      "norm_label": "unit tests"
+    },
+    {
+      "label": "All Tests (Unit + Integration)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L130",
+      "_origin": "ast",
+      "id": "readme_all_tests_unit_integration",
+      "community": 45,
+      "norm_label": "all tests (unit + integration)"
+    },
+    {
+      "label": "E2E Replay Validation",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L136",
+      "_origin": "ast",
+      "id": "readme_e2e_replay_validation",
+      "community": 45,
+      "norm_label": "e2e replay validation"
+    },
+    {
+      "label": "Performance Benchmark",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L144",
+      "_origin": "ast",
+      "id": "readme_performance_benchmark",
+      "community": 45,
+      "norm_label": "performance benchmark"
+    },
+    {
+      "label": "Audit Suite",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L153",
+      "_origin": "ast",
+      "id": "readme_audit_suite",
+      "community": 45,
+      "norm_label": "audit suite"
+    },
+    {
+      "label": "Docker",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L162",
+      "_origin": "ast",
+      "id": "readme_docker",
+      "community": 45,
+      "norm_label": "docker"
+    },
+    {
+      "label": "CLI Reference",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L174",
+      "_origin": "ast",
+      "id": "readme_cli_reference",
+      "community": 45,
+      "norm_label": "cli reference"
     },
     {
       "label": "Module Map",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L134",
+      "source_location": "L183",
       "_origin": "ast",
       "id": "readme_module_map",
       "community": 45,
@@ -6332,7 +6336,7 @@
       "label": "Audit Compliance",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L147",
+      "source_location": "L196",
       "_origin": "ast",
       "id": "readme_audit_compliance",
       "community": 45,
@@ -6342,251 +6346,11 @@
       "label": "License",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L165",
+      "source_location": "L214",
       "_origin": "ast",
       "id": "readme_license",
       "community": 45,
       "norm_label": "license"
-    },
-    {
-      "label": "audit_guide.md",
-      "file_type": "document",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "docs_audit_guide",
-      "community": 93,
-      "norm_label": "audit_guide.md"
-    },
-    {
-      "label": "Audit Guide \u2014 Filler",
-      "file_type": "document",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "docs_audit_guide_audit_guide_filler",
-      "community": 93,
-      "norm_label": "audit guide \u2014 filler"
-    },
-    {
-      "label": "Prerequisites",
-      "file_type": "document",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L7",
-      "_origin": "ast",
-      "id": "docs_audit_guide_prerequisites",
-      "community": 93,
-      "norm_label": "prerequisites"
-    },
-    {
-      "label": "Functional",
-      "file_type": "document",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L19",
-      "_origin": "ast",
-      "id": "docs_audit_guide_functional",
-      "community": 93,
-      "norm_label": "functional"
-    },
-    {
-      "label": "Q1 \u2014 Docker image + Zone 01 Audit",
-      "file_type": "document",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L21",
-      "_origin": "ast",
-      "id": "docs_audit_guide_q1_docker_image_zone_01_audit",
-      "community": 93,
-      "norm_label": "q1 \u2014 docker image + zone 01 audit"
-    },
-    {
-      "label": "Q2 \u2014 Project runs correctly",
-      "file_type": "document",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L56",
-      "_origin": "ast",
-      "id": "docs_audit_guide_q2_project_runs_correctly",
-      "community": 93,
-      "norm_label": "q2 \u2014 project runs correctly"
-    },
-    {
-      "label": "Q3 \u2014 1-cell overlap rule",
-      "file_type": "document",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L79",
-      "_origin": "ast",
-      "id": "docs_audit_guide_q3_1_cell_overlap_rule",
-      "community": 93,
-      "norm_label": "q3 \u2014 1-cell overlap rule"
-    },
-    {
-      "label": "Q4 \u2014 Win-rate vs wall_e on map00 (4/5)",
-      "file_type": "document",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L102",
-      "_origin": "ast",
-      "id": "docs_audit_guide_q4_win_rate_vs_wall_e_on_map00_4_5",
-      "community": 93,
-      "norm_label": "q4 \u2014 win-rate vs wall_e on map00 (4/5)"
-    },
-    {
-      "label": "Q5 \u2014 Win-rate vs h2_d2 on map01 (4/5)",
-      "file_type": "document",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L133",
-      "_origin": "ast",
-      "id": "docs_audit_guide_q5_win_rate_vs_h2_d2_on_map01_4_5",
-      "community": 93,
-      "norm_label": "q5 \u2014 win-rate vs h2_d2 on map01 (4/5)"
-    },
-    {
-      "label": "Q6 \u2014 Win-rate vs bender on map02 (4/5)",
-      "file_type": "document",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L142",
-      "_origin": "ast",
-      "id": "docs_audit_guide_q6_win_rate_vs_bender_on_map02_4_5",
-      "community": 93,
-      "norm_label": "q6 \u2014 win-rate vs bender on map02 (4/5)"
-    },
-    {
-      "label": "Unit Tests",
-      "file_type": "document",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L151",
-      "_origin": "ast",
-      "id": "docs_audit_guide_unit_tests",
-      "community": 93,
-      "norm_label": "unit tests"
-    },
-    {
-      "label": "Q7 \u2014 All tests pass",
-      "file_type": "document",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L153",
-      "_origin": "ast",
-      "id": "docs_audit_guide_q7_all_tests_pass",
-      "community": 93,
-      "norm_label": "q7 \u2014 all tests pass"
-    },
-    {
-      "label": "Q8 \u2014 Input Parsing tests",
-      "file_type": "document",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L177",
-      "_origin": "ast",
-      "id": "docs_audit_guide_q8_input_parsing_tests",
-      "community": 93,
-      "norm_label": "q8 \u2014 input parsing tests"
-    },
-    {
-      "label": "Q9 \u2014 Placement Validation tests",
-      "file_type": "document",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L196",
-      "_origin": "ast",
-      "id": "docs_audit_guide_q9_placement_validation_tests",
-      "community": 93,
-      "norm_label": "q9 \u2014 placement validation tests"
-    },
-    {
-      "label": "Q10 \u2014 Boundary Detection tests",
-      "file_type": "document",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L217",
-      "_origin": "ast",
-      "id": "docs_audit_guide_q10_boundary_detection_tests",
-      "community": 93,
-      "norm_label": "q10 \u2014 boundary detection tests"
-    },
-    {
-      "label": "Basic",
-      "file_type": "document",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L235",
-      "_origin": "ast",
-      "id": "docs_audit_guide_basic",
-      "community": 93,
-      "norm_label": "basic"
-    },
-    {
-      "label": "Q11 \u2014 Good practices",
-      "file_type": "document",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L237",
-      "_origin": "ast",
-      "id": "docs_audit_guide_q11_good_practices",
-      "community": 93,
-      "norm_label": "q11 \u2014 good practices"
-    },
-    {
-      "label": "Q12 \u2014 Test file exists",
-      "file_type": "document",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L251",
-      "_origin": "ast",
-      "id": "docs_audit_guide_q12_test_file_exists",
-      "community": 93,
-      "norm_label": "q12 \u2014 test file exists"
-    },
-    {
-      "label": "Q13 \u2014 Tests check each case",
-      "file_type": "document",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L265",
-      "_origin": "ast",
-      "id": "docs_audit_guide_q13_tests_check_each_case",
-      "community": 93,
-      "norm_label": "q13 \u2014 tests check each case"
-    },
-    {
-      "label": "Bonus",
-      "file_type": "document",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L281",
-      "_origin": "ast",
-      "id": "docs_audit_guide_bonus",
-      "community": 93,
-      "norm_label": "bonus"
-    },
-    {
-      "label": "Visualizer",
-      "file_type": "document",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L283",
-      "_origin": "ast",
-      "id": "docs_audit_guide_visualizer",
-      "community": 93,
-      "norm_label": "visualizer"
-    },
-    {
-      "label": "Win-rate vs terminator",
-      "file_type": "document",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L293",
-      "_origin": "ast",
-      "id": "docs_audit_guide_win_rate_vs_terminator",
-      "community": 93,
-      "norm_label": "win-rate vs terminator"
-    },
-    {
-      "label": "Quick Reference: All Make Targets",
-      "file_type": "document",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L302",
-      "_origin": "ast",
-      "id": "docs_audit_guide_quick_reference_all_make_targets",
-      "community": 93,
-      "norm_label": "quick reference: all make targets"
-    },
-    {
-      "label": "Per-Question Make Targets",
-      "file_type": "document",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L317",
-      "_origin": "ast",
-      "id": "docs_audit_guide_per_question_make_targets",
-      "community": 93,
-      "norm_label": "per-question make targets"
     },
     {
       "label": "deeppro.md",
@@ -6625,7 +6389,7 @@
       "source_location": "L62",
       "_origin": "ast",
       "id": "plan_deeppro_1_data_structures_types_src_types_rs",
-      "community": 29,
+      "community": 100,
       "norm_label": "1. data structures & types \u2014 `src/types.rs`"
     },
     {
@@ -6635,7 +6399,7 @@
       "source_location": "L153",
       "_origin": "ast",
       "id": "plan_deeppro_coordinate_convention",
-      "community": 29,
+      "community": 100,
       "norm_label": "coordinate convention"
     },
     {
@@ -6645,7 +6409,7 @@
       "source_location": "L166",
       "_origin": "ast",
       "id": "plan_deeppro_architectural_variant_byte_level_grid_storage_performance_optimization",
-      "community": 29,
+      "community": 100,
       "norm_label": "architectural variant: byte-level grid storage (performance optimization)"
     },
     {
@@ -6655,7 +6419,7 @@
       "source_location": "L174",
       "_origin": "ast",
       "id": "plan_deeppro_2_module_a_parser_src_parser_rs",
-      "community": 29,
+      "community": 93,
       "norm_label": "2. module a: parser \u2014 `src/parser.rs`"
     },
     {
@@ -6665,7 +6429,7 @@
       "source_location": "L176",
       "_origin": "ast",
       "id": "plan_deeppro_goal",
-      "community": 29,
+      "community": 93,
       "norm_label": "goal"
     },
     {
@@ -6675,7 +6439,7 @@
       "source_location": "L179",
       "_origin": "ast",
       "id": "plan_deeppro_input_format_exact",
-      "community": 29,
+      "community": 93,
       "norm_label": "input format (exact)"
     },
     {
@@ -6685,7 +6449,7 @@
       "source_location": "L219",
       "_origin": "ast",
       "id": "plan_deeppro_step_by_step_implementation",
-      "community": 29,
+      "community": 93,
       "norm_label": "step-by-step implementation"
     },
     {
@@ -6695,7 +6459,7 @@
       "source_location": "L221",
       "_origin": "ast",
       "id": "plan_deeppro_a1_parse_player_identity",
-      "community": 29,
+      "community": 93,
       "norm_label": "a1: parse player identity"
     },
     {
@@ -6705,7 +6469,7 @@
       "source_location": "L253",
       "_origin": "ast",
       "id": "plan_deeppro_a2_parse_anfield_grid",
-      "community": 29,
+      "community": 93,
       "norm_label": "a2: parse anfield grid"
     },
     {
@@ -6715,7 +6479,7 @@
       "source_location": "L309",
       "_origin": "ast",
       "id": "plan_deeppro_a3_parse_piece",
-      "community": 29,
+      "community": 93,
       "norm_label": "a3: parse piece"
     },
     {
@@ -6725,7 +6489,7 @@
       "source_location": "L360",
       "_origin": "ast",
       "id": "plan_deeppro_a4_full_turn_parser",
-      "community": 29,
+      "community": 93,
       "norm_label": "a4: full turn parser"
     },
     {
@@ -6735,7 +6499,7 @@
       "source_location": "L406",
       "_origin": "ast",
       "id": "plan_deeppro_a5_helper_read_a_line",
-      "community": 29,
+      "community": 93,
       "norm_label": "a5: helper \u2014 read a line"
     },
     {
@@ -6885,7 +6649,7 @@
       "source_location": "L784",
       "_origin": "ast",
       "id": "plan_deeppro_4_5_module_d_output_formatter_src_output_rs",
-      "community": 29,
+      "community": 101,
       "norm_label": "4.5. module d: output formatter \u2014 `src/output.rs`"
     },
     {
@@ -6895,7 +6659,7 @@
       "source_location": "L786",
       "_origin": "ast",
       "id": "plan_deeppro_goal_786",
-      "community": 29,
+      "community": 101,
       "norm_label": "goal"
     },
     {
@@ -6905,7 +6669,7 @@
       "source_location": "L789",
       "_origin": "ast",
       "id": "plan_deeppro_implementation_sketch",
-      "community": 29,
+      "community": 101,
       "norm_label": "implementation sketch"
     },
     {
@@ -6915,7 +6679,7 @@
       "source_location": "L808",
       "_origin": "ast",
       "id": "plan_deeppro_5_main_loop_src_main_rs",
-      "community": 29,
+      "community": 102,
       "norm_label": "5. main loop \u2014 `src/main.rs`"
     },
     {
@@ -6925,7 +6689,7 @@
       "source_location": "L810",
       "_origin": "ast",
       "id": "plan_deeppro_error_handling_guardrails",
-      "community": 29,
+      "community": 102,
       "norm_label": "error handling & guardrails"
     },
     {
@@ -6935,7 +6699,7 @@
       "source_location": "L878",
       "_origin": "ast",
       "id": "plan_deeppro_critical_io_behaviour",
-      "community": 29,
+      "community": 102,
       "norm_label": "critical io behaviour"
     },
     {
@@ -6995,7 +6759,7 @@
       "source_location": "L952",
       "_origin": "ast",
       "id": "plan_deeppro_test_cases",
-      "community": 38,
+      "community": 94,
       "norm_label": "test cases"
     },
     {
@@ -7005,7 +6769,7 @@
       "source_location": "L954",
       "_origin": "ast",
       "id": "plan_deeppro_it_1_p1_single_valid_turn_places_on_own_territory",
-      "community": 38,
+      "community": 94,
       "norm_label": "it-1: p1 single valid turn \u2014 places on own territory"
     },
     {
@@ -7015,7 +6779,7 @@
       "source_location": "L970",
       "_origin": "ast",
       "id": "plan_deeppro_it_2_p2_single_valid_turn",
-      "community": 38,
+      "community": 94,
       "norm_label": "it-2: p2 single valid turn"
     },
     {
@@ -7025,7 +6789,7 @@
       "source_location": "L973",
       "_origin": "ast",
       "id": "plan_deeppro_it_3_no_valid_placement_fallback_0_0",
-      "community": 38,
+      "community": 94,
       "norm_label": "it-3: no valid placement \u2192 fallback `0 0`"
     },
     {
@@ -7035,7 +6799,7 @@
       "source_location": "L976",
       "_origin": "ast",
       "id": "plan_deeppro_it_4_multiple_valid_placements_picks_closest_to_opponent",
-      "community": 38,
+      "community": 94,
       "norm_label": "it-4: multiple valid placements \u2192 picks closest to opponent"
     },
     {
@@ -7045,7 +6809,7 @@
       "source_location": "L979",
       "_origin": "ast",
       "id": "plan_deeppro_it_5_boundary_rejection_wired_in_pipeline",
-      "community": 38,
+      "community": 94,
       "norm_label": "it-5: boundary rejection wired in pipeline"
     },
     {
@@ -7055,7 +6819,7 @@
       "source_location": "L982",
       "_origin": "ast",
       "id": "plan_deeppro_it_6_two_consecutive_turns_no_player_line_re_sent",
-      "community": 38,
+      "community": 94,
       "norm_label": "it-6: two consecutive turns (no player line re-sent)"
     },
     {
@@ -7125,7 +6889,7 @@
       "source_location": "L1253",
       "_origin": "ast",
       "id": "plan_deeppro_11_dockerfile_exclusions",
-      "community": 29,
+      "community": 98,
       "norm_label": "11. dockerfile & exclusions"
     },
     {
@@ -7135,7 +6899,7 @@
       "source_location": "L1255",
       "_origin": "ast",
       "id": "plan_deeppro_dockerignore",
-      "community": 29,
+      "community": 98,
       "norm_label": "`.dockerignore`"
     },
     {
@@ -7145,7 +6909,7 @@
       "source_location": "L1263",
       "_origin": "ast",
       "id": "plan_deeppro_dockerfile_base_debian_bookworm_slim",
-      "community": 29,
+      "community": 98,
       "norm_label": "dockerfile (base: debian bookworm slim)"
     },
     {
@@ -7155,7 +6919,7 @@
       "source_location": "L1279",
       "_origin": "ast",
       "id": "plan_deeppro_alternative_alpine_based_docker_minimal_image_size_variant",
-      "community": 29,
+      "community": 98,
       "norm_label": "alternative: alpine-based docker (minimal image size variant)"
     },
     {
@@ -7175,7 +6939,7 @@
       "source_location": "L1363",
       "_origin": "ast",
       "id": "plan_deeppro_13_full_tdd_execution_order_day_by_day",
-      "community": 29,
+      "community": 97,
       "norm_label": "13. full tdd execution order (day-by-day)"
     },
     {
@@ -7185,7 +6949,7 @@
       "source_location": "L1365",
       "_origin": "ast",
       "id": "plan_deeppro_day_1_project_setup_types_output_parser",
-      "community": 29,
+      "community": 97,
       "norm_label": "day 1: project setup + types + output + parser"
     },
     {
@@ -7195,7 +6959,7 @@
       "source_location": "L1378",
       "_origin": "ast",
       "id": "plan_deeppro_day_2_validator_strategy",
-      "community": 29,
+      "community": 97,
       "norm_label": "day 2: validator + strategy"
     },
     {
@@ -7205,7 +6969,7 @@
       "source_location": "L1387",
       "_origin": "ast",
       "id": "plan_deeppro_day_3_main_loop_integration_docker_benchmark",
-      "community": 29,
+      "community": 97,
       "norm_label": "day 3: main loop + integration + docker + benchmark"
     },
     {
@@ -7215,7 +6979,7 @@
       "source_location": "L1398",
       "_origin": "ast",
       "id": "plan_deeppro_day_4_e2e_replay_validation_multi_turn_testing_strategy_tuning",
-      "community": 29,
+      "community": 97,
       "norm_label": "day 4: e2e replay validation + multi-turn testing + strategy tuning"
     },
     {
@@ -7225,7 +6989,7 @@
       "source_location": "L1409",
       "_origin": "ast",
       "id": "plan_deeppro_day_5_visualizer_bonus_polish",
-      "community": 29,
+      "community": 97,
       "norm_label": "day 5: visualizer (bonus) + polish"
     },
     {
@@ -7255,7 +7019,7 @@
       "source_location": "L1465",
       "_origin": "ast",
       "id": "plan_deeppro_16_visualizer_specification_bonus",
-      "community": 29,
+      "community": 99,
       "norm_label": "16. visualizer specification (bonus)"
     },
     {
@@ -7265,7 +7029,7 @@
       "source_location": "L1467",
       "_origin": "ast",
       "id": "plan_deeppro_goal_1467",
-      "community": 29,
+      "community": 99,
       "norm_label": "goal"
     },
     {
@@ -7275,7 +7039,7 @@
       "source_location": "L1470",
       "_origin": "ast",
       "id": "plan_deeppro_implementation_sketch_1470",
-      "community": 29,
+      "community": 99,
       "norm_label": "implementation sketch"
     },
     {
@@ -7417,46 +7181,6 @@
       "id": "plan_implementation_tracker_requirements_audit_map",
       "community": 5,
       "norm_label": "\ud83d\udcd1 requirements / audit map"
-    },
-    {
-      "label": "METHODOLOGY.md",
-      "file_type": "document",
-      "source_file": "docs/report/METHODOLOGY.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "report_methodology",
-      "community": 94,
-      "norm_label": "methodology.md"
-    },
-    {
-      "label": "Implementation Methodology",
-      "file_type": "document",
-      "source_file": "docs/report/METHODOLOGY.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "report_methodology_implementation_methodology",
-      "community": 94,
-      "norm_label": "implementation methodology"
-    },
-    {
-      "label": "Multi-Agent Architecture",
-      "file_type": "document",
-      "source_file": "docs/report/METHODOLOGY.md",
-      "source_location": "L5",
-      "_origin": "ast",
-      "id": "report_methodology_multi_agent_architecture",
-      "community": 94,
-      "norm_label": "multi-agent architecture"
-    },
-    {
-      "label": "Development Principles",
-      "file_type": "document",
-      "source_file": "docs/report/METHODOLOGY.md",
-      "source_location": "L12",
-      "_origin": "ast",
-      "id": "report_methodology_development_principles",
-      "community": 94,
-      "norm_label": "development principles"
     },
     {
       "label": "cross-plan-enrichments.md",
@@ -7979,386 +7703,6 @@
       "norm_label": "5. deterministic tie-breaker logic (from `glm.md`)"
     },
     {
-      "label": "audit.md",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "requirements_audit",
-      "community": 40,
-      "norm_label": "audit.md"
-    },
-    {
-      "label": "Functional",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "requirements_audit_functional",
-      "community": 48,
-      "norm_label": "functional"
-    },
-    {
-      "label": "Try to run the command `./game_engine -f maps/map01 -p1 robots/bender -p2 robots/terminator` inside the container.",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L3",
-      "_origin": "ast",
-      "id": "requirements_audit_try_to_run_the_command_game_engine_f_maps_map01_p1_robots_bender_p2_robots_terminator_inside_the_container",
-      "community": 48,
-      "norm_label": "try to run the command `./game_engine -f maps/map01 -p1 robots/bender -p2 robots/terminator` inside the container."
-    },
-    {
-      "label": "Can you confirm that the student was able to create the image and container correctly?",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L5",
-      "_origin": "ast",
-      "id": "requirements_audit_can_you_confirm_that_the_student_was_able_to_create_the_image_and_container_correctly",
-      "community": 48,
-      "norm_label": "can you confirm that the student was able to create the image and container correctly?"
-    },
-    {
-      "label": "Try to run the student player against one of our players.",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L7",
-      "_origin": "ast",
-      "id": "requirements_audit_try_to_run_the_student_player_against_one_of_our_players",
-      "community": 48,
-      "norm_label": "try to run the student player against one of our players."
-    },
-    {
-      "label": "Can you confirm that the project runs correctly?",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L9",
-      "_origin": "ast",
-      "id": "requirements_audit_can_you_confirm_that_the_project_runs_correctly",
-      "community": 48,
-      "norm_label": "can you confirm that the project runs correctly?"
-    },
-    {
-      "label": "Try to run the student player against one of our players.",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L11",
-      "_origin": "ast",
-      "id": "requirements_audit_try_to_run_the_student_player_against_one_of_our_players_11",
-      "community": 48,
-      "norm_label": "try to run the student player against one of our players."
-    },
-    {
-      "label": "Can you confirm that the student player is placing the pieces correctly with the overlapping of just on cell?",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L13",
-      "_origin": "ast",
-      "id": "requirements_audit_can_you_confirm_that_the_student_player_is_placing_the_pieces_correctly_with_the_overlapping_of_just_on_cell",
-      "community": 48,
-      "norm_label": "can you confirm that the student player is placing the pieces correctly with the overlapping of just on cell?"
-    },
-    {
-      "label": "Try to run `./game_engine -f maps/map00 -p1 <path to student player> -p2 robots/wall_e` five times changing the position of the players each time so that the student player can be the `p1` and the `p2`.",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L15",
-      "_origin": "ast",
-      "id": "requirements_audit_try_to_run_game_engine_f_maps_map00_p1_path_to_student_player_p2_robots_wall_e_five_times_changing_the_position_of_the_players_each_time_so_that_the_student_player_can_be_the_p1_and_the_p2",
-      "community": 48,
-      "norm_label": "try to run `./game_engine -f maps/map00 -p1 <path to student player> -p2 robots/wall_e` five times changing the position of the players each time so that the student player can be the `p1` and the `p2`."
-    },
-    {
-      "label": "Can you confirm that the student player won at least 4 out of 5 times?",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L17",
-      "_origin": "ast",
-      "id": "requirements_audit_can_you_confirm_that_the_student_player_won_at_least_4_out_of_5_times",
-      "community": 48,
-      "norm_label": "can you confirm that the student player won at least 4 out of 5 times?"
-    },
-    {
-      "label": "Try to run `./game_engine -f maps/map01 -p1 <path to student player> -p2 robots/h2_d2` five times changing the position of the players each time so that the student player can be the `p1` and the `p2`.",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L19",
-      "_origin": "ast",
-      "id": "requirements_audit_try_to_run_game_engine_f_maps_map01_p1_path_to_student_player_p2_robots_h2_d2_five_times_changing_the_position_of_the_players_each_time_so_that_the_student_player_can_be_the_p1_and_the_p2",
-      "community": 48,
-      "norm_label": "try to run `./game_engine -f maps/map01 -p1 <path to student player> -p2 robots/h2_d2` five times changing the position of the players each time so that the student player can be the `p1` and the `p2`."
-    },
-    {
-      "label": "Can you confirm that the student player won at least 4 out of 5 times?",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L21",
-      "_origin": "ast",
-      "id": "requirements_audit_can_you_confirm_that_the_student_player_won_at_least_4_out_of_5_times_21",
-      "community": 48,
-      "norm_label": "can you confirm that the student player won at least 4 out of 5 times?"
-    },
-    {
-      "label": "Try to run `./game_engine -f maps/map02 -p1 <path to student player> -p2 robots/bender` five times changing the position of the players each time so that the student player can be the `p1` and the `p2`.",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L23",
-      "_origin": "ast",
-      "id": "requirements_audit_try_to_run_game_engine_f_maps_map02_p1_path_to_student_player_p2_robots_bender_five_times_changing_the_position_of_the_players_each_time_so_that_the_student_player_can_be_the_p1_and_the_p2",
-      "community": 48,
-      "norm_label": "try to run `./game_engine -f maps/map02 -p1 <path to student player> -p2 robots/bender` five times changing the position of the players each time so that the student player can be the `p1` and the `p2`."
-    },
-    {
-      "label": "Can you confirm that the student player won at least 4 out of 5 times?",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L25",
-      "_origin": "ast",
-      "id": "requirements_audit_can_you_confirm_that_the_student_player_won_at_least_4_out_of_5_times_25",
-      "community": 48,
-      "norm_label": "can you confirm that the student player won at least 4 out of 5 times?"
-    },
-    {
-      "label": "Unit Tests",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L27",
-      "_origin": "ast",
-      "id": "requirements_audit_unit_tests",
-      "community": 40,
-      "norm_label": "unit tests"
-    },
-    {
-      "label": "Do all tests pass without errors?",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L29",
-      "_origin": "ast",
-      "id": "requirements_audit_do_all_tests_pass_without_errors",
-      "community": 40,
-      "norm_label": "do all tests pass without errors?"
-    },
-    {
-      "label": "Are there specific tests for **Input Parsing** (e.g., verifying the robot correctly reads the Anfield dimensions and the piece shape from stdin)?",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L31",
-      "_origin": "ast",
-      "id": "requirements_audit_are_there_specific_tests_for_input_parsing_e_g_verifying_the_robot_correctly_reads_the_anfield_dimensions_and_the_piece_shape_from_stdin",
-      "community": 40,
-      "norm_label": "are there specific tests for **input parsing** (e.g., verifying the robot correctly reads the anfield dimensions and the piece shape from stdin)?"
-    },
-    {
-      "label": "Are there tests for **Placement Validation** (e.g., checking that a move is rejected if it overlaps two of your own cells or one of the opponent's)?",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L33",
-      "_origin": "ast",
-      "id": "requirements_audit_are_there_tests_for_placement_validation_e_g_checking_that_a_move_is_rejected_if_it_overlaps_two_of_your_own_cells_or_one_of_the_opponent_s",
-      "community": 40,
-      "norm_label": "are there tests for **placement validation** (e.g., checking that a move is rejected if it overlaps two of your own cells or one of the opponent's)?"
-    },
-    {
-      "label": "Are there tests for **Boundary Detection** to ensure pieces are never placed partially outside the grid?",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L35",
-      "_origin": "ast",
-      "id": "requirements_audit_are_there_tests_for_boundary_detection_to_ensure_pieces_are_never_placed_partially_outside_the_grid",
-      "community": 40,
-      "norm_label": "are there tests for **boundary detection** to ensure pieces are never placed partially outside the grid?"
-    },
-    {
-      "label": "Basic",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L37",
-      "_origin": "ast",
-      "id": "requirements_audit_basic",
-      "community": 40,
-      "norm_label": "basic"
-    },
-    {
-      "label": "+Does the code obey the [good practices](../../good-practices/README.md)?",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L39",
-      "_origin": "ast",
-      "id": "requirements_audit_does_the_code_obey_the_good_practices_good_practices_readme_md",
-      "community": 40,
-      "norm_label": "+does the code obey the [good practices](../../good-practices/readme.md)?"
-    },
-    {
-      "label": "+Is there a test file for this code?",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L41",
-      "_origin": "ast",
-      "id": "requirements_audit_is_there_a_test_file_for_this_code",
-      "community": 40,
-      "norm_label": "+is there a test file for this code?"
-    },
-    {
-      "label": "+Are the tests checking each possible case?",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L43",
-      "_origin": "ast",
-      "id": "requirements_audit_are_the_tests_checking_each_possible_case",
-      "community": 40,
-      "norm_label": "+are the tests checking each possible case?"
-    },
-    {
-      "label": "Bonus",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L45",
-      "_origin": "ast",
-      "id": "requirements_audit_bonus",
-      "community": 40,
-      "norm_label": "bonus"
-    },
-    {
-      "label": "+Did the student create a visualizer for the project?",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L47",
-      "_origin": "ast",
-      "id": "requirements_audit_did_the_student_create_a_visualizer_for_the_project",
-      "community": 40,
-      "norm_label": "+did the student create a visualizer for the project?"
-    },
-    {
-      "label": "Try to run `./game_engine -f maps/<map of your choice> -p1 <path to student player> -p2 robots/terminator` five times changing the position of the players each time so that the student player can be the `p1` and the `p2`.",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L49",
-      "_origin": "ast",
-      "id": "requirements_audit_try_to_run_game_engine_f_maps_map_of_your_choice_p1_path_to_student_player_p2_robots_terminator_five_times_changing_the_position_of_the_players_each_time_so_that_the_student_player_can_be_the_p1_and_the_p2",
-      "community": 40,
-      "norm_label": "try to run `./game_engine -f maps/<map of your choice> -p1 <path to student player> -p2 robots/terminator` five times changing the position of the players each time so that the student player can be the `p1` and the `p2`."
-    },
-    {
-      "label": "+Can you confirm that the student player won at least 4 out of 5 times?",
-      "file_type": "document",
-      "source_file": "docs/requirements/audit.md",
-      "source_location": "L51",
-      "_origin": "ast",
-      "id": "requirements_audit_can_you_confirm_that_the_student_player_won_at_least_4_out_of_5_times_51",
-      "community": 40,
-      "norm_label": "+can you confirm that the student player won at least 4 out of 5 times?"
-    },
-    {
-      "label": "requirements.md",
-      "file_type": "document",
-      "source_file": "docs/requirements/requirements.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "requirements_requirements",
-      "community": 40,
-      "norm_label": "requirements.md"
-    },
-    {
-      "label": "Filler",
-      "file_type": "document",
-      "source_file": "docs/requirements/requirements.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "requirements_requirements_filler",
-      "community": 40,
-      "norm_label": "filler"
-    },
-    {
-      "label": "The Game:",
-      "file_type": "document",
-      "source_file": "docs/requirements/requirements.md",
-      "source_location": "L3",
-      "_origin": "ast",
-      "id": "requirements_requirements_the_game",
-      "community": 40,
-      "norm_label": "the game:"
-    },
-    {
-      "label": "The Anfield:",
-      "file_type": "document",
-      "source_file": "docs/requirements/requirements.md",
-      "source_location": "L14",
-      "_origin": "ast",
-      "id": "requirements_requirements_the_anfield",
-      "community": 40,
-      "norm_label": "the anfield:"
-    },
-    {
-      "label": "The pieces",
-      "file_type": "document",
-      "source_file": "docs/requirements/requirements.md",
-      "source_location": "L38",
-      "_origin": "ast",
-      "id": "requirements_requirements_the_pieces",
-      "community": 40,
-      "norm_label": "the pieces"
-    },
-    {
-      "label": "The Robots",
-      "file_type": "document",
-      "source_file": "docs/requirements/requirements.md",
-      "source_location": "L59",
-      "_origin": "ast",
-      "id": "requirements_requirements_the_robots",
-      "community": 40,
-      "norm_label": "the robots"
-    },
-    {
-      "label": "The Game_engine",
-      "file_type": "document",
-      "source_file": "docs/requirements/requirements.md",
-      "source_location": "L89",
-      "_origin": "ast",
-      "id": "requirements_requirements_the_game_engine",
-      "community": 40,
-      "norm_label": "the game_engine"
-    },
-    {
-      "label": "Docker",
-      "file_type": "document",
-      "source_file": "docs/requirements/requirements.md",
-      "source_location": "L112",
-      "_origin": "ast",
-      "id": "requirements_requirements_docker",
-      "community": 40,
-      "norm_label": "docker"
-    },
-    {
-      "label": "Usage",
-      "file_type": "document",
-      "source_file": "docs/requirements/requirements.md",
-      "source_location": "L133",
-      "_origin": "ast",
-      "id": "requirements_requirements_usage",
-      "community": 40,
-      "norm_label": "usage"
-    },
-    {
-      "label": "Unit Tests",
-      "file_type": "document",
-      "source_file": "docs/requirements/requirements.md",
-      "source_location": "L166",
-      "_origin": "ast",
-      "id": "requirements_requirements_unit_tests",
-      "community": 40,
-      "norm_label": "unit tests"
-    },
-    {
-      "label": "Bonus",
-      "file_type": "document",
-      "source_file": "docs/requirements/requirements.md",
-      "source_location": "L175",
-      "_origin": "ast",
-      "id": "requirements_requirements_bonus",
-      "community": 40,
-      "norm_label": "bonus"
-    },
-    {
       "label": "README.md",
       "file_type": "document",
       "source_file": "engine-maps-robots/README.md",
@@ -8389,284 +7733,384 @@
       "norm_label": "notes"
     },
     {
-      "label": "polymerge-report-makefile-validate.md",
+      "label": "audit.md",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
+      "source_file": "requirements/audit.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate",
-      "community": 39,
-      "norm_label": "polymerge-report-makefile-validate.md"
+      "id": "requirements_audit",
+      "community": 40,
+      "norm_label": "audit.md"
     },
     {
-      "label": "Multi-Model Analysis Report: Makefile Validation",
+      "label": "Functional",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
+      "source_file": "requirements/audit.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_multi_model_analysis_report_makefile_validation",
-      "community": 39,
-      "norm_label": "multi-model analysis report: makefile validation"
+      "id": "requirements_audit_functional",
+      "community": 48,
+      "norm_label": "functional"
     },
     {
-      "label": "Consensus Findings",
+      "label": "Try to run the command `./game_engine -f maps/map01 -p1 robots/bender -p2 robots/terminator` inside the container.",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
+      "source_file": "requirements/audit.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "requirements_audit_try_to_run_the_command_game_engine_f_maps_map01_p1_robots_bender_p2_robots_terminator_inside_the_container",
+      "community": 48,
+      "norm_label": "try to run the command `./game_engine -f maps/map01 -p1 robots/bender -p2 robots/terminator` inside the container."
+    },
+    {
+      "label": "Can you confirm that the student was able to create the image and container correctly?",
+      "file_type": "document",
+      "source_file": "requirements/audit.md",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_consensus_findings",
-      "community": 39,
-      "norm_label": "consensus findings"
+      "id": "requirements_audit_can_you_confirm_that_the_student_was_able_to_create_the_image_and_container_correctly",
+      "community": 48,
+      "norm_label": "can you confirm that the student was able to create the image and container correctly?"
     },
     {
-      "label": "1. Coverage Matrix \u2014 All Audit Questions Have Makefile Targets",
+      "label": "Try to run the student player against one of our players.",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
+      "source_file": "requirements/audit.md",
       "source_location": "L7",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_1_coverage_matrix_all_audit_questions_have_makefile_targets",
-      "community": 39,
-      "norm_label": "1. coverage matrix \u2014 all audit questions have makefile targets"
+      "id": "requirements_audit_try_to_run_the_student_player_against_one_of_our_players",
+      "community": 48,
+      "norm_label": "try to run the student player against one of our players."
     },
     {
-      "label": "Unique Findings",
+      "label": "Can you confirm that the project runs correctly?",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
+      "source_file": "requirements/audit.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "requirements_audit_can_you_confirm_that_the_project_runs_correctly",
+      "community": 48,
+      "norm_label": "can you confirm that the project runs correctly?"
+    },
+    {
+      "label": "Try to run the student player against one of our players.",
+      "file_type": "document",
+      "source_file": "requirements/audit.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "requirements_audit_try_to_run_the_student_player_against_one_of_our_players_11",
+      "community": 48,
+      "norm_label": "try to run the student player against one of our players."
+    },
+    {
+      "label": "Can you confirm that the student player is placing the pieces correctly with the overlapping of just on cell?",
+      "file_type": "document",
+      "source_file": "requirements/audit.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "requirements_audit_can_you_confirm_that_the_student_player_is_placing_the_pieces_correctly_with_the_overlapping_of_just_on_cell",
+      "community": 48,
+      "norm_label": "can you confirm that the student player is placing the pieces correctly with the overlapping of just on cell?"
+    },
+    {
+      "label": "Try to run `./game_engine -f maps/map00 -p1 <path to student player> -p2 robots/wall_e` five times changing the position of the players each time so that the student player can be the `p1` and the `p2`.",
+      "file_type": "document",
+      "source_file": "requirements/audit.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "requirements_audit_try_to_run_game_engine_f_maps_map00_p1_path_to_student_player_p2_robots_wall_e_five_times_changing_the_position_of_the_players_each_time_so_that_the_student_player_can_be_the_p1_and_the_p2",
+      "community": 48,
+      "norm_label": "try to run `./game_engine -f maps/map00 -p1 <path to student player> -p2 robots/wall_e` five times changing the position of the players each time so that the student player can be the `p1` and the `p2`."
+    },
+    {
+      "label": "Can you confirm that the student player won at least 4 out of 5 times?",
+      "file_type": "document",
+      "source_file": "requirements/audit.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "requirements_audit_can_you_confirm_that_the_student_player_won_at_least_4_out_of_5_times",
+      "community": 48,
+      "norm_label": "can you confirm that the student player won at least 4 out of 5 times?"
+    },
+    {
+      "label": "Try to run `./game_engine -f maps/map01 -p1 <path to student player> -p2 robots/h2_d2` five times changing the position of the players each time so that the student player can be the `p1` and the `p2`.",
+      "file_type": "document",
+      "source_file": "requirements/audit.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "requirements_audit_try_to_run_game_engine_f_maps_map01_p1_path_to_student_player_p2_robots_h2_d2_five_times_changing_the_position_of_the_players_each_time_so_that_the_student_player_can_be_the_p1_and_the_p2",
+      "community": 48,
+      "norm_label": "try to run `./game_engine -f maps/map01 -p1 <path to student player> -p2 robots/h2_d2` five times changing the position of the players each time so that the student player can be the `p1` and the `p2`."
+    },
+    {
+      "label": "Can you confirm that the student player won at least 4 out of 5 times?",
+      "file_type": "document",
+      "source_file": "requirements/audit.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "requirements_audit_can_you_confirm_that_the_student_player_won_at_least_4_out_of_5_times_21",
+      "community": 48,
+      "norm_label": "can you confirm that the student player won at least 4 out of 5 times?"
+    },
+    {
+      "label": "Try to run `./game_engine -f maps/map02 -p1 <path to student player> -p2 robots/bender` five times changing the position of the players each time so that the student player can be the `p1` and the `p2`.",
+      "file_type": "document",
+      "source_file": "requirements/audit.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "requirements_audit_try_to_run_game_engine_f_maps_map02_p1_path_to_student_player_p2_robots_bender_five_times_changing_the_position_of_the_players_each_time_so_that_the_student_player_can_be_the_p1_and_the_p2",
+      "community": 48,
+      "norm_label": "try to run `./game_engine -f maps/map02 -p1 <path to student player> -p2 robots/bender` five times changing the position of the players each time so that the student player can be the `p1` and the `p2`."
+    },
+    {
+      "label": "Can you confirm that the student player won at least 4 out of 5 times?",
+      "file_type": "document",
+      "source_file": "requirements/audit.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "requirements_audit_can_you_confirm_that_the_student_player_won_at_least_4_out_of_5_times_25",
+      "community": 48,
+      "norm_label": "can you confirm that the student player won at least 4 out of 5 times?"
+    },
+    {
+      "label": "Unit Tests",
+      "file_type": "document",
+      "source_file": "requirements/audit.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "requirements_audit_unit_tests",
+      "community": 40,
+      "norm_label": "unit tests"
+    },
+    {
+      "label": "Do all tests pass without errors?",
+      "file_type": "document",
+      "source_file": "requirements/audit.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "requirements_audit_do_all_tests_pass_without_errors",
+      "community": 40,
+      "norm_label": "do all tests pass without errors?"
+    },
+    {
+      "label": "Are there specific tests for **Input Parsing** (e.g., verifying the robot correctly reads the Anfield dimensions and the piece shape from stdin)?",
+      "file_type": "document",
+      "source_file": "requirements/audit.md",
       "source_location": "L31",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_unique_findings",
-      "community": 39,
-      "norm_label": "unique findings"
+      "id": "requirements_audit_are_there_specific_tests_for_input_parsing_e_g_verifying_the_robot_correctly_reads_the_anfield_dimensions_and_the_piece_shape_from_stdin",
+      "community": 40,
+      "norm_label": "are there specific tests for **input parsing** (e.g., verifying the robot correctly reads the anfield dimensions and the piece shape from stdin)?"
     },
     {
-      "label": "2. Command Correctness \u2014 Verified Commands (13/13 targets verified)",
+      "label": "Are there tests for **Placement Validation** (e.g., checking that a move is rejected if it overlaps two of your own cells or one of the opponent's)?",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
+      "source_file": "requirements/audit.md",
       "source_location": "L33",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_2_command_correctness_verified_commands_13_13_targets_verified",
-      "community": 39,
-      "norm_label": "2. command correctness \u2014 verified commands (13/13 targets verified)"
+      "id": "requirements_audit_are_there_tests_for_placement_validation_e_g_checking_that_a_move_is_rejected_if_it_overlaps_two_of_your_own_cells_or_one_of_the_opponent_s",
+      "community": 40,
+      "norm_label": "are there tests for **placement validation** (e.g., checking that a move is rejected if it overlaps two of your own cells or one of the opponent's)?"
     },
     {
-      "label": "File Path Verification",
+      "label": "Are there tests for **Boundary Detection** to ensure pieces are never placed partially outside the grid?",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L62",
+      "source_file": "requirements/audit.md",
+      "source_location": "L35",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_file_path_verification",
-      "community": 39,
-      "norm_label": "file path verification"
+      "id": "requirements_audit_are_there_tests_for_boundary_detection_to_ensure_pieces_are_never_placed_partially_outside_the_grid",
+      "community": 40,
+      "norm_label": "are there tests for **boundary detection** to ensure pieces are never placed partially outside the grid?"
     },
     {
-      "label": "3. Discrepancies with Audit Guide",
+      "label": "Basic",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L73",
+      "source_file": "requirements/audit.md",
+      "source_location": "L37",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_3_discrepancies_with_audit_guide",
-      "community": 39,
-      "norm_label": "3. discrepancies with audit guide"
+      "id": "requirements_audit_basic",
+      "community": 40,
+      "norm_label": "basic"
     },
     {
-      "label": "3a. Q8/Q9/Q10 \u2014 Makefile Commands vs Audit Guide Commands",
+      "label": "+Does the code obey the [good practices](../../good-practices/README.md)?",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L75",
+      "source_file": "requirements/audit.md",
+      "source_location": "L39",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_3a_q8_q9_q10_makefile_commands_vs_audit_guide_commands",
-      "community": 39,
-      "norm_label": "3a. q8/q9/q10 \u2014 makefile commands vs audit guide commands"
+      "id": "requirements_audit_does_the_code_obey_the_good_practices_good_practices_readme_md",
+      "community": 40,
+      "norm_label": "+does the code obey the [good practices](../../good-practices/readme.md)?"
     },
     {
-      "label": "3b. `maker audit` vs Audit Guide Procedure",
+      "label": "+Is there a test file for this code?",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L86",
+      "source_file": "requirements/audit.md",
+      "source_location": "L41",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_3b_maker_audit_vs_audit_guide_procedure",
-      "community": 39,
-      "norm_label": "3b. `maker audit` vs audit guide procedure"
+      "id": "requirements_audit_is_there_a_test_file_for_this_code",
+      "community": 40,
+      "norm_label": "+is there a test file for this code?"
     },
     {
-      "label": "3c. `winrate_check` vs Script `check_winrate`",
+      "label": "+Are the tests checking each possible case?",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L110",
+      "source_file": "requirements/audit.md",
+      "source_location": "L43",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_3c_winrate_check_vs_script_check_winrate",
-      "community": 39,
-      "norm_label": "3c. `winrate_check` vs script `check_winrate`"
+      "id": "requirements_audit_are_the_tests_checking_each_possible_case",
+      "community": 40,
+      "norm_label": "+are the tests checking each possible case?"
     },
     {
-      "label": "4. .PHONY Coverage \u2014 \u2705 Complete",
+      "label": "Bonus",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L123",
+      "source_file": "requirements/audit.md",
+      "source_location": "L45",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_4_phony_coverage_complete",
-      "community": 39,
-      "norm_label": "4. .phony coverage \u2014 \u2705 complete"
+      "id": "requirements_audit_bonus",
+      "community": 40,
+      "norm_label": "bonus"
     },
     {
-      "label": "5. Issues Found \u2014 Concrete Bugs",
+      "label": "+Did the student create a visualizer for the project?",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L135",
+      "source_file": "requirements/audit.md",
+      "source_location": "L47",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_5_issues_found_concrete_bugs",
-      "community": 39,
-      "norm_label": "5. issues found \u2014 concrete bugs"
+      "id": "requirements_audit_did_the_student_create_a_visualizer_for_the_project",
+      "community": 40,
+      "norm_label": "+did the student create a visualizer for the project?"
     },
     {
-      "label": "\ud83d\udd34 CRITICAL \u2014 Issue #1: `make audit` path mismatch + no-op exit",
+      "label": "Try to run `./game_engine -f maps/<map of your choice> -p1 <path to student player> -p2 robots/terminator` five times changing the position of the players each time so that the student player can be the `p1` and the `p2`.",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L137",
+      "source_file": "requirements/audit.md",
+      "source_location": "L49",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_critical_issue_1_make_audit_path_mismatch_no_op_exit",
-      "community": 39,
-      "norm_label": "\ud83d\udd34 critical \u2014 issue #1: `make audit` path mismatch + no-op exit"
+      "id": "requirements_audit_try_to_run_game_engine_f_maps_map_of_your_choice_p1_path_to_student_player_p2_robots_terminator_five_times_changing_the_position_of_the_players_each_time_so_that_the_student_player_can_be_the_p1_and_the_p2",
+      "community": 40,
+      "norm_label": "try to run `./game_engine -f maps/<map of your choice> -p1 <path to student player> -p2 robots/terminator` five times changing the position of the players each time so that the student player can be the `p1` and the `p2`."
     },
     {
-      "label": "\ud83d\udd34 CRITICAL \u2014 Issue #2: `cargo clippy --deny warnings` broken flag",
+      "label": "+Can you confirm that the student player won at least 4 out of 5 times?",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L160",
+      "source_file": "requirements/audit.md",
+      "source_location": "L51",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_critical_issue_2_cargo_clippy_deny_warnings_broken_flag",
-      "community": 39,
-      "norm_label": "\ud83d\udd34 critical \u2014 issue #2: `cargo clippy --deny warnings` broken flag"
+      "id": "requirements_audit_can_you_confirm_that_the_student_player_won_at_least_4_out_of_5_times_51",
+      "community": 40,
+      "norm_label": "+can you confirm that the student player won at least 4 out of 5 times?"
     },
     {
-      "label": "\ud83d\udfe1 HIGH \u2014 Issue #3: `run_audit_suite.sh` missing `exit 1` on failure",
+      "label": "requirements.md",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L177",
+      "source_file": "requirements/requirements.md",
+      "source_location": "L1",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_high_issue_3_run_audit_suite_sh_missing_exit_1_on_failure",
-      "community": 39,
-      "norm_label": "\ud83d\udfe1 high \u2014 issue #3: `run_audit_suite.sh` missing `exit 1` on failure"
+      "id": "requirements_requirements",
+      "community": 40,
+      "norm_label": "requirements.md"
     },
     {
-      "label": "\ud83d\udfe1 HIGH \u2014 Issue #4: `winrate_check` macro missing `timeout`",
+      "label": "Filler",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L187",
+      "source_file": "requirements/requirements.md",
+      "source_location": "L1",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_high_issue_4_winrate_check_macro_missing_timeout",
-      "community": 39,
-      "norm_label": "\ud83d\udfe1 high \u2014 issue #4: `winrate_check` macro missing `timeout`"
+      "id": "requirements_requirements_filler",
+      "community": 40,
+      "norm_label": "filler"
     },
     {
-      "label": "\ud83d\udfe1 HIGH \u2014 Issue #5: Multiple files fail `cargo fmt --check`",
+      "label": "The Game:",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L196",
+      "source_file": "requirements/requirements.md",
+      "source_location": "L3",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_high_issue_5_multiple_files_fail_cargo_fmt_check",
-      "community": 39,
-      "norm_label": "\ud83d\udfe1 high \u2014 issue #5: multiple files fail `cargo fmt --check`"
+      "id": "requirements_requirements_the_game",
+      "community": 40,
+      "norm_label": "the game:"
     },
     {
-      "label": "\ud83d\udfe1 HIGH \u2014 Issue #6: `q1` missing `exit 1` on failure",
+      "label": "The Anfield:",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L212",
+      "source_file": "requirements/requirements.md",
+      "source_location": "L14",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_high_issue_6_q1_missing_exit_1_on_failure",
-      "community": 39,
-      "norm_label": "\ud83d\udfe1 high \u2014 issue #6: `q1` missing `exit 1` on failure"
+      "id": "requirements_requirements_the_anfield",
+      "community": 40,
+      "norm_label": "the anfield:"
     },
     {
-      "label": "\u26a0\ufe0f MEDIUM \u2014 Issue #7: E2E test silent skip when `./game_engine` not found",
+      "label": "The pieces",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L226",
+      "source_file": "requirements/requirements.md",
+      "source_location": "L38",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_medium_issue_7_e2e_test_silent_skip_when_game_engine_not_found",
-      "community": 39,
-      "norm_label": "\u26a0\ufe0f medium \u2014 issue #7: e2e test silent skip when `./game_engine` not found"
+      "id": "requirements_requirements_the_pieces",
+      "community": 40,
+      "norm_label": "the pieces"
     },
     {
-      "label": "\u26a0\ufe0f MEDIUM \u2014 Issue #8: `run_audit_suite.sh` Q3 also silently passes",
+      "label": "The Robots",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L235",
+      "source_file": "requirements/requirements.md",
+      "source_location": "L59",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_medium_issue_8_run_audit_suite_sh_q3_also_silently_passes",
-      "community": 39,
-      "norm_label": "\u26a0\ufe0f medium \u2014 issue #8: `run_audit_suite.sh` q3 also silently passes"
+      "id": "requirements_requirements_the_robots",
+      "community": 40,
+      "norm_label": "the robots"
     },
     {
-      "label": "\ud83d\udd35 LOW \u2014 Issue #9: `run_audit_suite.sh` missing Q11/Q12/Q13 checks",
+      "label": "The Game_engine",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L242",
+      "source_file": "requirements/requirements.md",
+      "source_location": "L89",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_low_issue_9_run_audit_suite_sh_missing_q11_q12_q13_checks",
-      "community": 39,
-      "norm_label": "\ud83d\udd35 low \u2014 issue #9: `run_audit_suite.sh` missing q11/q12/q13 checks"
+      "id": "requirements_requirements_the_game_engine",
+      "community": 40,
+      "norm_label": "the game_engine"
     },
     {
-      "label": "\ud83d\udd35 LOW \u2014 Issue #10: `winrate_check` missing `|| true` after engine command",
+      "label": "Docker",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L249",
+      "source_file": "requirements/requirements.md",
+      "source_location": "L112",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_low_issue_10_winrate_check_missing_true_after_engine_command",
-      "community": 39,
-      "norm_label": "\ud83d\udd35 low \u2014 issue #10: `winrate_check` missing `|| true` after engine command"
+      "id": "requirements_requirements_docker",
+      "community": 40,
+      "norm_label": "docker"
     },
     {
-      "label": "6. Verification Attempt \u2014 Actual Results",
+      "label": "Usage",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L256",
+      "source_file": "requirements/requirements.md",
+      "source_location": "L133",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_6_verification_attempt_actual_results",
-      "community": 39,
-      "norm_label": "6. verification attempt \u2014 actual results"
+      "id": "requirements_requirements_usage",
+      "community": 40,
+      "norm_label": "usage"
     },
     {
-      "label": "Audit Guide Commands (for comparison)",
+      "label": "Unit Tests",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L272",
+      "source_file": "requirements/requirements.md",
+      "source_location": "L166",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_audit_guide_commands_for_comparison",
-      "community": 39,
-      "norm_label": "audit guide commands (for comparison)"
+      "id": "requirements_requirements_unit_tests",
+      "community": 40,
+      "norm_label": "unit tests"
     },
     {
-      "label": "Per-Model Summary",
+      "label": "Bonus",
       "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L282",
+      "source_file": "requirements/requirements.md",
+      "source_location": "L175",
       "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_per_model_summary",
-      "community": 39,
-      "norm_label": "per-model summary"
-    },
-    {
-      "label": "Recommendations (Priority Order)",
-      "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L292",
-      "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_recommendations_priority_order",
-      "community": 39,
-      "norm_label": "recommendations (priority order)"
-    },
-    {
-      "label": "Raw Reports",
-      "file_type": "document",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L304",
-      "_origin": "ast",
-      "id": "polymerge_report_makefile_validate_raw_reports",
-      "community": 39,
-      "norm_label": "raw reports"
+      "id": "requirements_requirements_bonus",
+      "community": 40,
+      "norm_label": "bonus"
     },
     {
       "label": "Karpathy Guidelines",
@@ -11775,26 +11219,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/q1_audit.sh",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "scripts_q1_audit",
-      "target": "home_ertval_code_zone_modules_filler_scripts_q1_audit_sh__entry",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/q1_simple.sh",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "scripts_q1_simple",
-      "target": "home_ertval_code_zone_modules_filler_scripts_q1_simple_sh__entry",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "src/bin/visualizer.rs",
       "source_location": "L5",
       "weight": 1.0,
@@ -12432,41 +11856,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/strategy.rs",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "src_strategy",
-      "target": "src_strategy_apply_placement",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
       "source_location": "L115",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_strategy",
       "target": "src_strategy_choose_best_placement"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L41",
-      "weight": 1.0,
-      "source": "src_strategy",
-      "target": "src_strategy_count_opponent_adjacent",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L18",
-      "weight": 1.0,
-      "source": "src_strategy",
-      "target": "src_strategy_frontier_size",
-      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -12482,31 +11876,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/strategy.rs",
-      "source_location": "L61",
-      "weight": 1.0,
-      "source": "src_strategy",
-      "target": "src_strategy_reachable_area",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
       "source_location": "L90",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_strategy",
       "target": "src_strategy_score_placement"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L224",
-      "weight": 1.0,
-      "source": "src_strategy",
-      "target": "src_strategy_score_placement_full",
-      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -12532,94 +11906,6 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "src/strategy.rs",
-      "source_location": "L4",
-      "weight": 1.0,
-      "context": "return_type",
-      "source": "src_strategy_apply_placement",
-      "target": "src_strategy_rs_grid",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L4",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_strategy_apply_placement",
-      "target": "src_strategy_rs_piece",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L4",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_strategy_apply_placement",
-      "target": "src_strategy_rs_player",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L4",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_strategy_apply_placement",
-      "target": "src_strategy_rs_point",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L234",
-      "weight": 1.0,
-      "source": "src_strategy_score_placement_full",
-      "target": "src_strategy_apply_placement",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L194",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_strategy_choose_best_placement",
-      "target": "src_strategy_rs_grid",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L41",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_strategy_count_opponent_adjacent",
-      "target": "src_strategy_rs_grid",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L18",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_strategy_frontier_size",
-      "target": "src_strategy_rs_grid",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
       "source_location": "L5",
       "weight": 1.0,
       "context": "parameter_type",
@@ -12631,210 +11917,12 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "src/strategy.rs",
-      "source_location": "L61",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_strategy_reachable_area",
-      "target": "src_strategy_rs_grid",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L224",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_strategy_score_placement_full",
-      "target": "src_strategy_rs_grid",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L115",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "confidence_score": 1.0,
-      "source": "src_strategy_choose_best_placement",
-      "target": "src_strategy_rs_piece"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L41",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_strategy_count_opponent_adjacent",
-      "target": "src_strategy_rs_piece",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L90",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "confidence_score": 1.0,
-      "source": "src_strategy_score_placement",
-      "target": "src_strategy_rs_piece"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L224",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_strategy_score_placement_full",
-      "target": "src_strategy_rs_piece",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L115",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "confidence_score": 1.0,
-      "source": "src_strategy_choose_best_placement",
-      "target": "src_strategy_rs_point"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L41",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_strategy_count_opponent_adjacent",
-      "target": "src_strategy_rs_point",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L90",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "confidence_score": 1.0,
-      "source": "src_strategy_score_placement",
-      "target": "src_strategy_rs_point"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L224",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_strategy_score_placement_full",
-      "target": "src_strategy_rs_point",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L194",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_strategy_choose_best_placement",
-      "target": "src_strategy_rs_player",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L41",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_strategy_count_opponent_adjacent",
-      "target": "src_strategy_rs_player",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L18",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_strategy_frontier_size",
-      "target": "src_strategy_rs_player",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
       "source_location": "L5",
       "weight": 1.0,
       "context": "parameter_type",
       "confidence_score": 1.0,
       "source": "src_strategy_generate_heatmap",
       "target": "src_strategy_rs_player"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L61",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_strategy_reachable_area",
-      "target": "src_strategy_rs_player",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L224",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_strategy_score_placement_full",
-      "target": "src_strategy_rs_player",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L235",
-      "weight": 1.0,
-      "source": "src_strategy_score_placement_full",
-      "target": "src_strategy_frontier_size",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L237",
-      "weight": 1.0,
-      "source": "src_strategy_score_placement_full",
-      "target": "src_strategy_count_opponent_adjacent",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L238",
-      "weight": 1.0,
-      "source": "src_strategy_score_placement_full",
-      "target": "src_strategy_reachable_area",
-      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -12881,17 +11969,6 @@
       "target": "src_strategy_rs_vec"
     },
     {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L224",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "source": "src_strategy_score_placement_full",
-      "target": "src_strategy_rs_vec",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -12903,15 +11980,48 @@
       "target": "src_strategy_score_placement"
     },
     {
-      "relation": "calls",
-      "context": "call",
+      "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "src/strategy.rs",
-      "source_location": "L232",
+      "source_location": "L90",
       "weight": 1.0,
-      "source": "src_strategy_score_placement_full",
-      "target": "src_strategy_score_placement",
-      "confidence_score": 1.0
+      "context": "parameter_type",
+      "confidence_score": 1.0,
+      "source": "src_strategy_score_placement",
+      "target": "src_strategy_rs_piece"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/strategy.rs",
+      "source_location": "L90",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "confidence_score": 1.0,
+      "source": "src_strategy_score_placement",
+      "target": "src_strategy_rs_point"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/strategy.rs",
+      "source_location": "L115",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "confidence_score": 1.0,
+      "source": "src_strategy_choose_best_placement",
+      "target": "src_strategy_rs_piece"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/strategy.rs",
+      "source_location": "L115",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "confidence_score": 1.0,
+      "source": "src_strategy_choose_best_placement",
+      "target": "src_strategy_rs_point"
     },
     {
       "relation": "references",
@@ -12923,17 +12033,6 @@
       "confidence_score": 1.0,
       "source": "src_strategy_choose_best_placement",
       "target": "src_strategy_rs_option"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/strategy.rs",
-      "source_location": "L207",
-      "weight": 1.0,
-      "source": "src_strategy_choose_best_placement",
-      "target": "src_strategy_score_placement_full",
-      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -17320,6 +16419,36 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "METHODOLOGY.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "methodology",
+      "target": "methodology_implementation_methodology"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "METHODOLOGY.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "methodology_implementation_methodology",
+      "target": "methodology_development_principles"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "METHODOLOGY.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "methodology_implementation_methodology",
+      "target": "methodology_multi_agent_architecture"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "README.md",
       "source_location": "L9",
       "weight": 1.0,
@@ -17336,6 +16465,16 @@
       "confidence_score": 1.0,
       "source": "readme_filler",
       "target": "readme_audit_compliance"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L174",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_filler",
+      "target": "readme_cli_reference"
     },
     {
       "relation": "contains",
@@ -17411,251 +16550,81 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L108",
+      "source_location": "L130",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_quick_start",
-      "target": "readme_make_commands",
-      "confidence_score": 1.0
+      "target": "readme_all_tests_unit_integration"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L125",
-      "weight": 1.0,
-      "source": "readme_quick_start",
-      "target": "readme_manual_build_run",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "docs_audit_guide",
-      "target": "docs_audit_guide_audit_guide_filler",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L235",
-      "weight": 1.0,
-      "source": "docs_audit_guide_audit_guide_filler",
-      "target": "docs_audit_guide_basic",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L281",
-      "weight": 1.0,
-      "source": "docs_audit_guide_audit_guide_filler",
-      "target": "docs_audit_guide_bonus",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L19",
-      "weight": 1.0,
-      "source": "docs_audit_guide_audit_guide_filler",
-      "target": "docs_audit_guide_functional",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L317",
-      "weight": 1.0,
-      "source": "docs_audit_guide_audit_guide_filler",
-      "target": "docs_audit_guide_per_question_make_targets",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L7",
-      "weight": 1.0,
-      "source": "docs_audit_guide_audit_guide_filler",
-      "target": "docs_audit_guide_prerequisites",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L302",
-      "weight": 1.0,
-      "source": "docs_audit_guide_audit_guide_filler",
-      "target": "docs_audit_guide_quick_reference_all_make_targets",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L151",
-      "weight": 1.0,
-      "source": "docs_audit_guide_audit_guide_filler",
-      "target": "docs_audit_guide_unit_tests",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "docs_audit_guide_functional",
-      "target": "docs_audit_guide_q1_docker_image_zone_01_audit",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L56",
-      "weight": 1.0,
-      "source": "docs_audit_guide_functional",
-      "target": "docs_audit_guide_q2_project_runs_correctly",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L79",
-      "weight": 1.0,
-      "source": "docs_audit_guide_functional",
-      "target": "docs_audit_guide_q3_1_cell_overlap_rule",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L102",
-      "weight": 1.0,
-      "source": "docs_audit_guide_functional",
-      "target": "docs_audit_guide_q4_win_rate_vs_wall_e_on_map00_4_5",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L133",
-      "weight": 1.0,
-      "source": "docs_audit_guide_functional",
-      "target": "docs_audit_guide_q5_win_rate_vs_h2_d2_on_map01_4_5",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L142",
-      "weight": 1.0,
-      "source": "docs_audit_guide_functional",
-      "target": "docs_audit_guide_q6_win_rate_vs_bender_on_map02_4_5",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L217",
-      "weight": 1.0,
-      "source": "docs_audit_guide_unit_tests",
-      "target": "docs_audit_guide_q10_boundary_detection_tests",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/audit_guide.md",
       "source_location": "L153",
       "weight": 1.0,
-      "source": "docs_audit_guide_unit_tests",
-      "target": "docs_audit_guide_q7_all_tests_pass",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "readme_quick_start",
+      "target": "readme_audit_suite"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L177",
+      "source_file": "README.md",
+      "source_location": "L104",
       "weight": 1.0,
-      "source": "docs_audit_guide_unit_tests",
-      "target": "docs_audit_guide_q8_input_parsing_tests",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "readme_quick_start",
+      "target": "readme_build"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L196",
+      "source_file": "README.md",
+      "source_location": "L162",
       "weight": 1.0,
-      "source": "docs_audit_guide_unit_tests",
-      "target": "docs_audit_guide_q9_placement_validation_tests",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "readme_quick_start",
+      "target": "readme_docker"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L237",
+      "source_file": "README.md",
+      "source_location": "L136",
       "weight": 1.0,
-      "source": "docs_audit_guide_basic",
-      "target": "docs_audit_guide_q11_good_practices",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "readme_quick_start",
+      "target": "readme_e2e_replay_validation"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L251",
+      "source_file": "README.md",
+      "source_location": "L144",
       "weight": 1.0,
-      "source": "docs_audit_guide_basic",
-      "target": "docs_audit_guide_q12_test_file_exists",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "readme_quick_start",
+      "target": "readme_performance_benchmark"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L265",
+      "source_file": "README.md",
+      "source_location": "L113",
       "weight": 1.0,
-      "source": "docs_audit_guide_basic",
-      "target": "docs_audit_guide_q13_tests_check_each_case",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "readme_quick_start",
+      "target": "readme_run_inside_game_engine"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L283",
+      "source_file": "README.md",
+      "source_location": "L122",
       "weight": 1.0,
-      "source": "docs_audit_guide_bonus",
-      "target": "docs_audit_guide_visualizer",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/audit_guide.md",
-      "source_location": "L293",
-      "weight": 1.0,
-      "source": "docs_audit_guide_bonus",
-      "target": "docs_audit_guide_win_rate_vs_terminator",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "readme_quick_start",
+      "target": "readme_unit_tests"
     },
     {
       "relation": "conceptually_related_to",
@@ -18598,36 +17567,6 @@
       "target": "plan_implementation_tracker_phase_8_visualizer_bonus"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/report/METHODOLOGY.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "report_methodology",
-      "target": "report_methodology_implementation_methodology",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/report/METHODOLOGY.md",
-      "source_location": "L12",
-      "weight": 1.0,
-      "source": "report_methodology_implementation_methodology",
-      "target": "report_methodology_development_principles",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/report/METHODOLOGY.md",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "report_methodology_implementation_methodology",
-      "target": "report_methodology_multi_agent_architecture",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -19250,6 +18189,26 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "engine-maps-robots/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_maps_robots_readme",
+      "target": "engine_maps_robots_readme_filler_docker_image"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "engine-maps-robots/README.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_maps_robots_readme_filler_docker_image",
+      "target": "engine_maps_robots_readme_notes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "requirements/audit.md",
       "source_location": "L37",
       "weight": 1.0,
@@ -19626,296 +18585,6 @@
       "confidence_score": 1.0,
       "source": "requirements_requirements_the_game_engine",
       "target": "requirements_requirements_docker"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "engine-maps-robots/README.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "engine_maps_robots_readme",
-      "target": "engine_maps_robots_readme_filler_docker_image"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "engine-maps-robots/README.md",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "engine_maps_robots_readme_filler_docker_image",
-      "target": "engine_maps_robots_readme_notes"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate",
-      "target": "polymerge_report_makefile_validate_multi_model_analysis_report_makefile_validation",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_multi_model_analysis_report_makefile_validation",
-      "target": "polymerge_report_makefile_validate_consensus_findings",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L282",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_multi_model_analysis_report_makefile_validation",
-      "target": "polymerge_report_makefile_validate_per_model_summary",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L304",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_multi_model_analysis_report_makefile_validation",
-      "target": "polymerge_report_makefile_validate_raw_reports",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L292",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_multi_model_analysis_report_makefile_validation",
-      "target": "polymerge_report_makefile_validate_recommendations_priority_order",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_multi_model_analysis_report_makefile_validation",
-      "target": "polymerge_report_makefile_validate_unique_findings",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L7",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_consensus_findings",
-      "target": "polymerge_report_makefile_validate_1_coverage_matrix_all_audit_questions_have_makefile_targets",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L33",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_unique_findings",
-      "target": "polymerge_report_makefile_validate_2_command_correctness_verified_commands_13_13_targets_verified",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L73",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_unique_findings",
-      "target": "polymerge_report_makefile_validate_3_discrepancies_with_audit_guide",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L123",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_unique_findings",
-      "target": "polymerge_report_makefile_validate_4_phony_coverage_complete",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L135",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_unique_findings",
-      "target": "polymerge_report_makefile_validate_5_issues_found_concrete_bugs",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L256",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_unique_findings",
-      "target": "polymerge_report_makefile_validate_6_verification_attempt_actual_results",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L62",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_unique_findings",
-      "target": "polymerge_report_makefile_validate_file_path_verification",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L75",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_3_discrepancies_with_audit_guide",
-      "target": "polymerge_report_makefile_validate_3a_q8_q9_q10_makefile_commands_vs_audit_guide_commands",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L86",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_3_discrepancies_with_audit_guide",
-      "target": "polymerge_report_makefile_validate_3b_maker_audit_vs_audit_guide_procedure",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L110",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_3_discrepancies_with_audit_guide",
-      "target": "polymerge_report_makefile_validate_3c_winrate_check_vs_script_check_winrate",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L137",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_5_issues_found_concrete_bugs",
-      "target": "polymerge_report_makefile_validate_critical_issue_1_make_audit_path_mismatch_no_op_exit",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L160",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_5_issues_found_concrete_bugs",
-      "target": "polymerge_report_makefile_validate_critical_issue_2_cargo_clippy_deny_warnings_broken_flag",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L177",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_5_issues_found_concrete_bugs",
-      "target": "polymerge_report_makefile_validate_high_issue_3_run_audit_suite_sh_missing_exit_1_on_failure",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L187",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_5_issues_found_concrete_bugs",
-      "target": "polymerge_report_makefile_validate_high_issue_4_winrate_check_macro_missing_timeout",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L196",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_5_issues_found_concrete_bugs",
-      "target": "polymerge_report_makefile_validate_high_issue_5_multiple_files_fail_cargo_fmt_check",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L212",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_5_issues_found_concrete_bugs",
-      "target": "polymerge_report_makefile_validate_high_issue_6_q1_missing_exit_1_on_failure",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L249",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_5_issues_found_concrete_bugs",
-      "target": "polymerge_report_makefile_validate_low_issue_10_winrate_check_missing_true_after_engine_command",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L242",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_5_issues_found_concrete_bugs",
-      "target": "polymerge_report_makefile_validate_low_issue_9_run_audit_suite_sh_missing_q11_q12_q13_checks",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L226",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_5_issues_found_concrete_bugs",
-      "target": "polymerge_report_makefile_validate_medium_issue_7_e2e_test_silent_skip_when_game_engine_not_found",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L235",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_5_issues_found_concrete_bugs",
-      "target": "polymerge_report_makefile_validate_medium_issue_8_run_audit_suite_sh_q3_also_silently_passes",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "polymerge-report-makefile-validate.md",
-      "source_location": "L272",
-      "weight": 1.0,
-      "source": "polymerge_report_makefile_validate_6_verification_attempt_actual_results",
-      "target": "polymerge_report_makefile_validate_audit_guide_commands_for_comparison",
-      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -20600,5 +19269,5 @@
       "source_file": "docs/plan/deeppro.md"
     }
   ],
-  "built_at_commit": "b9459ae03adc10bd84021583fbb950b383756b92"
+  "built_at_commit": "00ac4c4f28adcf7416bac15f780f6df599aaeed5"
 }

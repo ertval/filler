@@ -1,16 +1,16 @@
-# Graph Report - filler  (2026-06-27)
+# Graph Report - filler  (2026-06-18)
 
 ## Corpus Check
-- 99 files · ~59,977 words
+- 95 files · ~54,474 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 921 nodes · 1060 edges · 100 communities (78 shown, 22 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 26 edges (avg confidence: 0.87)
+- 867 nodes · 985 edges · 104 communities (84 shown, 20 thin omitted)
+- Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 26 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b9459ae0`
+- Built from commit: `00ac4c4f`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -102,6 +102,10 @@
 - [[_COMMUNITY_Community 96|Community 96]]
 - [[_COMMUNITY_Community 97|Community 97]]
 - [[_COMMUNITY_Community 98|Community 98]]
+- [[_COMMUNITY_Community 99|Community 99]]
+- [[_COMMUNITY_Community 100|Community 100]]
+- [[_COMMUNITY_Community 101|Community 101]]
+- [[_COMMUNITY_Community 102|Community 102]]
 - [[_COMMUNITY_Community 103|Community 103]]
 
 ## God Nodes (most connected - your core abstractions)
@@ -109,12 +113,12 @@
 2. `Gitea CLI (tea)` - 20 edges
 3. `Filler Implementation Plan — TDD in Rust (DeepPro Edition)` - 19 edges
 4. `parse_turn()` - 12 edges
-5. `score_placement_full()` - 12 edges
-6. `Caveman Compress` - 12 edges
-7. `Caveman Help` - 12 edges
-8. `no-mistakes` - 12 edges
-9. `find_valid_placements()` - 11 edges
-10. `caveman` - 11 edges
+5. `Caveman Compress` - 12 edges
+6. `Caveman Help` - 12 edges
+7. `no-mistakes` - 12 edges
+8. `find_valid_placements()` - 11 edges
+9. `caveman` - 11 edges
+10. `What You Must Do When Invoked` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Karpathy Guidelines` --semantically_similar_to--> `Karpathy Guidelines`  [INFERRED] [semantically similar]
@@ -143,7 +147,7 @@
 - **Karpathy Guidelines Principles** — karpathy_guidelines_think_before_coding, karpathy_guidelines_simplicity_first, karpathy_guidelines_surgical_changes, karpathy_guidelines_goal_driven_execution, karpathy_guidelines_skill [EXTRACTED 1.00]
 - **Filler Implementation Artifacts** — plan_deeppro, plan_implementation_tracker, requirements_audit, requirements_requirements [EXTRACTED 1.00]
 
-## Communities (100 total, 22 thin omitted)
+## Communities (104 total, 20 thin omitted)
 
 ### Community 0 - "Graphify Core Pipeline"
 Cohesion: 0.06
@@ -206,8 +210,8 @@ Cohesion: 0.14
 Nodes (13): Common Skill Categories, Find Skills, How to Help Users Find Skills, Step 1: Understand What They Need, Step 2: Check the Leaderboard First, Step 3: Search for Skills, Step 4: Verify Quality Before Recommending, Step 5: Present Options to the User (+5 more)
 
 ### Community 29 - "Community 29"
-Cohesion: 0.05
-Nodes (41): 0. Project Structure, 10. Win-Rate Parser — `e2e/assert_winrate.rs`, 11. Dockerfile & Exclusions, 12. Build & Test Commands, 13. Full TDD Execution Order (Day-by-Day), 14. Edge Cases Checklist, 15. Audit Question → Test Mapping, 16. Visualizer Specification (Bonus) (+33 more)
+Cohesion: 0.20
+Nodes (10): 0. Project Structure, 10. Win-Rate Parser — `e2e/assert_winrate.rs`, 12. Build & Test Commands, 14. Edge Cases Checklist, 15. Audit Question → Test Mapping, 17. Summary, 6. `src/lib.rs` — Module Re-exports, 7. `Cargo.toml` (+2 more)
 
 ### Community 30 - "Community 30"
 Cohesion: 0.05
@@ -242,12 +246,12 @@ Cohesion: 0.14
 Nodes (14): 3. Module B: Placement Validator — `src/validator.rs`, B1: Boundary Check, B2: Overlap Logic, B3: Find All Valid Placements, C1: Generate Heatmap (BFS from opponent territory), C2: Score a Placement, C3: Choose Best Placement, C4: Advanced Territory Control (Bonus) (+6 more)
 
 ### Community 38 - "Community 38"
-Cohesion: 0.14
-Nodes (14): 8.1. Benchmark Harness — `benches/turn_benchmark.rs`, 8.2. E2E Replay Validation Test — `tests/e2e.rs`, 8.3. Multi-Turn Territory Growth Test — `tests/multi_turn.rs`, 8.4. Deterministic Tie-Breaker Test — `tests/strategy_tests.rs`, 8. Integration Tests — `tests/integration_tests.rs`, Goal, IT-1: P1 single valid turn — places on own territory, IT-2: P2 single valid turn (+6 more)
+Cohesion: 0.29
+Nodes (7): 8.1. Benchmark Harness — `benches/turn_benchmark.rs`, 8.2. E2E Replay Validation Test — `tests/e2e.rs`, 8.3. Multi-Turn Territory Growth Test — `tests/multi_turn.rs`, 8.4. Deterministic Tie-Breaker Test — `tests/strategy_tests.rs`, 8. Integration Tests — `tests/integration_tests.rs`, Goal, Test Helpers — `tests/common/mod.rs`
 
 ### Community 39 - "Community 39"
-Cohesion: 0.07
-Nodes (27): 1. Coverage Matrix — All Audit Questions Have Makefile Targets, 2. Command Correctness — Verified Commands (13/13 targets verified), 3. Discrepancies with Audit Guide, 3a. Q8/Q9/Q10 — Makefile Commands vs Audit Guide Commands, 3b. `maker audit` vs Audit Guide Procedure, 3c. `winrate_check` vs Script `check_winrate`, 4. .PHONY Coverage — ✅ Complete, 5. Issues Found — Concrete Bugs (+19 more)
+Cohesion: 0.50
+Nodes (3): Development Principles, Implementation Methodology, Multi-Agent Architecture
 
 ### Community 40 - "Community 40"
 Cohesion: 0.06
@@ -262,16 +266,16 @@ Cohesion: 0.21
 Nodes (11): Self, Cell, GameState, Grid, Piece, Player, Point, Error (+3 more)
 
 ### Community 43 - "Community 43"
-Cohesion: 0.35
-Nodes (16): apply_placement(), choose_best_placement(), count_opponent_adjacent(), frontier_size(), generate_heatmap(), reachable_area(), Grid, Option (+8 more)
+Cohesion: 0.27
+Nodes (11): choose_best_placement(), generate_heatmap(), Grid, Option, Piece, Player, Point, Vec (+3 more)
 
 ### Community 44 - "Community 44"
 Cohesion: 0.20
 Nodes (10): Caveman Commit Skill, Caveman Help, Configure Default Mode, Deactivate, Language, Modes, More, Skills (+2 more)
 
 ### Community 45 - "Community 45"
-Cohesion: 0.17
-Nodes (11): Audit Compliance, filler, How It Works, License, Make Commands, Manual Build & Run, Module Map, Project Structure (+3 more)
+Cohesion: 0.11
+Nodes (18): All Tests (Unit + Integration), Audit Compliance, Audit Suite, Build, CLI Reference, Docker, E2E Replay Validation, filler (+10 more)
 
 ### Community 46 - "Community 46"
 Cohesion: 0.22
@@ -394,12 +398,12 @@ Cohesion: 0.18
 Nodes (15): Duration, Frame, parse_anfield_header(), play(), read_replay(), render_frame(), Grid, R (+7 more)
 
 ### Community 93 - "Community 93"
-Cohesion: 0.08
-Nodes (23): Audit Guide — Filler, Basic, Bonus, Functional, Per-Question Make Targets, Prerequisites, Q10 — Boundary Detection tests, Q11 — Good practices (+15 more)
+Cohesion: 0.22
+Nodes (9): 2. Module A: Parser — `src/parser.rs`, A1: Parse Player Identity, A2: Parse Anfield Grid, A3: Parse Piece, A4: Full Turn Parser, A5: Helper — Read a line, Goal, Input Format (exact) (+1 more)
 
 ### Community 94 - "Community 94"
-Cohesion: 0.50
-Nodes (3): Development Principles, Implementation Methodology, Multi-Agent Architecture
+Cohesion: 0.29
+Nodes (7): IT-1: P1 single valid turn — places on own territory, IT-2: P2 single valid turn, IT-3: No valid placement → fallback `0 0`, IT-4: Multiple valid placements → picks closest to opponent, IT-5: Boundary rejection wired in pipeline, IT-6: Two consecutive turns (no player line re-sent), Test Cases
 
 ### Community 95 - "Community 95"
 Cohesion: 0.40
@@ -409,25 +413,49 @@ Nodes (4): Boundaries, Intensity, Persistence, Rules
 Cohesion: 0.83
 Nodes (4): Cavecrew Builder, Cavecrew Skill Definition, Cavecrew Investigator, Cavecrew Reviewer
 
+### Community 97 - "Community 97"
+Cohesion: 0.33
+Nodes (6): 13. Full TDD Execution Order (Day-by-Day), Day 1: Project Setup + Types + Output + Parser, Day 2: Validator + Strategy, Day 3: Main Loop + Integration + Docker + Benchmark, Day 4: E2E Replay Validation + Multi-Turn Testing + Strategy Tuning, Day 5: Visualizer (Bonus) + Polish
+
+### Community 98 - "Community 98"
+Cohesion: 0.50
+Nodes (4): 11. Dockerfile & Exclusions, Alternative: Alpine-Based Docker (Minimal Image Size Variant), Dockerfile (Base: Debian Bookworm Slim), `.dockerignore`
+
+### Community 99 - "Community 99"
+Cohesion: 0.67
+Nodes (3): 16. Visualizer Specification (Bonus), Goal, Implementation sketch
+
+### Community 100 - "Community 100"
+Cohesion: 0.67
+Nodes (3): 1. Data Structures & Types — `src/types.rs`, Architectural Variant: Byte-Level Grid Storage (Performance Optimization), Coordinate Convention
+
+### Community 101 - "Community 101"
+Cohesion: 0.67
+Nodes (3): 4.5. Module D: Output Formatter — `src/output.rs`, Goal, Implementation sketch
+
+### Community 102 - "Community 102"
+Cohesion: 0.67
+Nodes (3): 5. Main Loop — `src/main.rs`, Critical IO Behaviour, Error Handling & Guardrails
+
 ## Knowledge Gaps
-- **461 isolated node(s):** `$schema`, `plugin`, `@opencode-ai/plugin`, `run_game.sh script`, `q1_audit.sh script` (+456 more)
+- **429 isolated node(s):** `$schema`, `plugin`, `@opencode-ai/plugin`, `run_game.sh script`, `Result` (+424 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **22 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **20 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Filler Implementation Plan — TDD in Rust (DeepPro Edition)` connect `Community 29` to `Community 40`, `Community 37`, `Community 38`?**
-  _High betweenness centrality (0.023) - this node is a cross-community bridge._
+- **Why does `Filler Implementation Plan — TDD in Rust (DeepPro Edition)` connect `Community 29` to `Community 97`, `Community 98`, `Community 99`, `Community 100`, `Community 37`, `Community 101`, `Community 102`, `Community 40`, `Community 38`, `Community 93`?**
+  _High betweenness centrality (0.026) - this node is a cross-community bridge._
 - **Why does `Final Cross-Plan Analysis: Enrichments for Deeppro` connect `Community 34` to `Community 40`?**
-  _High betweenness centrality (0.009) - this node is a cross-community bridge._
+  _High betweenness centrality (0.010) - this node is a cross-community bridge._
 - **Why does `Cross-Plan Analysis: Enrichments for Deeppro from Gem & GLM Plans` connect `Community 35` to `Community 40`?**
-  _High betweenness centrality (0.008) - this node is a cross-community bridge._
+  _High betweenness centrality (0.009) - this node is a cross-community bridge._
 - **Are the 2 inferred relationships involving `parse_turn()` (e.g. with `test_blank_line_tolerance()` and `test_parse_eof_mid_turn()`) actually correct?**
   _`parse_turn()` has 2 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 2 inferred relationships involving `Caveman Compress` (e.g. with `Compress` and `RTK CLI Proxy`) actually correct?**
+  _`Caveman Compress` has 2 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `Caveman compress scripts.  This package provides tools to compress natural langu`, `Split YAML frontmatter from body. Returns (frontmatter, body).      Memory files`, `Resolve the out-of-tree backup directory for a given source file.      Backups m` to the rest of the system?**
-  _495 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _463 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Graphify Core Pipeline` be split into smaller, more focused modules?**
   _Cohesion score 0.06349206349206349 - nodes in this community are weakly interconnected._
-- **Should `Caveman Agent Skills` be split into smaller, more focused modules?**
-  _Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected._

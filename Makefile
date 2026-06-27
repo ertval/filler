@@ -51,18 +51,20 @@ docker-run:
 # ── Audit per-question targets (Q1–Q13) ──────────────────────────
 
 # Reusable win-rate check: $(1)=map_path, $(2)=robot_path
+# Runs 5 total games: 3 as student P1, 2 as student P2.
+# Requires ≥4 wins out of 5 to pass (audit criteria: 4/5).
 define winrate_check
-	@wins=0; total=10; \
-	for i in 1 2 3 4 5; do \
+	@wins=0; total=5; \
+	for i in 1 2 3; do \
 	  out=$$(timeout 15 $(ENGINE) -f $(1) -p1 $(STUDENT) -p2 $(2) -q 2>&1); \
 	  if echo "$$out" | grep -q -e "Player 1 won" -e "Player1 won"; then wins=$$((wins+1)); fi; \
 	done; \
-	for i in 1 2 3 4 5; do \
+	for i in 1 2; do \
 	  out=$$(timeout 15 $(ENGINE) -f $(1) -p1 $(2) -p2 $(STUDENT) -q 2>&1); \
 	  if echo "$$out" | grep -q -e "Player 2 won" -e "Player2 won"; then wins=$$((wins+1)); fi; \
 	done; \
-	echo "Wins: $$wins/$$total (need 8)"; \
-	if [ $$wins -ge 8 ]; then echo "[PASS]"; else echo "[FAIL]"; exit 1; fi
+	echo "Wins: $$wins/$$total (need 4)"; \
+	if [ $$wins -ge 4 ]; then echo "[PASS]"; else echo "[FAIL]"; exit 1; fi
 endef
 
 # Q1: Full Zone 01 Audit — build zone-filler + filler, mount student binary, run audit inside container
@@ -150,3 +152,5 @@ help:
 	@echo "Bonus targets:"
 	@echo "  qb-visualizer  Visualizer tests"
 	@echo "  qb-terminator  Win-rate vs terminator"
+	@echo ""
+	@echo "Win-rate targets run 5 total games (3 as P1 + 2 as P2), need >=4 wins."

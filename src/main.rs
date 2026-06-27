@@ -35,7 +35,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             }
 
             let heatmap = strategy::generate_heatmap(&turn.grid, turn.opponent, turn.me);
-            let chosen = strategy::choose_best_placement(&valid, &heatmap, &turn.piece);
+            let chosen = strategy::choose_best_placement(&valid, &heatmap, &turn.piece, &turn.grid, turn.me, turn.opponent);
             Ok((chosen, turn))
         }));
 

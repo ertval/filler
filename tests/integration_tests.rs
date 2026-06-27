@@ -30,7 +30,7 @@ fn test_it1_p1_single_valid_turn() {
     assert_eq!(valid, vec![Point { row: 1, col: 1 }]);
 
     let heatmap = strategy::generate_heatmap(&turn.grid, turn.opponent, turn.me);
-    let chosen = strategy::choose_best_placement(&valid, &heatmap, &turn.piece).unwrap();
+    let chosen = strategy::choose_best_placement(&valid, &heatmap, &turn.piece, &turn.grid, turn.me, turn.opponent).unwrap();
     assert_eq!(chosen, Point { row: 1, col: 1 });
     assert_eq!(output::format_move(chosen), "1 1\n");
 }
@@ -57,7 +57,7 @@ fn test_it2_p2_single_valid_turn() {
     assert_eq!(valid, vec![Point { row: 3, col: 3 }]);
 
     let heatmap = strategy::generate_heatmap(&turn.grid, turn.opponent, turn.me);
-    let chosen = strategy::choose_best_placement(&valid, &heatmap, &turn.piece).unwrap();
+    let chosen = strategy::choose_best_placement(&valid, &heatmap, &turn.piece, &turn.grid, turn.me, turn.opponent).unwrap();
     assert_eq!(chosen, Point { row: 3, col: 3 });
     assert_eq!(output::format_move(chosen), "3 3\n");
 }
@@ -109,7 +109,7 @@ fn test_it4_multiple_valid_placements_closest() {
     assert!(valid.contains(&Point { row: 1, col: 2 }));
 
     let heatmap = strategy::generate_heatmap(&turn.grid, turn.opponent, turn.me);
-    let chosen = strategy::choose_best_placement(&valid, &heatmap, &turn.piece).unwrap();
+    let chosen = strategy::choose_best_placement(&valid, &heatmap, &turn.piece, &turn.grid, turn.me, turn.opponent).unwrap();
     // (1,2) is closer to (3,3) than (1,1)
     assert_eq!(chosen, Point { row: 1, col: 2 });
 }
